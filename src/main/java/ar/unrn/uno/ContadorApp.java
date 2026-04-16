@@ -8,8 +8,6 @@ public class ContadorApp {
 
     /**
      * Punto de entrada de la aplicación.
-     *
-     */
      */
     static void main() {
         Contador i = new Contador(10);
