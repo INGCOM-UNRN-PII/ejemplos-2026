@@ -68,6 +68,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'nl.jqno.equalsverifier:equalsverifier:3.17.3'
     // ========== FASE 1: ArchUnit para reglas de arquitectura ==========
     // Reglas: 0x2001, 0x2003, 0x2008, 0x2009, 0x200C, 0x200D, 0x2012
     testImplementation 'com.tngtech.archunit:archunit-junit5:1.2.1'
@@ -91,6 +92,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperty 'net.bytebuddy.experimental', 'true'
     timeout = Duration.ofMinutes(5) // Cinco minutos para resolver cuelgues en los tests.
     finalizedBy jacocoTestReport
 

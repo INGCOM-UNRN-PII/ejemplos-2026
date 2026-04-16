@@ -9,6 +9,7 @@ import java.util.Set;
  */
 public class PersonaApp {
 
+    @SuppressWarnings({"SelfEquals", "EqualsNull", "NullAway"})
     public static void main(String[] args) {
         System.out.println("--- Demostración de equals() y hashCode() CORRECTOS ---");
 

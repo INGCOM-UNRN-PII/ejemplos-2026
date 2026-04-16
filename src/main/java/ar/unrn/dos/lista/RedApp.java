@@ -1,4 +1,4 @@
-package ar.unrn.dos;
+package ar.unrn.dos.lista;
 
 import java.util.List;
 

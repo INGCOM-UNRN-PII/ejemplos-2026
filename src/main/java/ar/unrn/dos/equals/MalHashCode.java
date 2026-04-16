@@ -17,10 +17,17 @@ public class MalHashCode {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        MalHashCode that = (MalHashCode) o;
-        return Objects.equals(id, that.id);
+        if (this == o) {
+            return true;
+        }
+        if (o == null) {
+            return false;
+        }
+        if (o instanceof MalHashCode that) {
+            return Objects.equals(id, that.id);
+        } else {
+            return false;
+        }
     }
 
     @Override

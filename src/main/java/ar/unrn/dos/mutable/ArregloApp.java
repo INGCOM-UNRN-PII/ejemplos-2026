@@ -1,4 +1,4 @@
-package ar.unrn.dos;
+package ar.unrn.dos.mutable;
 
 /**
  * Aplicación de consola para demostrar el uso de la clase Arreglo

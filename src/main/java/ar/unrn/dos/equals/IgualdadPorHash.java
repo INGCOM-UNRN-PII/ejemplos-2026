@@ -14,19 +14,24 @@ public class IgualdadPorHash {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        IgualdadPorHash that = (IgualdadPorHash) o;
-        
-        // ¡MAL! Usar hashCode() para determinar igualdad.
-        // Diferentes valores de cadena pueden generar el mismo hashCode (ej: "FB" y "Ea")
-        return this.hashCode() == that.hashCode();
+        if (this == o) {
+            return true;
+        }
+        if (o == null) {
+            return false;
+        }
+        if (o instanceof IgualdadPorHash that) {
+            // ¡MAL! Usar hashCode() para determinar igualdad.
+            // Diferentes valores de cadena pueden generar el mismo hashCode (ej: "FB" y "Ea")
+            return this.hashCode() == that.hashCode();
+        }
+        return false;
     }
 
     @Override
     public int hashCode() {
-        // Usamos el hashCode estándar de String (que puede colisionar)
-        return texto != null ? texto.hashCode() : 0;
+        // Usamos un hashCode bien malo
+        return 1;
     }
 
     public String getTexto() {

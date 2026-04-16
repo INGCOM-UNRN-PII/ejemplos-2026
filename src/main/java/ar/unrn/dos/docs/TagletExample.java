@@ -1,4 +1,4 @@
-package ar.unrn.dos;
+package ar.unrn.dos.docs;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -188,16 +188,23 @@ public class TagletExample {
      * El resultado es {@code true} si y solo si el argumento no es {@code null}
      * y es un objeto {@code TagletExample} que tiene el mismo {@link #name} y {@link #value}.
      *
-     * @param o El objeto a comparar con este {@code TagletExample}.
+     * @param otro El objeto a comparar con este {@code TagletExample}.
      * @return {@code true} si los objetos son iguales; {@code false} en caso contrario.
      * @see java.lang.Object#equals(Object)
      */
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        TagletExample that = (TagletExample) o;
-        return value == that.value && Objects.equals(name, that.name);
+    public boolean equals(Object otro) {
+        if (this == otro) {
+            return true;
+        }
+        if (otro == null) {
+            return false;
+        }
+        if (otro instanceof TagletExample o) {
+            return value == o.value && Objects.equals(name, o.name);
+        }else{
+            return false;
+        }
     }
 
     /**

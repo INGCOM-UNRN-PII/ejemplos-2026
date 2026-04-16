@@ -1,4 +1,4 @@
-package ar.unrn.dos;
+package ar.unrn.dos.mutable;
 
 import java.util.Arrays;
 import java.util.Objects;
