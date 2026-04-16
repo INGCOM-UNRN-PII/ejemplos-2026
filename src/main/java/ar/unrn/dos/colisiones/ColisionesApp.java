@@ -8,7 +8,7 @@ import java.util.Map;
 public class ColisionesApp {
     private static final int NUM_OBJETOS_A_GENERAR = 500_000;
 
-    public static void main(String[] args) {
+    static void main() {
         System.out.println("Iniciando búsqueda de colisiones de hashCode para " + NUM_OBJETOS_A_GENERAR + " objetos...");
 
         Map<Integer, List<ObjetoSimple>> objetosPorHashCode = new HashMap<>();

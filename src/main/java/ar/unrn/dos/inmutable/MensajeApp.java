@@ -7,7 +7,7 @@ package ar.unrn.dos.inmutable;
  */
 public class MensajeApp {
 
-    public static void main(String[] args) {
+    static void main() {
         System.out.println("--- Demostración con objetos inmutables (String) ---");
 
         // 1. Creamos la variable inicial

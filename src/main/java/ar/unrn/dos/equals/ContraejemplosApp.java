@@ -10,7 +10,7 @@ import java.util.Set;
  * debido a una mala implementación subyacente.
  */
 public class ContraejemplosApp {
-    public static void main(String[] args) {
+    static void main() {
         
         System.out.println("--- DEMOSTRACIÓN DE MALAS PRÁCTICAS EN EQUALS Y HASHCODE ---\n");
         

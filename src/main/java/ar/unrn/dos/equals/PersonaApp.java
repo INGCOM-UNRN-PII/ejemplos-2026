@@ -10,7 +10,7 @@ import java.util.Set;
 public class PersonaApp {
 
     @SuppressWarnings({"SelfEquals", "EqualsNull", "NullAway"})
-    public static void main(String[] args) {
+    static void main() {
         System.out.println("--- Demostración de equals() y hashCode() CORRECTOS ---");
 
         Persona p1 = new Persona("Juan", 30);

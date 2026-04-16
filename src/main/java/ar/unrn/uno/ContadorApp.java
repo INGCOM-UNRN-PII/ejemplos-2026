@@ -11,7 +11,7 @@ public class ContadorApp {
      *
      * @param args Argumentos de línea de comandos.
      */
-    public static void main(String[] args) {
+    static void main() {
         Contador i = new Contador(10);
 
         // Ejemplo de modificación manual rompiendo la lógica del dominio

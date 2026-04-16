@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class RedApp {
 
-    public static void main(String[] args) {
+    static void main() {
         Red miRed = new Red();
 
         System.out.println("1. Estado inicial de la red:");
