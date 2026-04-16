@@ -24,26 +24,31 @@ public class Telemetria {
 
         for (int i = 0; i < capacidad; i++) {
             try {
-                // Se accede a los elementos, lo que puede lanzar ArrayIndexOutOfBoundsException o NullPointerException
+                // Se accede a los elementos. Esto puede lanzar ArrayIndexOutOfBoundsException
                 String lecturaStr = lecturas[i];
                 String factorStr = factores[i];
 
-                // Se parsean los valores, lo que puede lanzar NumberFormatException o NullPointerException
-                int lecturaInt = Integer.parseInt(lecturaStr);
-                int factorInt = Integer.parseInt(factorStr);
-                
-                // Se realiza la división, lo que puede lanzar ArithmeticException
-                int valorNormalizado = lecturaInt / factorInt;
-                
-                // Si todo es exitoso, se guarda el resultado
-                resultado[i] = String.valueOf(valorNormalizado);
+                // Evitamos lanzar y atrapar excepciones localmente para control de flujo.
+                // Validamos los nulos explícitamente y pasamos a la siguiente iteración.
+                if (lecturaStr == null || factorStr == null) {
+                    resultado[i] = "ERR_NULO";
+                } else {
+
+                    // Se parsean los valores (puede lanzar NumberFormatException)
+                    int lecturaInt = Integer.parseInt(lecturaStr);
+                    int factorInt = Integer.parseInt(factorStr);
+
+                    // Se realiza la división (puede lanzar ArithmeticException si es 0)
+                    int valorNormalizado = lecturaInt / factorInt;
+
+                    // Si todo es exitoso, se guarda el resultado como String
+                    resultado[i] = String.valueOf(valorNormalizado);
+                }
 
             } catch (NumberFormatException e) {
                 resultado[i] = "ERR_FORMATO";
             } catch (ArithmeticException e) {
                 resultado[i] = "ERR_DIV_CERO";
-            } catch (NullPointerException e) {
-                resultado[i] = "ERR_NULO";
             } catch (ArrayIndexOutOfBoundsException e) {
                 resultado[i] = "ERR_INDICE";
             }
