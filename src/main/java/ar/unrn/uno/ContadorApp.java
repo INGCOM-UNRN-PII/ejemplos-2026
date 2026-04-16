@@ -9,7 +9,7 @@ public class ContadorApp {
     /**
      * Punto de entrada de la aplicación.
      *
-     * @param args Argumentos de línea de comandos.
+     */
      */
     static void main() {
         Contador i = new Contador(10);
