@@ -1,9 +1,92 @@
-# proyecto-gradle
+# Ejemplos - Programación II
 
-Plantilla de proyectos empleando Gradle y configurado con herramientas de verificación de calidad de código.
+Este proyecto contiene ejemplos categorizados de conceptos clave de Programación Orientada a Objetos en Java, organizados por temática.
 
 Las [reglas](config/reglas.md) están en revisión continua y las podemos conversar
 en [Discussions](https://github.com/orgs/INGCOM-UNRN-PII/discussions).
+
+## Contenido de Ejemplos
+
+## Índice de Ejemplos
+
+Este proyecto contiene ejemplos categorizados de conceptos clave de Programación Orientada a Objetos en Java, organizados por temática.
+
+### 1. Fundamentos y Sintaxis (`ar.unrn.generados.*`)
+
+#### [Fundamentos](src/main/java/ar/unrn/generados/fundamentos/)
+- **`OrigenesJava`**: Historia, filosofía WORA y conceptos de JVM/Garbage Collector.
+- **`CaracteristicasLenguaje`**: Tipado estático y fuerte, estructura de clases y métodos estáticos.
+- **`TiposDeDatos`**: Detalle de tipos primitivos, precisión de punto flotante y casting.
+
+#### [Sintaxis y Control](src/main/java/ar/unrn/generados/sintaxis/)
+- **`ControlFlujo`**: Uso de `if`, `switch` moderno y lazos (`for`, `while`) usando banderas booleanas.
+- **`Metodos`**: Firmas, sobrecarga, pasaje por valor y recursión básica.
+- **`ArgumentosVariables`**: Uso de Varargs (`int...`) para recibir múltiples argumentos.
+- **`EjemploRecursion`**: Factorial, Fibonacci y búsqueda binaria recursiva.
+
+### 2. Orientación a Objetos y Colecciones
+
+#### [Diseño de Objetos](src/main/java/ar/unrn/generados/objetos/)
+- **`MemoriaYStrings`**: Stack vs Heap, alias de referencias e inmutabilidad de `String`.
+- **`ClasesInternas`**: Miembros, estáticas y clases anónimas.
+- **`EjemploInterfaces`**: Definición de contratos y polimorfismo mediante interfaces.
+
+#### [Estructuras de Datos](src/main/java/ar/unrn/generados/colecciones/)
+- **`ArreglosEjemplos`**: Arreglos estáticos, utilidades de `java.util.Arrays` y búsqueda con bandera.
+- **`EjemploColecciones`**: Uso de `ArrayList`, iteración `for-each` y operaciones básicas de lista.
+- **`GenericosEjemplo`**: Clases y métodos genéricos, seguridad de tipos y `Type Erasure`.
+
+#### [Encapsulamiento y Comportamiento](src/main/java/ar/unrn/dos/dominio/)
+- **`Arma`** y **`Combatiente`**: Ejemplo de encapsulamiento estricto (sin getters/setters) y el principio "Tell, Don't Ask".
+
+### 3. El Contrato de Objetos (equals y hashCode)
+
+#### [Implementaciones Correctas](src/main/java/ar/unrn/dos/equals/)
+- **`Persona`**: Implementación robusta de `equals` y `hashCode` usando pattern matching.
+- **`PersonaApp`**: Demostración de reflexividad, simetría y transitividad.
+
+#### [Problemas y Contraejemplos](src/main/java/ar/unrn/dos/equals/problemas/)
+- **`ProblemaEqualsSimetria`**: Fallos en colecciones por violar la simetría.
+- **`ProblemaHashCodeInconsistente`**: Objetos que "desaparecen" de un `Set` por mutabilidad.
+- **`ProblemaEqualsSinHashCode`**: Duplicados en mapas por omitir `hashCode`.
+- **`ProblemaColisionesHash`**: Degradación de rendimiento por mala distribución de hash.
+- **`ComparativaRendimientoHash`**: Medición empírica del impacto de las colisiones ($O(1)$ vs $O(N)$).
+
+### 4. Temas Avanzados y Servicios
+
+#### [Programación Funcional](src/main/java/ar/unrn/generados/funcional/)
+- **`ProgramacionFuncional`**: Introducción a Lambdas, Streams, filtrado, transformación y reducción.
+
+#### [Gestión de Errores](src/main/java/ar/unrn/generados/excepciones/)
+- **`GestionExcepciones`**: Uso de `try-catch`, `finally`, excepciones personalizadas y `try-with-resources`.
+
+#### [Servicios del Sistema](src/main/java/ar/unrn/generados/servicios/)
+- **`EntradaSalida`**: Uso de `Scanner` (lectura validada) y `printf` para formato.
+- **`ManejoArchivos`**: API NIO.2 (`Files`, `Path`) para lectura y escritura de archivos.
+- **`ManejoFechas`**: API `java.time` moderna (inmutabilidad y thread-safety).
+
+#### [Patrones de Diseño](src/main/java/ar/unrn/generados/patrones/)
+- **`PatronSingleton`**: Garantía de instancia única.
+- **`PatronObserver`**: Desacoplamiento mediante notificaciones uno-a-muchos.
+- **`PatronVisitor`**: Extensión de operaciones sobre una jerarquía fija mediante doble despacho.
+
+---
+
+### Ejecutar ejemplos
+
+Para ejecutar todos los ejemplos del paquete `ar.unrn.cuatro`:
+
+```bash
+./gradlew run
+```
+
+O ejecutar un ejemplo específico directamente desde tu IDE o con:
+
+```bash
+./gradlew run --args="ar.unrn.cuatro.NombreDelEjemplo"
+```
+
+Cada ejemplo tiene un método `main` que demuestra el problema específico con salida explicativa en consola.
 
 ## Comando de verificación completo
 
