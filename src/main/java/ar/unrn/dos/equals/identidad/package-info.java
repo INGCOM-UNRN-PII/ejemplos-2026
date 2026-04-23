@@ -50,4 +50,4 @@
  * @see java.util.HashMap
  * @see java.util.HashSet
  */
-package ar.unrn.cuatro;
+package ar.unrn.dos.equals.identidad;

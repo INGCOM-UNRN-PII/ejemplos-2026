@@ -20,9 +20,18 @@ src/main/java/ar/unrn/
 │   │   ├── Arma.java
 │   │   └── Combatiente.java
 │   └── equals/                 # Contrato equals/hashCode
-│       ├── Persona.java
-│       ├── PersonaApp.java
-│       └── problemas/          # Contraejemplos y fallos comunes
+│       ├── correcto/           # Implementaciones correctas
+│       │   ├── Persona.java
+│       │   └── PersonaApp.java
+│       ├── identidad/          # Violaciones de identidad (reflexividad, simetría, etc.)
+│       │   ├── consistencia_equals/
+│       │   ├── consistencia_hash/
+│       │   ├── mutabilidad/
+│       │   ├── nullcomparison/
+│       │   ├── simetria/
+│       │   ├── transitividad/
+│       │   └── EqualsViolaReflexividad.java
+│       └── problemas/          # Contraejemplos y fallos de rendimiento
 │           ├── colisiones/     # Colisiones de Hash y rendimiento
 │           ├── inconsistencia/ # Mutabilidad y pérdida de objetos
 │           ├── rendimiento/    # Medición O(1) vs O(N)
@@ -47,7 +56,6 @@ src/main/java/ar/unrn/
 │   │   ├── OrigenesJava.java
 │   │   └── TiposDeDatos.java
 │   ├── herencia/               # Polimorfismo y sobreescritura
-│   │   ├── figuras/            # Jerarquía de Punto y Círculo
 │   │   ├── sinoverride/        # Problemas por omitir @Override
 │   │   └── superkeyword/       # Reuso de lógica del padre
 │   ├── objetos/                # Gestión de memoria y visibilidad
@@ -69,15 +77,17 @@ src/main/java/ar/unrn/
 │   │   └── Metodos.java
 │   └── util/                   # Clases utilitarias y tests
 │       └── Matematica.java
-├── identidad/                  # Verificaciones de identidad de objetos
-│   ├── EqualsViolaSimetria.java
-│   └── ...
+├── herencia/                   # Herencia y polimorfismo
+│   └── figuras/                # Jerarquía de Punto y Círculo
+│       ├── Circulo.java
+│       ├── Punto.java
+│       └── PuntoApp.java
 └── LoaderApp.java              # Cargador principal de ejemplos
 ```
 
 ## Índice de Ejemplos
 
-### 1. Fundamentos y Sintaxis
+### 1. Fundamentos y Sintaxis (`ar.unrn.generados.*`)
 - **Fundamentos**: Historia, filosofía WORA y conceptos de JVM.
 - **Sintaxis**: Control de flujo moderno, métodos y recursión.
 - **Argumentos Variables**: Uso de Varargs (`int...`).
@@ -89,7 +99,8 @@ src/main/java/ar/unrn/
 
 ### 3. El Contrato de Objetos (equals y hashCode)
 - **Implementación Correcta**: Uso de pattern matching en `Persona`.
-- **Problemas Comunes**: Violación de simetría, inconsistencia por mutabilidad y colisiones de hash.
+- **Violaciones de Identidad**: Reflexividad, simetría, transitividad, consistencia y comparación con null.
+- **Problemas Comunes**: Inconsistencia por mutabilidad y colisiones de hash.
 - **Rendimiento**: Comparativa empírica de acceso $O(1)$ vs $O(N)$.
 
 ### 4. Temas Avanzados
