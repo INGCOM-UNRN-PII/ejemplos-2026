@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals.problemas.inconsistencia;
+package ar.unrn.equals.problemas.inconsistencia;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -8,35 +8,6 @@ import java.util.Set;
  * Ejemplo de objetos que desaparecen de un Set por mutabilidad en hashCode.
  */
 public class ProblemaHashCodeInconsistente {
-
-    static class PuntoMutable {
-        private int x, y;
-
-        public PuntoMutable(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        public void setX(int x) {
-            this.x = x;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (!(o instanceof PuntoMutable p)) {
-                return false;
-            }
-            return x == p.x && y == p.y;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(x, y);
-        }
-    }
 
     public static void main(String[] args) {
         Set<PuntoMutable> puntos = new HashSet<>();

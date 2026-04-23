@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals.problemas.simetria;
+package ar.unrn.equals.problemas.simetria;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,30 +8,6 @@ import java.util.List;
  * Si A es igual a B, entonces B debe ser igual a A.
  */
 public class ProblemaEqualsSimetria {
-
-    static class Usuario {
-        private String login;
-
-        public Usuario(String login) {
-            this.login = login;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (o instanceof Usuario u) {
-                return login.equals(u.login);
-            }
-            if (o instanceof String s) {
-                return login.equals(s); // ¡ERROR! No es simétrico
-            }
-            return false;
-        }
-
-        @Override
-        public int hashCode() {
-            return login.hashCode();
-        }
-    }
 
     @SuppressWarnings("EqualsIncompatibleType")
     public static void main(String[] args) {
