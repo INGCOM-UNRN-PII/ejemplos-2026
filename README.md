@@ -13,12 +13,12 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 
 ### 1. Fundamentos y Sintaxis (`ar.unrn.generados.*`)
 
-#### [Fundamentos](src/main/java/ar/unrn/generados/fundamentos/)
+#### [Fundamentos](src/main/java/ar/unrn/anteriores/fundamentos/)
 - **`OrigenesJava`**: Historia, filosofía WORA y conceptos de JVM/Garbage Collector.
 - **`CaracteristicasLenguaje`**: Tipado estático y fuerte, estructura de clases y métodos estáticos.
 - **`TiposDeDatos`**: Detalle de tipos primitivos, precisión de punto flotante y casting.
 
-#### [Sintaxis y Control](src/main/java/ar/unrn/generados/sintaxis/)
+#### [Sintaxis y Control](src/main/java/ar/unrn/anteriores/sintaxis/)
 - **`ControlFlujo`**: Uso de `if`, `switch` moderno y lazos (`for`, `while`) usando banderas booleanas.
 - **`Metodos`**: Firmas, sobrecarga, pasaje por valor y recursión básica.
 - **`ArgumentosVariables`**: Uso de Varargs (`int...`) para recibir múltiples argumentos.
@@ -26,12 +26,12 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 
 ### 2. Orientación a Objetos y Colecciones
 
-#### [Diseño de Objetos](src/main/java/ar/unrn/generados/objetos/)
+#### [Diseño de Objetos](src/main/java/ar/unrn/anteriores/objetos/)
 - **`MemoriaYStrings`**: Stack vs Heap, alias de referencias e inmutabilidad de `String`.
 - **`ClasesInternas`**: Miembros, estáticas y clases anónimas.
 - **`EjemploInterfaces`**: Definición de contratos y polimorfismo mediante interfaces.
 
-#### [Estructuras de Datos](src/main/java/ar/unrn/generados/colecciones/)
+#### [Estructuras de Datos](src/main/java/ar/unrn/anteriores/colecciones/)
 - **`ArreglosEjemplos`**: Arreglos estáticos, utilidades de `java.util.Arrays` y búsqueda con bandera.
 - **`EjemploColecciones`**: Uso de `ArrayList`, iteración `for-each` y operaciones básicas de lista.
 - **`GenericosEjemplo`**: Clases y métodos genéricos, seguridad de tipos y `Type Erasure`.
@@ -58,21 +58,21 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 
 ### 4. Temas Avanzados y Servicios
 
-#### [Programación Funcional](src/main/java/ar/unrn/generados/funcional/)
+#### [Programación Funcional](src/main/java/ar/unrn/anteriores/funcional/)
 - **`ProgramacionFuncional`**: Introducción a Lambdas, Streams, filtrado, transformación y reducción.
 
-#### [Gestión de Errores](src/main/java/ar/unrn/generados/excepciones/)
+#### [Gestión de Errores](src/main/java/ar/unrn/excepciones/base/)
 - **`GestionExcepciones`**: Uso de `try-catch`, `finally`, excepciones personalizadas y `try-with-resources`.
 
 #### [Jerarquía de Excepciones](src/main/java/ar/unrn/excepciones/)
 - **`BancoException`**, **`SaldoInsuficienteException`**, **`CuentaBloqueadaException`**: Ejemplo de jerarquía de excepciones personalizadas y captura multinivel.
 
-#### [Servicios del Sistema](src/main/java/ar/unrn/generados/servicios/)
+#### [Servicios del Sistema](src/main/java/ar/unrn/anteriores/servicios/)
 - **`EntradaSalida`**: Uso de `Scanner` (lectura validada) y `printf` para formato.
 - **`ManejoArchivos`**: API NIO.2 (`Files`, `Path`) para lectura y escritura de archivos.
 - **`ManejoFechas`**: API `java.time` moderna (inmutabilidad y thread-safety).
 
-#### [Patrones de Diseño](src/main/java/ar/unrn/generados/patrones/)
+#### [Patrones de Diseño](src/main/java/ar/unrn/anteriores/patrones/)
 - **`PatronSingleton`**: Garantía de instancia única.
 - **`PatronObserver`**: Desacoplamiento mediante notificaciones uno-a-muchos.
 - **`PatronVisitor`**: Extensión de operaciones sobre una jerarquía fija mediante doble despacho.
