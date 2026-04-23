@@ -36,6 +36,10 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 - **`EjemploColecciones`**: Uso de `ArrayList`, iteración `for-each` y operaciones básicas de lista.
 - **`GenericosEjemplo`**: Clases y métodos genéricos, seguridad de tipos y `Type Erasure`.
 
+#### [Orientación a Objetos Avanzada](src/main/java/ar/unrn/generados/herencia/)
+- **`ProblemaSinOverride`**: Demostración de errores comunes al omitir la anotación `@Override` (sobrecarga accidental).
+- **`SobreescrituraSuper`**: Uso de `super` para extender la funcionalidad del padre o reutilizar partes de su implementación.
+
 #### [Encapsulamiento y Comportamiento](src/main/java/ar/unrn/dos/dominio/)
 - **`Arma`** y **`Combatiente`**: Ejemplo de encapsulamiento estricto (sin getters/setters) y el principio "Tell, Don't Ask".
 

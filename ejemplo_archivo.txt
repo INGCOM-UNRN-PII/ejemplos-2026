@@ -1,0 +1,3 @@
+Primera línea del ejemplo.
+Java NIO.2 es potente y seguro.
+Soporta caracteres especiales: ñ, á, é.
