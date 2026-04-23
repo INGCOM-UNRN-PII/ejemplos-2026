@@ -25,6 +25,7 @@ public class ProblemaEqualsSimetria {
         public int hashCode() { return login.hashCode(); }
     }
 
+    @SuppressWarnings("EqualsIncompatibleType")
     public static void main(String[] args) {
         Usuario user = new Usuario("admin");
         String str = "admin";

@@ -36,7 +36,7 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 - **`EjemploColecciones`**: Uso de `ArrayList`, iteración `for-each` y operaciones básicas de lista.
 - **`GenericosEjemplo`**: Clases y métodos genéricos, seguridad de tipos y `Type Erasure`.
 
-#### [Orientación a Objetos Avanzada](src/main/java/ar/unrn/generados/herencia/)
+#### [Orientación a Objetos Avanzada](src/main/java/ar/unrn/herencia/)
 - **`ProblemaSinOverride`**: Demostración de errores comunes al omitir la anotación `@Override` (sobrecarga accidental).
 - **`SobreescrituraSuper`**: Uso de `super` para extender la funcionalidad del padre o reutilizar partes de su implementación.
 
@@ -63,6 +63,9 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 
 #### [Gestión de Errores](src/main/java/ar/unrn/generados/excepciones/)
 - **`GestionExcepciones`**: Uso de `try-catch`, `finally`, excepciones personalizadas y `try-with-resources`.
+
+#### [Jerarquía de Excepciones](src/main/java/ar/unrn/excepciones/)
+- **`BancoException`**, **`SaldoInsuficienteException`**, **`CuentaBloqueadaException`**: Ejemplo de jerarquía de excepciones personalizadas y captura multinivel.
 
 #### [Servicios del Sistema](src/main/java/ar/unrn/generados/servicios/)
 - **`EntradaSalida`**: Uso de `Scanner` (lectura validada) y `printf` para formato.

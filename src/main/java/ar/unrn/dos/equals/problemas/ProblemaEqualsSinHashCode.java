@@ -8,6 +8,7 @@ import java.util.Map;
  */
 public class ProblemaEqualsSinHashCode {
 
+    @SuppressWarnings("EqualsHashCode")
     static class Producto {
         private String codigo;
         public Producto(String codigo) { this.codigo = codigo; }
