@@ -1,0 +1,18 @@
+@startuml herencia_figuras
+
+package ar.unrn.herencia.figuras.geometria {
+    class Punto {
+        - x: int
+        - y: int
+        + distancia(otro: Punto): double
+    }
+
+    class Circulo {
+        - radio: double
+        + area(): double
+    }
+
+    Punto <|-- Circulo : es un >
+}
+
+@enduml

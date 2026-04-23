@@ -1,0 +1,25 @@
+@startuml excepciones_banco
+
+package ar.unrn.excepciones.banco {
+    class Exception << (S,#FF7700) >>
+    
+    class BancoException {
+        + BancoException(mensaje: String)
+    }
+
+    class SaldoInsuficienteException {
+        - saldoActual: double
+        - montoRequerido: double
+        + getSaldoActual(): double
+    }
+
+    class CuentaBloqueadaException {
+        + CuentaBloqueadaException(idCuenta: String)
+    }
+
+    Exception <|-- BancoException
+    BancoException <|-- SaldoInsuficienteException
+    BancoException <|-- CuentaBloqueadaException
+}
+
+@enduml

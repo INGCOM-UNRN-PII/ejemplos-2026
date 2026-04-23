@@ -1,0 +1,34 @@
+@startuml patron_observer
+
+package ar.unrn.generados.patrones.observer {
+    interface Observable {
+        + agregarObservador(o: Observador)
+        + quitarObservador(o: Observador)
+        + notificar()
+    }
+
+    interface Observador {
+        + actualizar(mensaje: String)
+    }
+
+    class CanalNoticias {
+        - suscriptores: List<Observador>
+        - ultimaNoticia: String
+        + publicarNoticia(noticia: String)
+    }
+
+    class AppMovil {
+        + actualizar(mensaje: String)
+    }
+
+    class PantallaPublica {
+        + actualizar(mensaje: String)
+    }
+
+    Observable <|.. CanalNoticias
+    Observador <|.. AppMovil
+    Observador <|.. PantallaPublica
+    CanalNoticias "1" o-- "*" Observador : notifica a >
+}
+
+@enduml

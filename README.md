@@ -5,119 +5,82 @@ Este proyecto contiene ejemplos categorizados de conceptos clave de Programació
 Las [reglas](config/reglas.md) están en revisión continua y las podemos conversar
 en [Discussions](https://github.com/orgs/INGCOM-UNRN-PII/discussions).
 
-## Estructura de Clases y Paquetes
+## Estructura de Clases y Paquetes (Granular)
+
+El proyecto sigue una estructura de **un paquete por ejemplo**, facilitando el aislamiento y la claridad.
 
 ```text
 src/main/java/ar/unrn/
-├── basicos/                    # Conceptos elementales
-│   ├── Contador.java
-│   └── ContadorApp.java
-├── dos/
-│   ├── colisiones/             # Colisiones físicas y objetos simples
-│   │   ├── ColisionesApp.java
-│   │   └── ObjetoSimple.java
-│   ├── dominio/                # Encapsulamiento estricto (Tell Don't Ask)
-│   │   ├── Arma.java
-│   │   └── Combatiente.java
-│   └── equals/                 # Contrato equals/hashCode
-│       ├── correcto/           # Implementaciones correctas
-│       │   ├── Persona.java
-│       │   └── PersonaApp.java
-│       ├── identidad/          # Violaciones de identidad (reflexividad, simetría, etc.)
-│       │   ├── consistencia_equals/
-│       │   ├── consistencia_hash/
-│       │   ├── mutabilidad/
-│       │   ├── nullcomparison/
-│       │   ├── simetria/
-│       │   ├── transitividad/
-│       │   └── EqualsViolaReflexividad.java
-│       └── problemas/          # Contraejemplos y fallos de rendimiento
-│           ├── colisiones/     # Colisiones de Hash y rendimiento
-│           ├── inconsistencia/ # Mutabilidad y pérdida de objetos
-│           ├── rendimiento/    # Medición O(1) vs O(N)
-│           ├── simetria/       # Violación de simetría
-│           └── sinhashcode/    # Duplicados en mapas
-├── excepciones/                # Jerarquías de excepciones personalizadas
-│   ├── BancoException.java
-│   ├── CuentaBloqueadaException.java
-│   ├── DemoExcepciones.java
-│   └── SaldoInsuficienteException.java
-├── generados/                  # Ejemplos temáticos reorganizados
-│   ├── colecciones/            # Arreglos y Framework de Colecciones
-│   │   ├── ArreglosEjemplos.java
-│   │   ├── EjemploColecciones.java
-│   │   └── genericos/          # Clases y métodos genéricos
-│   ├── excepciones/            # try-catch-finally y recursos
-│   │   └── GestionExcepciones.java
-│   ├── funcional/              # Lambdas y Streams
-│   │   └── ProgramacionFuncional.java
-│   ├── fundamentos/            # Historia y bases del lenguaje
-│   │   ├── CaracteristicasLenguaje.java
-│   │   ├── OrigenesJava.java
-│   │   └── TiposDeDatos.java
-│   ├── herencia/               # Polimorfismo y sobreescritura
-│   │   ├── sinoverride/        # Problemas por omitir @Override
-│   │   └── superkeyword/       # Reuso de lógica del padre
-│   ├── objetos/                # Gestión de memoria y visibilidad
-│   │   ├── EjemploInterfaces.java
-│   │   ├── MemoriaYStrings.java
-│   │   └── internas/           # Inner classes y clases anónimas
-│   ├── patrones/               # Patrones de diseño clásicos
-│   │   ├── PatronObserver.java
-│   │   ├── PatronSingleton.java
-│   │   └── PatronVisitor.java
+├── basicos/contador/           # Contador elemental
+├── dominio/combate/            # Encapsulamiento estricto (Arma, Combatiente)
+├── equals/
+│   ├── correcto/persona/       # Implementación robusta (Persona)
+│   ├── identidad/              # Violaciones del contrato (reflexividad, simetría, etc.)
+│   └── problemas/              # Contraejemplos de rendimiento y colisiones
+├── excepciones/
+│   ├── banco/                  # Jerarquía de excepciones personalizadas
+│   └── base/gestion/           # try-catch y recursos
+├── generados/
+│   ├── colecciones/            # Arreglos, ArrayList y Genéricos
+│   ├── funcional/streams/      # Lambdas y API de Streams
+│   ├── fundamentos/            # Historia, JVM y tipos primitivos
+│   ├── objetos/                # Memoria, Interfaces y Clases Internas
+│   ├── patrones/               # Observer, Singleton y Visitor
 │   ├── servicios/              # E/S, Archivos y Tiempo
-│   │   ├── EntradaSalida.java
-│   │   ├── ManejoArchivos.java
-│   │   └── ManejoFechas.java
-│   ├── sintaxis/               # Estructuras de control y métodos
-│   │   ├── ArgumentosVariables.java
-│   │   ├── ControlFlujo.java
-│   │   ├── EjemploRecursion.java
-│   │   └── Metodos.java
-│   └── util/                   # Clases utilitarias y tests
-│       └── Matematica.java
-├── herencia/                   # Herencia y polimorfismo
-│   └── figuras/                # Jerarquía de Punto y Círculo
-│       ├── Circulo.java
-│       ├── Punto.java
-│       └── PuntoApp.java
-└── LoaderApp.java              # Cargador principal de ejemplos
+│   ├── sintaxis/               # Control de flujo y métodos
+│   └── util/matematica/        # Clases utilitarias
+├── herencia/
+│   ├── figuras/geometria/      # Jerarquía de Punto y Círculo
+│   ├── sinoverride/            # Problemas por omitir @Override
+│   ├── superconstructor/       # Llamada a super() en constructores
+│   └── superkeyword/           # Extensión de lógica con super.metodo()
+├── inmutable/mensaje/          # Objetos inmutables
+├── lista/red/                  # Estructura de datos personalizada
+└── mutable/arreglo/            # Mutabilidad en arreglos
 ```
 
-## Índice de Ejemplos
+## Índice de Ejemplos y Temas
 
-### 1. Fundamentos y Sintaxis (`ar.unrn.generados.*`)
-- **Fundamentos**: Historia, filosofía WORA y conceptos de JVM.
-- **Sintaxis**: Control de flujo moderno, métodos y recursión.
-- **Argumentos Variables**: Uso de Varargs (`int...`).
+### 1. Fundamentos y Sintaxis
+- **Fundamentos**: [`OrigenesJava`](src/main/java/ar/unrn/generados/fundamentos/origenesjava/OrigenesJava.java), [`CaracteristicasLenguaje`](src/main/java/ar/unrn/generados/fundamentos/caracteristicaslenguaje/CaracteristicasLenguaje.java), [`TiposDeDatos`](src/main/java/ar/unrn/generados/fundamentos/tiposdedatos/TiposDeDatos.java).
+- **Sintaxis**: [`ControlFlujo`](src/main/java/ar/unrn/generados/sintaxis/controlflujo/ControlFlujo.java), [`Metodos`](src/main/java/ar/unrn/generados/sintaxis/metodos/Metodos.java), [`EjemploRecursion`](src/main/java/ar/unrn/generados/sintaxis/ejemplorecursion/EjemploRecursion.java).
+- **Herencia Básica**: [`EjemploSuper`](src/main/java/ar/unrn/herencia/superconstructor/EjemploSuper.java) (Llamada a constructor padre).
 
-### 2. Orientación a Objetos
-- **Diseño**: Gestión de memoria, inmutabilidad y clases internas.
-- **Encapsulamiento**: Principio "Tell, Don't Ask" en el dominio de combate.
-- **Herencia**: Sobreescritura con `super`, polimorfismo y uso de `@Override`.
+### 2. Orientación a Objetos Avanzada
+- **Encapsulamiento**: [`Combate`](src/main/java/ar/unrn/dominio/combate/) (Tell, Don't Ask).
+- **Sobreescritura**: [`SobreescrituraSuper`](src/main/java/ar/unrn/herencia/superkeyword/SobreescrituraSuper.java), [`ProblemaSinOverride`](src/main/java/ar/unrn/herencia/sinoverride/ProblemaSinOverride.java).
+- **Polimorfismo**: [`EjemploInterfaces`](src/main/java/ar/unrn/generados/objetos/interfaces/EjemploInterfaces.java).
 
 ### 3. El Contrato de Objetos (equals y hashCode)
-- **Implementación Correcta**: Uso de pattern matching en `Persona`.
-- **Violaciones de Identidad**: Reflexividad, simetría, transitividad, consistencia y comparación con null.
-- **Problemas Comunes**: Inconsistencia por mutabilidad y colisiones de hash.
-- **Rendimiento**: Comparativa empírica de acceso $O(1)$ vs $O(N)$.
+- **Implementación**: [`Persona`](src/main/java/ar/unrn/equals/correcto/persona/Persona.java).
+- **Fallas de Identidad**: [`Reflexividad`](src/main/java/ar/unrn/equals/identidad/reflexividad/), [`Simetria`](src/main/java/ar/unrn/equals/identidad/simetria/), [`Transitividad`](src/main/java/ar/unrn/equals/identidad/transitividad/).
+- **Rendimiento**: [`ComparativaRendimientoHash`](src/main/java/ar/unrn/equals/problemas/rendimiento/ComparativaRendimientoHash.java) ($O(1)$ vs $O(N)$).
 
-### 4. Temas Avanzados
-- **Programación Funcional**: Lambdas y procesamiento de Streams.
-- **Excepciones**: Jerarquías personalizadas y captura multinivel.
-- **Patrones de Diseño**: Singleton, Observer y Visitor.
+### 4. Patrones y Servicios
+- **Patrones**: [`Observer`](src/main/java/ar/unrn/generados/patrones/observer/), [`Singleton`](src/main/java/ar/unrn/generados/patrones/singleton/), [`Visitor`](src/main/java/ar/unrn/generados/patrones/visitor/).
+- **Servicios**: [`ManejoFechas`](src/main/java/ar/unrn/generados/servicios/manejofechas/), [`ManejoArchivos`](src/main/java/ar/unrn/generados/servicios/manejoarchivos/).
+
+---
+
+## Diagramas (PlantUML)
+
+Los diagramas se encuentran en la carpeta [`docs/diagrams/`](docs/diagrams/):
+- [Modelo de Combate](docs/diagrams/combate_dominio.plantuml)
+- [Jerarquía de Excepciones](docs/diagrams/excepciones_banco.plantuml)
+- [Patrón Observer](docs/diagrams/patron_observer.plantuml)
+- [Patrón Visitor](docs/diagrams/patron_visitor.plantuml)
+- [Jerarquía de Figuras](docs/diagrams/herencia_figuras.plantuml)
 
 ---
 
 ## Ejecución y Verificación
 
-Para ejecutar un ejemplo específico:
+Ejecutar un ejemplo específico:
 ```bash
-./gradlew run --args="ar.unrn.generados.sintaxis.ControlFlujo"
+./gradlew run --args="ar.unrn.basicos.contador.ContadorApp"
 ```
 
-Para ejecutar el análisis completo de calidad:
+Verificación completa de calidad:
 ```bash
 ./gradlew analyzeAll
 ```

@@ -1,0 +1,22 @@
+@startuml combate_dominio
+
+package ar.unrn.dos.dominio.combate {
+    class Combatiente {
+        - nombre: String
+        - salud: int
+        - arma: Arma
+        + atacar(oponente: Combatiente)
+        ~ recibirDanio(puntos: int)
+        + estaFueraDeCombate(): boolean
+    }
+
+    class Arma {
+        - danioBase: int
+        - usosRestantes: int
+        + disparar(): int
+    }
+
+    Combatiente "1" *-- "1" Arma : posee >
+}
+
+@enduml

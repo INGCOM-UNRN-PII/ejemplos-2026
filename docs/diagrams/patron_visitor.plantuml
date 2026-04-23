@@ -1,0 +1,36 @@
+@startuml patron_visitor
+
+package ar.unrn.generados.patrones.visitor {
+    interface Elemento {
+        + aceptar(v: Visitante)
+    }
+
+    interface Visitante {
+        + visitar(l: LibroVisitado)
+        + visitar(e: Electronico)
+    }
+
+    class LibroVisitado {
+        - titulo: String
+        - precio: double
+        + aceptar(v: Visitante)
+    }
+
+    class Electronico {
+        - nombre: String
+        - precioBase: double
+        + aceptar(v: Visitante)
+    }
+
+    class CalculadorImpuestos {
+        - totalImpuestos: double
+        + visitar(l: LibroVisitado)
+        + visitar(e: Electronico)
+    }
+
+    Elemento <|.. LibroVisitado
+    Elemento <|.. Electronico
+    Visitante <|.. CalculadorImpuestos
+}
+
+@enduml
