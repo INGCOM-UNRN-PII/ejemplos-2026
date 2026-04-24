@@ -1,6 +1,9 @@
-package ar.unrn.dos.equals;
+package ar.unrn.equals;
 
-import ar.unrn.dos.colisiones.ObjetoSimple;
+import ar.unrn.equals.colision.ObjetoSimple;
+import ar.unrn.equals.contraejemplos.IgualdadPorHash;
+import ar.unrn.equals.contraejemplos.MalHashCode;
+import ar.unrn.equals.identidad.simetria.Persona;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
 import org.junit.jupiter.api.DisplayName;
@@ -13,8 +16,10 @@ public class EqualsVerifierTest {
     @Test
     @DisplayName("Persona debe cumplir con el contrato de equals y hashCode")
     public void testPersona() {
-        EqualsVerifier.forClass(Persona.class)
-                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+        // En este test nos referimos a la Persona del paquete ar.unrn.equals.identidad.simetria
+        // que es la que se usa para los contraejemplos.
+        nl.jqno.equalsverifier.EqualsVerifier.forClass(ar.unrn.equals.identidad.simetria.Persona.class)
+                .suppress(nl.jqno.equalsverifier.Warning.STRICT_INHERITANCE, nl.jqno.equalsverifier.Warning.NONFINAL_FIELDS)
                 .verify();
     }
 

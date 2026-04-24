@@ -8,4 +8,7 @@ public class BancoException extends Exception {
     public BancoException(String mensaje) {
         super(mensaje);
     }
+    public BancoException(){
+        super("Reventó el cobán!");
+    }
 }

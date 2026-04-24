@@ -1,4 +1,4 @@
-package ar.unrn.dos.colisiones.objetosimple;
+package ar.unrn.equals.colision;
 
 import java.util.Objects;
 
@@ -19,7 +19,7 @@ public class ObjetoSimple {
      * para generar IDs únicos e incrementales para las nuevas instancias de
      * {@code ObjetoSimple}.
      */
-    private static int contador = 0;
+    private static int contadorFACTORY = 0;
 
     /**
      * El identificador numérico único para esta instancia de {@code ObjetoSimple}.
@@ -57,7 +57,7 @@ public class ObjetoSimple {
      * secuencial y un nombre generado automáticamente.
      */
     public static ObjetoSimple crearSiguiente() {
-        int siguienteId = ++contador; // Incrementa primero, luego asigna
+        int siguienteId = ++contadorFACTORY; // Incrementa primero, luego asigna
         String nombreBase36 = Integer.toString(siguienteId, 36); // 0-9 y a-z
         String nombreGenerado = nombreBase36.toUpperCase(); // 0-9 y A-Z
         return new ObjetoSimple(siguienteId, nombreGenerado);

@@ -1,6 +1,6 @@
 package ar.unrn.generados.util;
 
-import ar.unrn.generados.util.Matematica;
+import ar.unrn.generados.util.matematica.Matematica;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

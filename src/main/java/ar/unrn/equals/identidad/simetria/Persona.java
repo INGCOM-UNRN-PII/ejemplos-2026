@@ -4,10 +4,11 @@ public class Persona {
     public Persona(String nombre) { this.nombre = nombre; }
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) return true;
         if (obj == null) return false;
         if (!(obj instanceof Persona)) return false;
         Persona otra = (Persona) obj;
-        return nombre.equals(otra.nombre);
+        return java.util.Objects.equals(nombre, otra.nombre);
     }
-    @Override public int hashCode() { return nombre.hashCode(); }
+    @Override public int hashCode() { return java.util.Objects.hashCode(nombre); }
 }

@@ -1,10 +1,10 @@
-package ar.unrn.dos.dominio.combate;
+package ar.unrn.dominio.combate;
 
 /**
  * Representa un combatiente que posee un arma y puntos de salud.
  * El estado es totalmente privado y no se expone mediante getters.
  */
-class Combatiente {
+public class Combatiente {
     private final String nombre;
     private int salud;
     private final Arma arma;

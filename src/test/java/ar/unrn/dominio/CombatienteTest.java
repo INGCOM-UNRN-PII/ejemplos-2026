@@ -1,5 +1,7 @@
-package ar.unrn.dos.dominio;
+package ar.unrn.dominio;
 
+import ar.unrn.dominio.combate.Arma;
+import ar.unrn.dominio.combate.Combatiente;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

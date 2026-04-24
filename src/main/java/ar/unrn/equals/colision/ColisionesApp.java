@@ -1,4 +1,4 @@
-package ar.unrn.dos.colisiones.objetosimple;
+package ar.unrn.equals.colision;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.Map;
 public class ColisionesApp {
     private static final int NUM_OBJETOS_A_GENERAR = 500_000;
 
-    static void main() {
+    static void main(String[] args) {
         System.out.println("Iniciando búsqueda de colisiones de hashCode para " + NUM_OBJETOS_A_GENERAR + " objetos...");
 
         Map<Integer, List<ObjetoSimple>> objetosPorHashCode = new HashMap<>();

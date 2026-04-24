@@ -1,4 +1,4 @@
-package ar.unrn.dos.estaticos.contadorinstancias;
+package ar.unrn.estaticos.contadorinstancias;
 
 /**
  * Aplicación de consola para demostrar el uso de miembros estáticos

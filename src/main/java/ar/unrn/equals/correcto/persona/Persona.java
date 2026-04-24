@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals;
+package ar.unrn.equals.correcto.persona;
 
 import java.util.Objects;
 
@@ -32,25 +32,22 @@ class Persona {
 
     /**
      * Compara este objeto {@code Persona} con otro objeto para determinar si son iguales.
-     * La comparación se basa en el nombre y la edad. Utiliza pattern matching 
-     * para el casteo seguro.
+     * La comparación se basa en el nombre y la edad. Utiliza getClass() para asegurar
+     * que la comparación solo sea válida entre objetos de la misma clase exacta.
      *
      * @param otro El objeto a comparar con esta persona.
-     * @return {@code true} si los objetos son la misma instancia o si ambos son
-     *         del tipo {@code Persona} y tienen el mismo nombre y edad;
-     *         {@code false} en caso contrario.
+     * @return {@code true} si los objetos son de la misma clase y tienen el mismo
+     *         nombre y edad; {@code false} en caso contrario.
      */
     @Override
     public boolean equals(Object otro) {
         boolean esIgual = false;
-        if (this == otro) { // ¿Apuntan a lo mismo?
+        if (this == otro) {
             esIgual = true;
-        } else if (otro != null) { // ¿Apunta a algo válido?
-            // ¿Es una "Persona"? Usamos pattern matching for instanceof
-            if (otro instanceof Persona persona) { 
-                esIgual = (edad == persona.edad &&
+        } else if (otro != null && getClass() == otro.getClass()) {
+            Persona persona = (Persona) otro;
+            esIgual = (edad == persona.edad &&
                         Objects.equals(nombre, persona.nombre));
-            }
         }
         return esIgual;
     }

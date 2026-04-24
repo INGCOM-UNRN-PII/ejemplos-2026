@@ -1,4 +1,4 @@
-package ar.unrn.parciales;
+package ar.unrn.generados.parciales;
 
 /**
  * Clase que contiene la lógica para la normalización resiliente de datos de telemetría.

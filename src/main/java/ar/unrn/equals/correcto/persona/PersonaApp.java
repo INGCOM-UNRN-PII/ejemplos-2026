@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals;
+package ar.unrn.equals.correcto.persona;
 
 import java.util.HashSet;
 import java.util.Set;

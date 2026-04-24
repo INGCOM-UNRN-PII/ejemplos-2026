@@ -1,4 +1,4 @@
-package ar.unrn.parciales;
+package ar.unrn.generados.parciales;
 
 import java.util.Arrays;
 

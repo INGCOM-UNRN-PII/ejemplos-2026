@@ -1,4 +1,4 @@
-package ar.unrn.tres;
+package ar.unrn.herencia.figuras.geometria;
 
 import java.util.Objects;
 

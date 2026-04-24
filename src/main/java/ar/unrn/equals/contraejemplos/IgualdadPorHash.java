@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals.contraejemplos;
+package ar.unrn.equals.contraejemplos;
 
 /**
  * Contraejemplo 3: Implementar equals() usando únicamente hashCode().

@@ -1,4 +1,4 @@
-package ar.unrn.dos.estaticos.contadorinstancias; // Nota: 'static' es una palabra reservada en Java, por lo que usamos 'estaticos' para el paquete.
+package ar.unrn.estaticos.contadorinstancias; 
 
 /**
  * Clase de ejemplo para demostrar el uso de miembros estáticos (de clase)
@@ -18,7 +18,7 @@ public class ContadorInstancias {
      * Variable estática. Existe una sola copia en memoria para toda la clase.
      * Se usa aquí para llevar la cuenta total de cuántos objetos se han instanciado.
      */
-    private static int cantidadTotalCreada = 0;
+    private static int cantidadTotalCreadaFACTORY = 0;
 
 
     // --- MIEMBROS DE INSTANCIA (Pertenecen al OBJETO, cada uno tiene su propia copia) ---
@@ -33,10 +33,10 @@ public class ContadorInstancias {
      */
     public ContadorInstancias() {
         // Incrementamos la variable ESTÁTICA compartida
-        cantidadTotalCreada++;
+        cantidadTotalCreadaFACTORY++;
         
         // Asignamos la variable de INSTANCIA usando la estática compartida
-        this.id = PREFIJO_ID + cantidadTotalCreada;
+        this.id = PREFIJO_ID + cantidadTotalCreadaFACTORY;
     }
 
     /**
@@ -55,6 +55,6 @@ public class ContadorInstancias {
      */
     public static int getCantidadTotalCreada() {
         // return this.id; // ¡ESTO DARÍA ERROR DE COMPILACIÓN!
-        return cantidadTotalCreada;
+        return cantidadTotalCreadaFACTORY;
     }
 }

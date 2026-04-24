@@ -18,6 +18,7 @@ class PlantillaAppTest {
      * Este caso es una plantilla.
      */
     @Test
+    @Disabled("Plantilla de prueba pendiente de implementación")
     @DisplayName("Completar que se esta probando")
     void testPlantilla() {
         Assertions.fail("Test incompleto");

@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals.contraejemplos;
+package ar.unrn.equals.contraejemplos;
 
 import java.util.Objects;
 

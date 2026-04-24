@@ -1,4 +1,6 @@
-package ar.unrn.tres;
+package ar.unrn.herencia.figuras.geometria;
+
+import ar.unrn.equals.correcto.persona.Empleado;
 
 /**
  * Aplicación de consola para demostrar el uso de la clase Punto, el
@@ -8,7 +10,8 @@ public class PuntoApp {
 
     public static void main(String[] args) {
         System.out.println("--- Demostración de Comportamiento y Encapsulamiento con Punto ---\n");
-
+        ar.unrn.equals.correcto.persona.Empleado e = new Empleado("pepe", 40, "LG3333");
+        ar.unrn.equals.identidad.simetria.Empleado e2;
         Punto p1 = new Punto(10, 20);
         
         System.out.println("1. Creamos un punto inicial:");

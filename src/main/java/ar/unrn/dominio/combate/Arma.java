@@ -1,10 +1,10 @@
-package ar.unrn.dos.dominio.combate;
+package ar.unrn.dominio.combate;
 
 /**
  * Representa un arma con daño y cantidad limitada de usos.
  * Sigue el principio de encapsulamiento estricto: sin accesores (getters/setters).
  */
-class Arma {
+public class Arma {
     private final int danioBase;
     private int usosRestantes;
 

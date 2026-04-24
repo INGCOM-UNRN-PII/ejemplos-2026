@@ -1,4 +1,4 @@
-package ar.unrn.dos.equals.contraejemplos;
+package ar.unrn.equals.contraejemplos;
 
 import java.util.Objects;
 
@@ -36,6 +36,6 @@ public class MalHashCode {
         // Si dos objetos son equals(), deben tener el mismo hashCode. 
         // Aquí cada vez que llamamos a hashCode, o en diferentes instancias con mismo 'id', 
         // devolveremos un valor distinto. No funcionará con Colecciones basadas en Hash.
-        return (int) (Math.random() * 1000);
+        return Objects.hash(id);//(int) (Math.random() * 1000);
     }
 }
