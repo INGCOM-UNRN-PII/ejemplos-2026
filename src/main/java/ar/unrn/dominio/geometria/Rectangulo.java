@@ -1,0 +1,47 @@
+package ar.unrn.dominio.geometria;
+
+/**
+ * Rectángulo alineado a los ejes (AABB - Axis-Aligned Bounding Box).
+ * Definido exclusivamente por los vértices de su diagonal principal.
+ */
+public final class Rectangulo implements FiguraGeometrica {
+    private final Punto verticeInferior;
+    private final Punto verticeOpuesto;
+
+    public Rectangulo(Punto verticeInferior, Punto verticeOpuesto) {
+        if (verticeInferior.distanciaX(verticeOpuesto) == 0 || verticeInferior.distanciaY(verticeOpuesto) == 0) {
+            throw new IllegalArgumentException("Los vértices opuestos son ortogonalmente colineales, determinando un área degenerada.");
+        }
+        this.verticeInferior = verticeInferior;
+        this.verticeOpuesto = verticeOpuesto;
+    }
+
+    @Override
+    public double calcularArea() {
+        return verticeInferior.distanciaX(verticeOpuesto) * verticeInferior.distanciaY(verticeOpuesto);
+    }
+
+    @Override
+    public double calcularPerimetro() {
+        return 2 * (verticeInferior.distanciaX(verticeOpuesto) + verticeInferior.distanciaY(verticeOpuesto));
+    }
+
+    @Override
+    public Rectangulo trasladar(double dx, double dy) {
+        return new Rectangulo(
+            verticeInferior.trasladar(dx, dy), 
+            verticeOpuesto.trasladar(dx, dy)
+        );
+    }
+
+    /**
+     * Proyecta el polígono resolviendo los vértices ortogonales adyacentes
+     * delegando la recombinación espacial a la entidad Punto.
+     */
+    public Punto[] proyectarVertices() {
+        Punto verticeAdyacenteX = verticeInferior.alinearXCon(verticeOpuesto);
+        Punto verticeAdyacenteY = verticeInferior.alinearYCon(verticeOpuesto);
+
+        return new Punto[]{verticeInferior, verticeAdyacenteX, verticeOpuesto, verticeAdyacenteY};
+    }
+}
