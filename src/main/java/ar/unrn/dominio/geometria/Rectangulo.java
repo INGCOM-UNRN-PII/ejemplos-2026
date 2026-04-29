@@ -35,6 +35,19 @@ public final class Rectangulo implements FiguraGeometrica {
     }
 
     /**
+     * Rota la diagonal del rectángulo. El resultado es un nuevo AABB
+     * definido por los nuevos extremos de la diagonal rotada.
+     * Nota: Si el ángulo no es múltiplo de π/2, las dimensiones pueden variar.
+     */
+    @Override
+    public Rectangulo rotar(Punto centro, double anguloRadianes) {
+        return new Rectangulo(
+            verticeInferior.rotar(centro, anguloRadianes),
+            verticeOpuesto.rotar(centro, anguloRadianes)
+        );
+    }
+
+    /**
      * Proyecta el polígono resolviendo los vértices ortogonales adyacentes
      * delegando la recombinación espacial a la entidad Punto.
      */

@@ -34,4 +34,9 @@ public final class Circulo implements FiguraGeometrica {
     public Circulo trasladar(double dx, double dy) {
         return new Circulo(centro.trasladar(dx, dy), puntoFrontera.trasladar(dx, dy));
     }
+
+    @Override
+    public Circulo rotar(Punto centroRotacion, double anguloRadianes) {
+        return new Circulo(centro.rotar(centroRotacion, anguloRadianes), puntoFrontera.rotar(centroRotacion, anguloRadianes));
+    }
 }

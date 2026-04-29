@@ -44,4 +44,13 @@ public final class Triangulo implements FiguraGeometrica {
             verticeC.trasladar(dx, dy)
         );
     }
+
+    @Override
+    public Triangulo rotar(Punto centro, double anguloRadianes) {
+        return new Triangulo(
+            verticeA.rotar(centro, anguloRadianes),
+            verticeB.rotar(centro, anguloRadianes),
+            verticeC.rotar(centro, anguloRadianes)
+        );
+    }
 }
