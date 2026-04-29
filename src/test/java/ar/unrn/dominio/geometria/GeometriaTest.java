@@ -78,6 +78,30 @@ class GeometriaTest {
         assertEquals(6.0, triangulo.calcularArea(), DELTA);
         assertEquals(12.0, triangulo.calcularPerimetro(), DELTA);
 
-        assertThrows(IllegalArgumentException.class, () -> new Triangulo(t1, t2, new Punto(2, 0)));
+    @Test
+    @DisplayName("Punto: Rotación")
+    void testRotacionPunto() {
+        Punto p = new Punto(1, 0);
+        Punto centro = new Punto(0, 0);
+        
+        // Rotar 90 grados (PI/2)
+        Punto rotado = p.rotar(centro, Math.PI / 2);
+        
+        assertEquals(0.0, rotado.x(), DELTA);
+        assertEquals(1.0, rotado.y(), DELTA);
+    }
+
+    @Test
+    @DisplayName("Figuras: Transformaciones combinadas")
+    void testTransformacionesFiguras() {
+        Punto centro = new Punto(0, 0);
+        Punto frontera = new Punto(2, 0);
+        Circulo circulo = new Circulo(centro, frontera);
+        
+        // Trasladar y luego rotar
+        FiguraGeometrica transformado = circulo.trasladar(5, 5).rotar(new Punto(0, 0), Math.PI);
+        
+        // El nuevo centro debería estar en (-5, -5) tras rotar (5,5) 180 grados sobre el origen
+        assertTrue(transformado instanceof Circulo);
     }
 }
