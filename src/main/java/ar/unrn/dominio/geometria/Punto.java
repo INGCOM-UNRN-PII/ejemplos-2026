@@ -28,6 +28,24 @@ public final class Punto {
     }
 
     /**
+     * Rota el punto respecto a un centro dado un ángulo en radianes.
+     * Utiliza la matriz de rotación estándar:
+     * x' = (x-cx)cosθ - (y-cy)sinθ + cx
+     * y' = (x-cx)sinθ + (y-cy)cosθ + cy
+     */
+    public Punto rotar(Punto centro, double anguloRadianes) {
+        double cos = Math.cos(anguloRadianes);
+        double sin = Math.sin(anguloRadianes);
+        double dx = this.x - centro.x();
+        double dy = this.y - centro.y();
+
+        double newX = dx * cos - dy * sin + centro.x();
+        double newY = dx * sin + dy * cos + centro.y();
+
+        return new Punto(newX, newY);
+    }
+
+    /**
      * Calcula la distancia euclidiana empleando la norma euclidiana optimizada.
      */
     public double calcularDistancia(Punto otro) {
