@@ -20,7 +20,7 @@ public class ArregloApp {
 
         // Alguien modifica el array original DESPUÉS de pasarlo al constructor
         datosIniciales[0] = 999;
-        
+
         System.out.println("Modificamos el array 'datosIniciales' externamente: datosIniciales[0] = 999");
         System.out.println("Estado de miArreglo (¡se vio afectado!): " + miArreglo);
         System.out.println("--------------------------------------------------");
@@ -28,10 +28,10 @@ public class ArregloApp {
         // 2. Problema de diseño (si la clase tuviera un getter para el arreglo interno)
         // Como Arreglo no expone el array interno (solo tiene toString y obtener), 
         // el problema principal aquí reside en el constructor.
-        
+
         // Pero supongamos que la clase confiaba en que sus datos eran inmutables 
         // a partir de su creación. Como no hizo copia defensiva, la encapsulación se rompió.
-        
+
         System.out.println("Para solucionar esto, Arreglo debería hacer:");
         System.out.println("this.arreglo = Arrays.copyOf(arreglo, arreglo.length);");
         System.out.println("en su constructor.");

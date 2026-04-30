@@ -1,4 +1,5 @@
 package ar.unrn.equals.identidad.simetria;
+
 public class EqualsViolaSimetria {
     public static void main(String[] args) {
         System.out.println("--- Problema: Violación de Simetría ---");

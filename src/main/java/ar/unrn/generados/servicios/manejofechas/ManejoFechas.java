@@ -8,13 +8,13 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * Gestión de tiempo con la API java.time (introducida en Java 8).
- * 
- * Antes de Java 8, se usaban las clases 'Date' y 'Calendar', que eran 
- * mutables y tenían un diseño confuso. La nueva API es inmutable, 
+ * <p>
+ * Antes de Java 8, se usaban las clases 'Date' y 'Calendar', que eran
+ * mutables y tenían un diseño confuso. La nueva API es inmutable,
  * segura para hilos (thread-safe) y mucho más clara.
- * 
+ * <p>
  * Relación con el TP6 (Objetos y Hora):
- * Al trabajar con fechas, recordá que una fecha no es solo un conjunto de 
+ * Al trabajar con fechas, recordá que una fecha no es solo un conjunto de
  * enteros (día, mes, año), sino un objeto con comportamiento propio.
  */
 public class ManejoFechas {
@@ -43,7 +43,7 @@ public class ManejoFechas {
 
         // 4. Períodos (Cálculo de diferencia entre fechas).
         Period hastaElExamen = Period.between(hoy, fechaExamen);
-        System.out.println("\nFaltan " + hastaElExamen.getMonths() + " meses y " 
+        System.out.println("\nFaltan " + hastaElExamen.getMonths() + " meses y "
                 + hastaElExamen.getDays() + " días para el examen.");
 
         // 5. Formateo (Parsing y Formatting).

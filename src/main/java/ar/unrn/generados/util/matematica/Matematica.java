@@ -7,7 +7,9 @@ public class Matematica {
 
     /**
      * Calcula el factorial de un número entero no negativo.
+     *
      * @param n número del cual calcular el factorial.
+     *
      * @return factorial de n.
      * @throws IllegalArgumentException si n es negativo.
      */

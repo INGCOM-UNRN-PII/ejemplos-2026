@@ -71,6 +71,7 @@ public class LoaderApp {
      * to the given package and subpackages.
      *
      * @param packageName The base package to fetch
+     *
      * @return The classes in packageName
      * @throws ClassNotFoundException when a file looks like a class but isn't
      * @throws IOException            when a file has access problems
@@ -100,6 +101,7 @@ public class LoaderApp {
      * @param directory   The base directory
      * @param packageName The package name for classes found inside the base
      *                    directory
+     *
      * @return The classes in the specified directory
      * @throws ClassNotFoundException when a file looks like a class but isn't
      */
@@ -135,6 +137,7 @@ public class LoaderApp {
          */
         @Serial
         private static final long serialVersionUID = 42L;
+
         /**
          * Los fallos internos provienen exclusivamente de otros por lo
          * que se encadenan. Es obligatorio agregar también contexto textual.

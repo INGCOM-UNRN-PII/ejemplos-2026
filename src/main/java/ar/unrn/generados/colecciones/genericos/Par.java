@@ -9,6 +9,11 @@ public class Par<K, V> {
         this.valor = valor;
     }
 
-    public K getClave() { return clave; }
-    public V getValor() { return valor; }
+    public K getClave() {
+        return clave;
+    }
+
+    public V getValor() {
+        return valor;
+    }
 }

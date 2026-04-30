@@ -4,9 +4,9 @@ import java.util.Objects;
 
 /**
  * Ejemplo que viola la regla de comparación con NULL del contrato de equals.
- * 
+ * <p>
  * Contrato: Para cualquier referencia no-null x, x.equals(null) debe retornar false
- * 
+ * <p>
  * Problema: Implementaciones incorrectas que lanzan excepciones o retornan true
  * al comparar con null.
  */

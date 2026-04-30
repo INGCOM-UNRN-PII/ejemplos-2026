@@ -5,11 +5,11 @@ import java.util.List;
 
 /**
  * Implementación del Patrón de Diseño: Observador (Observer).
- * 
+ * <p>
  * Este patrón define una dependencia de uno-a-muchos entre objetos, de forma
  * que cuando un objeto (el Sujeto) cambia su estado, todos sus dependientes
  * (los Observadores) son notificados y actualizados automáticamente.
- * 
+ * <p>
  * Es fundamental para desacoplar componentes: el Sujeto no necesita saber
  * exactamente quién lo observa, solo que implementan la interfaz 'Observador'.
  */
@@ -22,7 +22,9 @@ interface Observador {
 // 2. Interfaz para el sujeto observable (Sujeto).
 interface Observable {
     void agregarObservador(Observador o);
+
     void quitarObservador(Observador o);
+
     void notificar();
 }
 

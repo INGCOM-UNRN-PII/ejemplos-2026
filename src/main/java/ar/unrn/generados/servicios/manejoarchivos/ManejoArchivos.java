@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * Ejemplo de manejo de archivos usando la API moderna NIO.2.
- * 
+ * <p>
  * Conceptos:
  * - Path para representar rutas.
  * - Files para operaciones atómicas.
@@ -20,7 +20,7 @@ public class ManejoArchivos {
 
     public static void main(String[] args) {
         String nombreArchivo = "ejemplo_archivo.txt";
-        
+
         System.out.println("--- Manejo de Archivos (NIO.2) ---");
 
         escribirArchivo(nombreArchivo);
@@ -30,9 +30,9 @@ public class ManejoArchivos {
     public static void escribirArchivo(String ruta) {
         Path path = Path.of(ruta);
         List<String> lineas = Arrays.asList(
-            "Primera línea del ejemplo.",
-            "Java NIO.2 es potente y seguro.",
-            "Soporta caracteres especiales: ñ, á, é."
+                "Primera línea del ejemplo.",
+                "Java NIO.2 es potente y seguro.",
+                "Soporta caracteres especiales: ñ, á, é."
         );
 
         try {
@@ -55,7 +55,7 @@ public class ManejoArchivos {
         try {
             // Lee todas las líneas en una lista
             List<String> lineas = Files.readAllLines(path, StandardCharsets.UTF_8);
-            
+
             System.out.println("Contenido del archivo:");
             for (String linea : lineas) {
                 System.out.println(" > " + linea);

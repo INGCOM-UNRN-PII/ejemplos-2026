@@ -7,20 +7,20 @@ import java.util.Objects;
  * Ejemplifica el concepto de Encapsulamiento y la asignación de responsabilidades.
  * <p>
  * En C, solíamos usar una struct {@code struct Punto { int x; int y; }} y funciones
- * separadas para operar sobre ella. En Java, protegemos los datos (campos privados) 
- * y controlamos el acceso, pero además, dotamos al objeto de comportamiento propio 
- * (métodos como calcular la distancia o desplazarse), siguiendo los principios de la 
+ * separadas para operar sobre ella. En Java, protegemos los datos (campos privados)
+ * y controlamos el acceso, pero además, dotamos al objeto de comportamiento propio
+ * (métodos como calcular la distancia o desplazarse), siguiendo los principios de la
  * Programación Orientada a Objetos.
  * </p>
  */
 public class Punto {
-    
+
     /**
      * Coordenada en el eje horizontal.
      * Encapsulada (privada) para evitar modificaciones no controladas.
      */
     private int x;
-    
+
     /**
      * Coordenada en el eje vertical.
      * Encapsulada (privada) para evitar modificaciones no controladas.
@@ -29,7 +29,7 @@ public class Punto {
 
     /**
      * Construye un nuevo {@code Punto} en el espacio bidimensional.
-     * 
+     *
      * @param x posición inicial en el eje horizontal (abscisas).
      * @param y posición inicial en el eje vertical (ordenadas).
      */
@@ -40,7 +40,7 @@ public class Punto {
 
     /**
      * Obtiene el valor actual de la coordenada horizontal (X).
-     * 
+     *
      * @return El valor actual de la coordenada X.
      */
     public int getX() {
@@ -49,7 +49,7 @@ public class Punto {
 
     /**
      * Establece un nuevo valor para la coordenada horizontal (X).
-     * 
+     *
      * @param x El nuevo valor para la coordenada X.
      */
     public void setX(int x) {
@@ -58,7 +58,7 @@ public class Punto {
 
     /**
      * Obtiene el valor actual de la coordenada vertical (Y).
-     * 
+     *
      * @return El valor actual de la coordenada Y.
      */
     public int getY() {
@@ -67,7 +67,7 @@ public class Punto {
 
     /**
      * Establece un nuevo valor para la coordenada vertical (Y).
-     * 
+     *
      * @param y El nuevo valor para la coordenada Y.
      */
     public void setY(int y) {
@@ -79,7 +79,7 @@ public class Punto {
     /**
      * Desplaza este punto en el plano sumando las cantidades especificadas
      * a sus coordenadas actuales.
-     * 
+     *
      * @param deltaX La cantidad a sumar (o restar si es negativa) a la coordenada X.
      * @param deltaY La cantidad a sumar (o restar si es negativa) a la coordenada Y.
      */
@@ -93,8 +93,9 @@ public class Punto {
      * <p>
      * Utiliza el teorema de Pitágoras: d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
      * </p>
-     * 
+     *
      * @param otro El punto hacia el cual calcular la distancia. No debe ser {@code null}.
+     *
      * @return La distancia euclidiana entre los dos puntos.
      */
     public double calcularDistancia(Punto otro) {
@@ -105,14 +106,15 @@ public class Punto {
     }
 
     /**
-     * Calcula el ángulo en radianes entre el eje X positivo y el vector formado 
+     * Calcula el ángulo en radianes entre el eje X positivo y el vector formado
      * por este punto y otro punto dado.
      * <p>
      * Este punto actúa como el origen (0,0) relativo para el cálculo.
      * El ángulo devuelto está en el rango de -pi a pi.
      * </p>
-     * 
+     *
      * @param otro El punto que define el vector. No debe ser {@code null}.
+     *
      * @return El ángulo en radianes entre el eje X positivo y el vector.
      */
     public double calcularAngulo(Punto otro) {
@@ -124,7 +126,7 @@ public class Punto {
 
     /**
      * Devuelve una representación en formato de cadena de este punto.
-     * 
+     *
      * @return Una cadena con el formato {@code "(x, y)"}.
      */
     @Override

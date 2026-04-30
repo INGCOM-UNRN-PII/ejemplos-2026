@@ -29,8 +29,14 @@ class Base {
         paso1();
         paso2();
     }
-    protected void paso1() { System.out.println("Base Paso 1"); }
-    protected void paso2() { System.out.println("Base Paso 2"); }
+
+    protected void paso1() {
+        System.out.println("Base Paso 1");
+    }
+
+    protected void paso2() {
+        System.out.println("Base Paso 2");
+    }
 }
 
 class Derivada extends Base {

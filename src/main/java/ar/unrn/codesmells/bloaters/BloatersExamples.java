@@ -9,8 +9,8 @@ public class BloatersExamples {
 
     // 1. Long Parameter List & Data Clumps
     // inicio, fin, calle, ciudad, pais suelen viajar juntos (Data Clumps)
-    public void registrarEvento(String nombre, int diaInicio, int mesInicio, int anioInicio, 
-                                int diaFin, int mesFin, int anioFin, 
+    public void registrarEvento(String nombre, int diaInicio, int mesInicio, int anioInicio,
+                                int diaFin, int mesFin, int anioFin,
                                 String calle, String ciudad, String pais) {
         // ...
     }
@@ -31,9 +31,18 @@ class GestorTodoEnUno {
     private String configuracionDb;
     private String logPath;
 
-    public void agregarUsuario() {}
-    public void procesarFactura() {}
-    public void conectarDb() {}
-    public void imprimirReporte() {}
-    public void enviarEmail() {}
+    public void agregarUsuario() {
+    }
+
+    public void procesarFactura() {
+    }
+
+    public void conectarDb() {
+    }
+
+    public void imprimirReporte() {
+    }
+
+    public void enviarEmail() {
+    }
 }

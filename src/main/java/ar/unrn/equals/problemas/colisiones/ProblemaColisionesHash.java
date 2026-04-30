@@ -1,6 +1,8 @@
 package ar.unrn.equals.problemas.colisiones;
+
 import java.util.HashMap;
 import java.util.Map;
+
 public class ProblemaColisionesHash {
     public static void main(String[] args) {
         Map<MalaMesa, String> mapa = new HashMap<>();

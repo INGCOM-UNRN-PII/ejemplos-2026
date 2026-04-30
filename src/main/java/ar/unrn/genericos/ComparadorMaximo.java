@@ -11,8 +11,10 @@ public class ComparadorMaximo {
     /**
      * Encuentra el máximo en una lista de elementos comparables.
      * T debe extender de Comparable<? super T>.
+     *
      * @param lista lista de elementos.
-     * @param <T> el tipo de los elementos, que debe ser Comparable.
+     * @param <T>   el tipo de los elementos, que debe ser Comparable.
+     *
      * @return el elemento máximo.
      * @throws IllegalArgumentException si la lista está vacía.
      */

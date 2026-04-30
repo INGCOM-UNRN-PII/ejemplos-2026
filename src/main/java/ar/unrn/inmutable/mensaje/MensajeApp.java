@@ -12,7 +12,7 @@ public class MensajeApp {
 
         // 1. Creamos la variable inicial
         String textoInicial = "Hola, inmutabilidad";
-        
+
         // 2. Se la pasamos al constructor
         Mensaje miMensaje = new Mensaje(textoInicial);
 
@@ -22,13 +22,13 @@ public class MensajeApp {
         // Como String es inmutable, no podemos modificar su contenido interno (como sí hacíamos con el array).
         // Lo único que podemos hacer es que la variable 'textoInicial' apunte a un nuevo String.
         textoInicial = "Texto modificado de manera maliciosa";
-        
+
         System.out.println("\nIntentamos modificar 'textoInicial' externamente apuntando a un nuevo valor...");
         System.out.println("Variable externa ahora vale: " + textoInicial);
-        
+
         // 4. Comprobamos el estado del objeto encapsulado
         System.out.println("Estado de miMensaje (¡permanece INTACTO!): " + miMensaje);
-        
+
         System.out.println("\n----------------------------------------------------");
         System.out.println("Conclusión:");
         System.out.println("Al usar objetos inmutables (como String), no es posible");

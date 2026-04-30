@@ -2,7 +2,7 @@ package ar.unrn.generados.sintaxis.controlflujo;
 
 /**
  * Ejemplo de estructuras de control de flujo en Java.
- * 
+ * <p>
  * Se prioriza el uso de banderas booleanas para el control de lazos,
  * siguiendo las recomendaciones académicas del proyecto (evitar break/continue).
  */

@@ -1,4 +1,5 @@
 package ar.unrn.equals.identidad.transitividad;
+
 public class EqualsViolaTransitividad {
     public static void main(String[] args) {
         System.out.println("--- Problema: Violación de Transitividad ---");

@@ -5,14 +5,14 @@ import java.util.List;
 
 /**
  * Implementación del Patrón de Diseño: Visitor (Visitante).
- * 
- * Este patrón permite separar algoritmos de la estructura de objetos sobre 
+ * <p>
+ * Este patrón permite separar algoritmos de la estructura de objetos sobre
  * la que operan. Es muy útil cuando tenés una jerarquía de clases fija pero
  * querés agregar nuevas operaciones sin modificarlas.
- * 
+ * <p>
  * Concepto clave: Doble Despacho (Double Dispatch).
  * Se delega la elección del método correcto en tiempo de ejecución.
- * 
+ * <p>
  * Inspirado en el TP9.
  */
 
@@ -25,6 +25,7 @@ interface Elemento {
 // Notá que hay un método por cada tipo concreto de elemento.
 interface Visitante {
     void visitar(LibroVisitado l);
+
     void visitar(Electronico e);
 }
 
@@ -40,8 +41,13 @@ class LibroVisitado implements Elemento {
         this.precio = precio;
     }
 
-    public double getPrecio() { return precio; }
-    public String getTitulo() { return titulo; }
+    public double getPrecio() {
+        return precio;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
 
     @Override
     public void aceptar(Visitante v) {
@@ -63,7 +69,9 @@ class Electronico implements Elemento {
         this.precioBase = precioBase;
     }
 
-    public double getPrecioBase() { return precioBase; }
+    public double getPrecioBase() {
+        return precioBase;
+    }
 
     @Override
     public void aceptar(Visitante v) {

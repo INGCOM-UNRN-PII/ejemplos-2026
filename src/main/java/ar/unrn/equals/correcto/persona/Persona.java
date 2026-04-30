@@ -8,12 +8,12 @@ import java.util.Objects;
  * el protocolo {@link Object#equals(Object)} / {@link Object#hashCode()}.
  */
 class Persona {
-    
+
     /**
      * El nombre de la persona.
      */
     private String nombre;
-    
+
     /**
      * La edad de la persona en años.
      */
@@ -36,8 +36,9 @@ class Persona {
      * que la comparación solo sea válida entre objetos de la misma clase exacta.
      *
      * @param otro El objeto a comparar con esta persona.
+     *
      * @return {@code true} si los objetos son de la misma clase y tienen el mismo
-     *         nombre y edad; {@code false} en caso contrario.
+     * nombre y edad; {@code false} en caso contrario.
      */
     @Override
     public boolean equals(Object otro) {
@@ -47,14 +48,14 @@ class Persona {
         } else if (otro != null && getClass() == otro.getClass()) {
             Persona persona = (Persona) otro;
             esIgual = (edad == persona.edad &&
-                        Objects.equals(nombre, persona.nombre));
+                    Objects.equals(nombre, persona.nombre));
         }
         return esIgual;
     }
 
     /**
      * Devuelve un valor de código hash para este objeto {@code Persona}.
-     * El cálculo se basa en el nombre y la edad para mantener consistencia 
+     * El cálculo se basa en el nombre y la edad para mantener consistencia
      * con el método {@link #equals(Object)}.
      *
      * @return El valor del código hash calculado para esta persona.

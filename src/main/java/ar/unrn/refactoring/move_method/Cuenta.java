@@ -11,6 +11,11 @@ public class Cuenta {
 }
 
 class TipoCuenta {
-    public double obtenerTasaBase() { return 0.05; }
-    public double obtenerFactorRiesgo() { return 1.2; }
+    public double obtenerTasaBase() {
+        return 0.05;
+    }
+
+    public double obtenerFactorRiesgo() {
+        return 1.2;
+    }
 }

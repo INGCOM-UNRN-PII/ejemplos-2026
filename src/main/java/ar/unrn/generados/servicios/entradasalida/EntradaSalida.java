@@ -5,7 +5,7 @@ import java.util.Locale;
 
 /**
  * Demostración de Entrada y Salida de datos en consola.
- * 
+ * <p>
  * Temas:
  * - System.out.printf para salidas formateadas.
  * - Scanner para lectura de tokens y líneas.
@@ -25,7 +25,7 @@ public class EntradaSalida {
 
     public static void demonstrarPrintf() {
         System.out.println("--- Salida Formateada (printf) ---");
-        
+
         String producto = "Manzanas";
         int cantidad = 50;
         double precio = 1.50;
@@ -48,16 +48,16 @@ public class EntradaSalida {
 
         System.out.print("Ingrese su edad: ");
         int edad = sc.nextInt();
-        
+
         // LIMPIEZA DEL BUFFER: El nextInt() deja un \n que debe ser consumido
         // antes de llamar a nextLine().
-        sc.nextLine(); 
+        sc.nextLine();
 
         System.out.print("Ingrese su nombre completo: ");
         String nombre = sc.nextLine();
 
         System.out.printf("Hola %s, tenés %d años.%n", nombre, edad);
-        
+
         sc.close();
     }
 }

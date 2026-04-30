@@ -3,6 +3,7 @@ package ar.unrn.genericos;
 /**
  * Ejemplo de clase genérica con dos parámetros de tipo.
  * Útil para representar pares clave-valor.
+ *
  * @param <K> el tipo de la clave.
  * @param <V> el tipo del valor.
  */

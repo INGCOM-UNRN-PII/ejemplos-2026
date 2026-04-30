@@ -24,7 +24,7 @@ public class Mensaje {
     }
 
     /**
-     * Obtiene el texto. 
+     * Obtiene el texto.
      * Retornar la referencia directa es seguro porque String es inmutable.
      *
      * @return El texto del mensaje.

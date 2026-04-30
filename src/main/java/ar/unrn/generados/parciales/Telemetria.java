@@ -12,14 +12,15 @@ public class Telemetria {
      * @param lecturas  Un arreglo de strings que representa los datos crudos.
      * @param factores  Un arreglo de strings con los factores de escala para la división.
      * @param capacidad El tamaño total del arreglo de salida y el número de iteraciones a realizar.
+     *
      * @return Un arreglo de strings de tamaño 'capacidad' con los valores normalizados
-     *         o códigos de error estandarizados en caso de fallo.
+     * o códigos de error estandarizados en caso de fallo.
      */
     public static String[] normalizarTelemetria(String[] lecturas, String[] factores, int capacidad) {
         if (capacidad < 0) {
             throw new IllegalArgumentException("La capacidad no puede ser negativa.");
         }
-        
+
         String[] resultado = new String[capacidad];
 
         for (int i = 0; i < capacidad; i++) {
@@ -53,7 +54,7 @@ public class Telemetria {
                 resultado[i] = "ERR_INDICE";
             }
         }
-        
+
         return resultado;
     }
 }

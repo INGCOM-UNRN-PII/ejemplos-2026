@@ -2,7 +2,7 @@ package ar.unrn.generados.sintaxis.argumentosvariables;
 
 /**
  * Demostración de Varargs (Argumentos Variables).
- * 
+ * <p>
  * Permite que un método reciba una cantidad indeterminada de argumentos
  * del mismo tipo, tratándolos internamente como un arreglo.
  */

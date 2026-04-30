@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Ejemplo de gestión de errores mediante Excepciones.
- * 
+ * <p>
  * Java separa el flujo normal del programa del flujo de error,
  * proporcionando información rica (Stack Trace) y garantizando
  * la limpieza de recursos (finally/try-with-resources).
@@ -55,7 +55,7 @@ public class GestionExcepciones {
     public static void demonstrarTryWithResources() {
         System.out.println("Simulando lectura validada...");
         String entradaSimulada = "no_soy_un_numero";
-        
+
         try (Scanner sc = new Scanner(entradaSimulada)) {
             int n = sc.nextInt();
             System.out.println("Número leído: " + n);

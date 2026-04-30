@@ -10,31 +10,31 @@ public class EstaticosApp {
         System.out.println("--- Demostración de Miembros Estáticos ---\n");
 
         System.out.println("1. Acceso antes de crear cualquier objeto (Acceso por CLASE):");
-        
+
         // Llamamos al método ESTÁTICO a través del nombre de la CLASE (no de un objeto).
         // Esto es posible porque el método 'getCantidadTotalCreada' pertenece a la clase,
         // y su variable 'cantidadTotalCreada' ya existe en memoria, independientemente 
         // de si se han creado objetos o no.
         int cantidadInicial = ContadorInstancias.getCantidadTotalCreada();
-        
+
         System.out.println("   Cantidad inicial de objetos creados: " + cantidadInicial);
 
 
         System.out.println("\n2. Creación de objetos...");
-        
+
         ContadorInstancias obj1 = new ContadorInstancias();
         System.out.println("   Se creó un objeto. ID asignado: " + obj1.getId());
-        
+
         ContadorInstancias obj2 = new ContadorInstancias();
         System.out.println("   Se creó otro objeto. ID asignado: " + obj2.getId());
 
 
         System.out.println("\n3. Acceso a las variables después de crear objetos:");
-        
+
         // Volvemos a acceder a la variable estática compartida a través de la clase.
         int cantidadFinal = ContadorInstancias.getCantidadTotalCreada();
         System.out.println("   Cantidad total de objetos creados según la clase: " + cantidadFinal);
-        
+
         // También podríamos intentar acceder al método estático usando una instancia:
         // int cantidadIncorrecta = obj1.getCantidadTotalCreada(); 
         // ¡CUIDADO! Esto en Java funciona, pero es una MALA PRÁCTICA. 

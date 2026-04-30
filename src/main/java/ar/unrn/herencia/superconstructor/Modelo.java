@@ -1,8 +1,9 @@
 package ar.unrn.herencia.superconstructor;
 
-public class Modelo extends Smartphone{
+public class Modelo extends Smartphone {
     protected String version;
-    public Modelo(String marca, String modelo, String version  ) {
+
+    public Modelo(String marca, String modelo, String version) {
         super(marca, modelo);
         this.version = version;
     }

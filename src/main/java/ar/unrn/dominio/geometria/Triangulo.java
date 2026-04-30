@@ -25,32 +25,32 @@ public final class Triangulo implements FiguraGeometrica {
         double b = verticeB.calcularDistancia(verticeC);
         double c = verticeC.calcularDistancia(verticeA);
         double semiperimetro = (a + b + c) / 2.0;
-        
+
         return Math.sqrt(semiperimetro * (semiperimetro - a) * (semiperimetro - b) * (semiperimetro - c));
     }
 
     @Override
     public double calcularPerimetro() {
-        return verticeA.calcularDistancia(verticeB) + 
-               verticeB.calcularDistancia(verticeC) + 
-               verticeC.calcularDistancia(verticeA);
+        return verticeA.calcularDistancia(verticeB) +
+                verticeB.calcularDistancia(verticeC) +
+                verticeC.calcularDistancia(verticeA);
     }
 
     @Override
     public Triangulo trasladar(double dx, double dy) {
         return new Triangulo(
-            verticeA.trasladar(dx, dy), 
-            verticeB.trasladar(dx, dy), 
-            verticeC.trasladar(dx, dy)
+                verticeA.trasladar(dx, dy),
+                verticeB.trasladar(dx, dy),
+                verticeC.trasladar(dx, dy)
         );
     }
 
     @Override
     public Triangulo rotar(Punto centro, double anguloRadianes) {
         return new Triangulo(
-            verticeA.rotar(centro, anguloRadianes),
-            verticeB.rotar(centro, anguloRadianes),
-            verticeC.rotar(centro, anguloRadianes)
+                verticeA.rotar(centro, anguloRadianes),
+                verticeB.rotar(centro, anguloRadianes),
+                verticeC.rotar(centro, anguloRadianes)
         );
     }
 }

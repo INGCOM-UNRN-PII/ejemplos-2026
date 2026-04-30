@@ -5,10 +5,10 @@ import java.util.List;
 
 /**
  * Muestra el uso de colecciones dinámicas en Java.
- * 
- * En C, para una lista dinámica debíamos usar malloc, realloc, free 
- * y manejar punteros con cuidado (o implementar listas enlazadas). 
- * Java provee el Framework de Colecciones (JCF), que encapsula toda 
+ * <p>
+ * En C, para una lista dinámica debíamos usar malloc, realloc, free
+ * y manejar punteros con cuidado (o implementar listas enlazadas).
+ * Java provee el Framework de Colecciones (JCF), que encapsula toda
  * esa complejidad.
  */
 public class EjemploColecciones {

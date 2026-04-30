@@ -2,7 +2,7 @@ package ar.unrn.generados.fundamentos.tiposdedatos;
 
 /**
  * Ejemplo detallado de los tipos de datos primitivos en Java.
- * 
+ * <p>
  * Java garantiza el tamaño de los tipos en todas las plataformas,
  * resolviendo problemas de portabilidad comunes en C.
  */
@@ -41,12 +41,12 @@ public class TiposDeDatos {
         // --- Casting (Conversiones) ---
         // Widening (Automático): De menor a mayor capacidad.
         int i = 100;
-        long l = i; 
+        long l = i;
 
         // Narrowing (Explícito): De mayor a menor capacidad.
         double d = 10.5;
         int truncado = (int) d; // Se pierde el .5
-        
+
         // --- Constantes ---
         final double PI = 3.14159265359;
         // PI = 3.0; // ERROR: No se puede cambiar una variable final.

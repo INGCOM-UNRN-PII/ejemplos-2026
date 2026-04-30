@@ -1,6 +1,8 @@
 package ar.unrn.generados.colecciones.genericos;
+
 import javax.annotation.Nullable;
 import java.util.List;
+
 public class GenericosEjemplo {
     public static void main(String[] args) {
         System.out.println("--- Demostración de Genéricos ---");

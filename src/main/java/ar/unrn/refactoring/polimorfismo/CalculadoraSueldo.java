@@ -1,8 +1,8 @@
 package ar.unrn.refactoring.polimorfismo;
 
 public class CalculadoraSueldo {
-    
-    enum Tipo { INGENIERO, VENDEDOR, GERENTE }
+
+    enum Tipo {INGENIERO, VENDEDOR, GERENTE}
 
     public double calcularSueldo(Tipo tipo, double base, double bonos) {
         // MÉTODO A REFACTORIZAR: Uso de condicionales sobre tipo

@@ -12,7 +12,8 @@ public class Dispensables {
     }
 
     // 2. Dead Code (método que nadie usa)
-    private void esteMetodoNoSeUsaNunca() {}
+    private void esteMetodoNoSeUsaNunca() {
+    }
 
     // 3. Speculative Generality
     public interface ProcesableJustInCase {
@@ -33,6 +34,7 @@ class ServicioA {
         System.out.println("Procesando...");
     }
 }
+
 class ServicioB {
     void procesar() {
         System.out.println("Validando..."); // Duplicado

@@ -1,4 +1,4 @@
-package ar.unrn.estaticos.contadorinstancias; 
+package ar.unrn.estaticos.contadorinstancias;
 
 /**
  * Clase de ejemplo para demostrar el uso de miembros estáticos (de clase)
@@ -34,7 +34,7 @@ public class ContadorInstancias {
     public ContadorInstancias() {
         // Incrementamos la variable ESTÁTICA compartida
         cantidadTotalCreadaFACTORY++;
-        
+
         // Asignamos la variable de INSTANCIA usando la estática compartida
         this.id = PREFIJO_ID + cantidadTotalCreadaFACTORY;
     }
@@ -50,7 +50,7 @@ public class ContadorInstancias {
     /**
      * Método estático. Pertenece a la clase, no a ningún objeto en particular.
      * SOLO puede acceder a otros miembros estáticos (no tiene acceso a 'this' ni a 'id').
-     * 
+     *
      * @return La cantidad total de instancias creadas hasta el momento.
      */
     public static int getCantidadTotalCreada() {

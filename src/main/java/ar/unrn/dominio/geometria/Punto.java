@@ -74,7 +74,7 @@ public final class Punto {
     }
 
     /**
-     * Evalúa si este punto es colineal con otros dos puntos dados, 
+     * Evalúa si este punto es colineal con otros dos puntos dados,
      * calculando el determinante del producto vectorial.
      */
     public boolean esColinealCon(Punto p1, Punto p2) {
@@ -100,8 +100,12 @@ public final class Punto {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Punto punto = (Punto) o;
         return Double.compare(punto.x, x) == 0 && Double.compare(punto.y, y) == 0;
     }

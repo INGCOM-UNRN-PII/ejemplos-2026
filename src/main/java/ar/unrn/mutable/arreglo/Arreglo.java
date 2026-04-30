@@ -19,6 +19,7 @@ public class Arreglo {
      * Construye una nueva instancia de Arreglo.
      *
      * @param arreglo El arreglo inicial. No puede ser {@code null}.
+     *
      * @throws NullPointerException si el arreglo es {@code null}.
      * @contract.pre arreglo != null
      */
@@ -32,6 +33,7 @@ public class Arreglo {
      *
      * @param posicion El índice a modificar.
      * @param valor    El nuevo valor a asignar.
+     *
      * @throws ArrayIndexOutOfBoundsException si la posición es inválida.
      */
     public void modificar(int posicion, int valor) {
@@ -42,6 +44,7 @@ public class Arreglo {
      * Obtiene el valor en una posición específica.
      *
      * @param posicion El índice del valor a obtener.
+     *
      * @return El valor en la posición indicada.
      * @throws ArrayIndexOutOfBoundsException si la posición es inválida.
      */

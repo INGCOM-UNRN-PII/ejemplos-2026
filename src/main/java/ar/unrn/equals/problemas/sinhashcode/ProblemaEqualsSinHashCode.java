@@ -1,6 +1,8 @@
 package ar.unrn.equals.problemas.sinhashcode;
+
 import java.util.HashMap;
 import java.util.Map;
+
 public class ProblemaEqualsSinHashCode {
     @SuppressWarnings("EqualsHashCode")
     public static void main(String[] args) {

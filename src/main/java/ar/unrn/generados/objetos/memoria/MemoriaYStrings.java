@@ -2,7 +2,7 @@ package ar.unrn.generados.objetos.memoria;
 
 /**
  * Demostración de conceptos de memoria, referencias y mutabilidad.
- * 
+ * <p>
  * Temas:
  * - Stack (primitivos) vs Heap (objetos).
  * - Alias de referencias.
@@ -31,13 +31,13 @@ public class MemoriaYStrings {
     public static void demonstrarInmutabilidadString() {
         System.out.println("\n--- Inmutabilidad de Strings ---");
         String s = "Hola";
-        
+
         // toUpperCase() no modifica 's', retorna un NUEVO String
         String resultado = s.toUpperCase();
 
         System.out.println("Original: " + s); // Sigue siendo "Hola"
         System.out.println("Resultado: " + resultado); // "HOLA"
-        
+
         // Comparación de contenido: SIEMPRE usar .equals()
         String s2 = new String("Hola");
         System.out.println("¿s == s2? " + (s == s2)); // false (distintas referencias)
@@ -51,11 +51,11 @@ public class MemoriaYStrings {
     public static void demonstrarStringBuilder() {
         System.out.println("\n--- StringBuilder ---");
         StringBuilder sb = new StringBuilder();
-        
+
         for (int i = 0; i < 5; i = i + 1) {
             sb.append("Paso ").append(i).append(". ");
         }
-        
+
         String finalTexto = sb.toString();
         System.out.println("Resultado: " + finalTexto);
     }

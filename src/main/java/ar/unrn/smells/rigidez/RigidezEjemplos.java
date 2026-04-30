@@ -15,8 +15,7 @@ class GeneradorReporte {
     }
 
     public void formatear(String datos, String tipo) {
-        if (tipo.equals("PDF")) { /* ... */ }
-        else if (tipo.equals("CSV")) { /* ... */ }
+        if (tipo.equals("PDF")) { /* ... */ } else if (tipo.equals("CSV")) { /* ... */ }
         // Nuevamente, rigidez ante el cambio.
     }
 }
@@ -26,13 +25,15 @@ class GeneradorReporte {
  */
 class SistemaCaja {
     private ImpresoraFiscal impresora = new ImpresoraFiscal();
-    
+
     public void cobrar() {
         // La lógica de cobro está amarrada a un modelo específico de impresora
-        impresora.imprimirTicketModeloA(); 
+        impresora.imprimirTicketModeloA();
     }
 }
 
 class ImpresoraFiscal {
-    public void imprimirTicketModeloA() { System.out.println("Ticket A"); }
+    public void imprimirTicketModeloA() {
+        System.out.println("Ticket A");
+    }
 }

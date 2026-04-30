@@ -1,4 +1,5 @@
 package ar.unrn.equals.identidad.consistencia_equals;
+
 public class EqualsViolaConsistencia {
     @SuppressWarnings("EqualsIncompatibleType")
     public static void main(String[] args) {

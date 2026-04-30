@@ -2,7 +2,7 @@ package ar.unrn.generados.fundamentos.caracteristicaslenguaje;
 
 /**
  * Demostración de las características fundamentales del lenguaje Java.
- * 
+ * <p>
  * Temas cubiertos:
  * - Estructura obligatoria de clases.
  * - Tipado estático y fuerte.
@@ -13,6 +13,7 @@ public class CaracteristicasLenguaje {
 
     /**
      * Todo programa Java debe comenzar en un método main dentro de una clase.
+     *
      * @param args argumentos de línea de comandos.
      */
     public static void main(String[] args) {

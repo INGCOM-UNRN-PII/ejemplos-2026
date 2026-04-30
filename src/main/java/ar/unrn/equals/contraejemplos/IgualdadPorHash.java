@@ -2,7 +2,7 @@ package ar.unrn.equals.contraejemplos;
 
 /**
  * Contraejemplo 3: Implementar equals() usando únicamente hashCode().
- * Esto es un error grave porque pueden ocurrir "colisiones". 
+ * Esto es un error grave porque pueden ocurrir "colisiones".
  * Dos objetos distintos pueden llegar a tener el mismo valor de hashCode.
  */
 public class IgualdadPorHash {

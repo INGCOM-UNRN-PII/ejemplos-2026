@@ -17,7 +17,7 @@ import java.util.List;
  * @contract.invar nodos != null
  */
 public class Red {
-    
+
     /**
      * Relación de agregación: La Red "tiene" una colección de nodos.
      * Se utiliza la interfaz {@code List} para permitir flexibilidad en la
@@ -40,6 +40,7 @@ public class Red {
      * Esta operación inserta el elemento en la última posición disponible de la lista.
      *
      * @param nodo El nodo (texto) a agregar.
+     *
      * @contract.pre nodo != null
      * @contract.post nodos.size() == old(nodos.size()) + 1
      */
@@ -56,6 +57,7 @@ public class Red {
      * (si lo hay) y todos los elementos subsecuentes hacia la derecha.
      *
      * @param nodo El nodo (texto) a insertar al principio.
+     *
      * @contract.pre nodo != null
      * @contract.post nodos.size() == old(nodos.size()) + 1
      * @contract.post nodos.get(0).equals(nodo)
@@ -72,7 +74,7 @@ public class Red {
      * Todos los elementos subsecuentes se desplazan hacia la izquierda.
      *
      * @return El nodo removido, o {@code null} si la red está vacía.
-     * @contract.post (old(nodos.isEmpty()) == true -> return == null) y (old(nodos.isEmpty()) == false -> nodos.size() == old(nodos.size()) - 1)
+     * @contract.post (old ( nodos.isEmpty ()) == true -> return == null) y (old(nodos.isEmpty()) == false -> nodos.size() == old(nodos.size()) - 1)
      */
     public String removerPrimerNodo() {
         if (!nodos.isEmpty()) {
@@ -80,10 +82,10 @@ public class Red {
         }
         return null;
     }
-    
+
     /**
      * Elimina todos los nodos contenidos en la red, dejándola vacía.
-     * 
+     *
      * @contract.post nodos.isEmpty() == true
      */
     public void vaciarRed() {
@@ -139,14 +141,14 @@ public class Red {
      * </p>
      *
      * @return Una {@link List} inmutable que contiene los nodos actuales.
-     * @see List#copyOf(java.util.Collection)
      * @contract.post return != null
+     * @see List#copyOf(java.util.Collection)
      */
     public List<String> obtenerNodosInmutables() {
         // List.copyOf (introducido en Java 10) devuelve una lista inmutable
         return List.copyOf(nodos);
     }
-    
+
     /**
      * Método ilustrativo que demuestra por qué no se puede modificar de manera directa
      * una colección mientras se está iterando sobre ella mediante un bucle {@code for-each}.

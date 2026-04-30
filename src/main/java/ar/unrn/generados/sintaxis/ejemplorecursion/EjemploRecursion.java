@@ -2,10 +2,10 @@ package ar.unrn.generados.sintaxis.ejemplorecursion;
 
 /**
  * Ejemplos de recursión y explicación conceptual del Stack (Pila de llamadas).
- * 
- * Al igual que en C, cada vez que se llama a un método, se crea un 
- * 'Stack Frame' que almacena parámetros y variables locales. 
- * En Java, la recursión profunda sin un caso base adecuado lanzará un 
+ * <p>
+ * Al igual que en C, cada vez que se llama a un método, se crea un
+ * 'Stack Frame' que almacena parámetros y variables locales.
+ * En Java, la recursión profunda sin un caso base adecuado lanzará un
  * StackOverflowError.
  */
 public class EjemploRecursion {
@@ -40,7 +40,7 @@ public class EjemploRecursion {
 
     /**
      * Sucesión de Fibonacci: f(n) = f(n-1) + f(n-2).
-     * Nota: Este enfoque recursivo simple es ineficiente por el 
+     * Nota: Este enfoque recursivo simple es ineficiente por el
      * recálculo constante de valores (O(2^n)).
      */
     public static int fibonacci(int n) {

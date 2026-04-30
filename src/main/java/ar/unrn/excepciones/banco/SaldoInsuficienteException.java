@@ -13,5 +13,7 @@ public class SaldoInsuficienteException extends BancoException {
         this.montoRequerido = requerido;
     }
 
-    public double getSaldoActual() { return saldoActual; }
+    public double getSaldoActual() {
+        return saldoActual;
+    }
 }

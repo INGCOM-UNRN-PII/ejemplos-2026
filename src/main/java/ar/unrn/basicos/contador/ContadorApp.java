@@ -1,4 +1,4 @@
-package ar.unrn.uno;
+package ar.unrn.basicos.contador;
 
 /**
  * Aplicación de consola para demostrar el uso de la clase Contador y el impacto

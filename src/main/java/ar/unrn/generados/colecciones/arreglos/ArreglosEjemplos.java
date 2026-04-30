@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Demostración de uso de Arreglos en Java.
- * 
+ * <p>
  * Conceptos:
  * - Atributo .length.
  * - Verificación automática de límites (ArrayIndexOutOfBoundsException).

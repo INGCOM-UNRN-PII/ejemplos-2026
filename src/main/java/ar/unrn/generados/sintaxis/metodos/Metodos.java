@@ -2,7 +2,7 @@ package ar.unrn.generados.sintaxis.metodos;
 
 /**
  * Ejemplo sobre la definición e invocación de métodos en Java.
- * 
+ * <p>
  * Conceptos clave:
  * - Firma del método: nombre + parámetros.
  * - Sobrecarga: mismos nombres, distintas firmas.
@@ -32,7 +32,7 @@ public class Metodos {
     }
 
     // --- Sobrecarga de métodos ---
-    
+
     public static int sumar(int a, int b) {
         return a + b;
     }

@@ -36,9 +36,9 @@ public class TelemetriaApp {
         System.out.println("Lecturas: " + Arrays.toString(lecturas));
         System.out.println("Factores: " + Arrays.toString(factores));
         System.out.println("Capacidad esperada: " + capacidad);
-        
+
         String[] resultado = Telemetria.normalizarTelemetria(lecturas, factores, capacidad);
-        
+
         System.out.println("Resultado normalizado: " + Arrays.toString(resultado));
         System.out.println("----------------------------------------------");
     }

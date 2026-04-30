@@ -2,12 +2,12 @@ package ar.unrn.generados.patrones.singleton;
 
 /**
  * Implementación del patrón de diseño Singleton.
- * 
- * Este patrón garantiza que una clase tenga una única instancia 
- * y proporciona un punto de acceso global a ella. 
- * Es útil para representar recursos únicos del sistema, como un gestor de 
+ * <p>
+ * Este patrón garantiza que una clase tenga una única instancia
+ * y proporciona un punto de acceso global a ella.
+ * Es útil para representar recursos únicos del sistema, como un gestor de
  * base de datos, un pool de conexiones o un gestor de configuración.
- * 
+ * <p>
  * En C, algo similar se lograba mediante variables estáticas globales en un
  * módulo (archivo .c) que no se exportaban fuera del mismo.
  */
@@ -52,7 +52,7 @@ public class PatronSingleton {
 
         // Intentamos obtener otra instancia.
         PatronSingleton s2 = PatronSingleton.getInstancia();
-        
+
         // Verificamos que ambas referencias apuntan al MISMO objeto.
         if (s1 == s2) {
             System.out.println("Ambos objetos son la misma instancia (mismo espacio de memoria).");

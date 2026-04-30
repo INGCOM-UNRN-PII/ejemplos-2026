@@ -19,6 +19,7 @@ public class Combatiente {
      * Comportamiento: Ataca a otro combatiente.
      * En lugar de preguntar por el arma y el daño, el combatiente simplemente "le dice"
      * al arma que dispare y al oponente que reciba el daño.
+     *
      * @param oponente el combatiente al cual atacar.
      */
     public void atacar(Combatiente oponente) {

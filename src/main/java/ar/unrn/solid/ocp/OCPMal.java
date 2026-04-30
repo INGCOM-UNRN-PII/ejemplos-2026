@@ -1,7 +1,7 @@
 package ar.unrn.solid.ocp;
 
 /**
- * VIOLACIÓN OCP: Si queremos agregar una nueva forma (Triángulo), 
+ * VIOLACIÓN OCP: Si queremos agregar una nueva forma (Triángulo),
  * debemos modificar esta clase agregando otro 'if' o 'switch'.
  */
 class GeneradorAreaMal {
@@ -17,5 +17,10 @@ class GeneradorAreaMal {
     }
 }
 
-class RectanguloMal { public double ancho, alto; }
-class CirculoMal { public double radio; }
+class RectanguloMal {
+    public double ancho, alto;
+}
+
+class CirculoMal {
+    public double radio;
+}

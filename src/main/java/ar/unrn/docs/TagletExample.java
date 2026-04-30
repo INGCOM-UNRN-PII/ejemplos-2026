@@ -1,4 +1,4 @@
-package ar.unrn.dos.docs;
+package ar.unrn.docs;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -20,11 +20,11 @@ import java.util.Objects;
  *
  * @author Tu Nombre
  * @version 1.0.1
- * @since 2023-10-27
  * @see java.lang.Object
  * @see #MAX_VALUE
  * @see #TagletExample(String, int)
  * @see #calculateSum(int, int)
+ * @since 2023-10-27
  * @deprecated Esta clase es solo para fines de demostración y no debe usarse en producción.
  */
 @Deprecated
@@ -61,6 +61,7 @@ public class TagletExample {
      *
      * @param name  El nombre que se asignará a esta instancia. No puede ser {@code null}.
      * @param value El valor inicial para esta instancia.
+     *
      * @throws IllegalArgumentException Si el nombre proporcionado es {@code null} o vacío.
      * @see #instanceCount
      * @see #MAX_VALUE
@@ -80,6 +81,7 @@ public class TagletExample {
      *
      * @param a El primer sumando.
      * @param b El segundo sumando.
+     *
      * @return La suma de {@code a} y {@code b}.
      * @see #subtract(int, int)
      */
@@ -92,6 +94,7 @@ public class TagletExample {
      *
      * @param a El minuendo.
      * @param b El sustraendo.
+     *
      * @return La diferencia entre {@code a} y {@code b}.
      */
     public int subtract(int a, int b) {
@@ -103,6 +106,7 @@ public class TagletExample {
      * Este método demuestra el uso del taglet {@code @throws}.
      *
      * @param input El valor de entrada a procesar.
+     *
      * @throws IOException Si el valor de entrada es mayor que {@link #MAX_VALUE}.
      *                     Esto simula una condición de error que podría ocurrir en una operación de E/S.
      * @deprecated Este método está obsoleto; use {@link #processValueSafely(int)} en su lugar.
@@ -120,8 +124,9 @@ public class TagletExample {
      * En su lugar, devuelve un booleano indicando el éxito.
      *
      * @param input El valor de entrada a procesar.
+     *
      * @return {@code true} si el valor fue procesado con éxito (no excede {@link #MAX_VALUE}),
-     *         {@code false} en caso contrario.
+     * {@code false} en caso contrario.
      * @since 1.0.1
      */
     public boolean processValueSafely(int input) {
@@ -146,6 +151,7 @@ public class TagletExample {
      * Establece un nuevo nombre para esta instancia.
      *
      * @param name El nuevo nombre. No puede ser {@code null} o vacío.
+     *
      * @throws IllegalArgumentException Si el nombre es {@code null} o vacío.
      */
     public void setName(String name) {
@@ -189,6 +195,7 @@ public class TagletExample {
      * y es un objeto {@code TagletExample} que tiene el mismo {@link #name} y {@link #value}.
      *
      * @param otro El objeto a comparar con este {@code TagletExample}.
+     *
      * @return {@code true} si los objetos son iguales; {@code false} en caso contrario.
      * @see java.lang.Object#equals(Object)
      */
@@ -202,7 +209,7 @@ public class TagletExample {
         }
         if (otro instanceof TagletExample o) {
             return value == o.value && Objects.equals(name, o.name);
-        }else{
+        } else {
             return false;
         }
     }
@@ -228,9 +235,9 @@ public class TagletExample {
     @Override
     public String toString() {
         return "TagletExample{" +
-               "name='" + name + '\'' +
-               ", value=" + value +
-               '}';
+                "name='" + name + '\'' +
+                ", value=" + value +
+                '}';
     }
 
     /**
@@ -264,6 +271,7 @@ public class TagletExample {
          * Procesa un elemento dado.
          *
          * @param item El elemento a procesar.
+         *
          * @return {@code true} si el procesamiento fue exitoso, {@code false} en caso contrario.
          */
         boolean process(T item);

@@ -78,6 +78,7 @@ public class ObjetoSimple {
      * </p>
      *
      * @param objeto el objeto con el que se va a comparar.
+     *
      * @return {@code true} si el objeto especificado es igual a este
      * {@code ObjetoSimple}; {@code false} en caso contrario.
      */

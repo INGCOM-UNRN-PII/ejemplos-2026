@@ -9,6 +9,7 @@ public class UtilidadesListas {
 
     /**
      * Método genérico que imprime cualquier lista.
+     *
      * @param lista la lista a imprimir.
      */
     public static void imprimirLista(List<?> lista) {
@@ -20,7 +21,9 @@ public class UtilidadesListas {
 
     /**
      * Upper Bounded Wildcard: Acepta una lista de T o cualquier subclase de T.
+     *
      * @param lista lista de números.
+     *
      * @return la suma de los elementos como double.
      */
     public static double sumar(List<? extends Number> lista) {
@@ -34,6 +37,7 @@ public class UtilidadesListas {
     /**
      * Lower Bounded Wildcard: Acepta una lista de T o cualquier superclase de T.
      * Útil para "consumir" elementos y agregarlos a una lista.
+     *
      * @param lista lista donde se agregarán los números.
      */
     public static void agregarNumeros(List<? super Integer> lista) {

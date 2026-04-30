@@ -14,8 +14,17 @@ class ProcesadorPedido {
     }
 }
 
-class EmailService { void enviar(String msg) { System.out.println("Enviando email: " + msg); } }
-class SqlDatabase { void guardar(String data) { System.out.println("Guardando en SQL: " + data); } }
+class EmailService {
+    void enviar(String msg) {
+        System.out.println("Enviando email: " + msg);
+    }
+}
+
+class SqlDatabase {
+    void guardar(String data) {
+        System.out.println("Guardando en SQL: " + data);
+    }
+}
 
 /**
  * Ejemplo 2: Intimidad inapropiada.

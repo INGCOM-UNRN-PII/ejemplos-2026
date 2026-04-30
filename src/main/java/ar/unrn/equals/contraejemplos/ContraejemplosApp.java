@@ -44,9 +44,9 @@ public class ContraejemplosApp {
         }
 
         conjunto.add(mal1);
-        
+
         MalHashCode mal2 = new MalHashCode("ID-123");
-        
+
         System.out.println("Hemos creado dos objetos con el mismo ID: 'ID-123'");
         System.out.println("¿mal1.equals(mal2)?: " + mal1.equals(mal2));
 

@@ -34,5 +34,6 @@ public class FacturaRefactoring {
         System.out.println("*****************************");
     }
 
-    public record Item(String nombre, double precio) {}
+    public record Item(String nombre, double precio) {
+    }
 }

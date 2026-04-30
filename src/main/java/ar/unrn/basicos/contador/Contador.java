@@ -1,4 +1,4 @@
-package ar.unrn.uno;
+package ar.unrn.basicos.contador;
 
 /**
  * Clase que representa un contador con un límite máximo (tope).
@@ -30,6 +30,7 @@ public class Contador {
      * Incrementa la posición actual del contador en la distancia indicada.
      *
      * @param distancia La cantidad a incrementar. Debe ser estrictamente mayor que 0.
+     *
      * @return La nueva posición del contador tras el incremento.
      * @throws IllegalArgumentException si la distancia es negativa o cero,
      *                                  o si el incremento hace que la posición supere el tope.

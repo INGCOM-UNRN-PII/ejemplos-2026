@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 
 /**
  * Introducción a la Programación Funcional en Java.
- * 
- * A partir de Java 8, el lenguaje incorporó Lambdas y la API de Streams. 
+ * <p>
+ * A partir de Java 8, el lenguaje incorporó Lambdas y la API de Streams.
  * Esto nos permite pasar de un estilo imperativo (¿cómo hacerlo?)
  * a uno declarativo (¿qué queremos obtener?).
- * 
+ * <p>
  * Conceptos clave:
  * - Lambdas: Funciones anónimas que se pueden pasar como parámetros.
  * - Streams: Una secuencia de elementos que admite operaciones de agregación.
@@ -36,9 +36,9 @@ public class ProgramacionFuncional {
         // Usamos filter(), map() y forEach().
         System.out.println("\n--- Streams: Filtrado y Transformación ---");
         nombres.stream()
-               .filter(n -> n.startsWith("A"))    // Predicado: Filtra elementos
-               .map(String::toUpperCase)          // Transformación: Convierte a mayúsculas
-               .forEach(System.out::println);     // Operación Terminal: Imprime
+                .filter(n -> n.startsWith("A"))    // Predicado: Filtra elementos
+                .map(String::toUpperCase)          // Transformación: Convierte a mayúsculas
+                .forEach(System.out::println);     // Operación Terminal: Imprime
 
         // 3. Collect: Transformar el Stream de vuelta a una Colección
         // Útil cuando necesitás el resultado en una nueva lista.
@@ -58,11 +58,11 @@ public class ProgramacionFuncional {
         // 5. Streams Numéricos
         // Permiten realizar operaciones matemáticas eficientes (sum, average, max).
         List<Integer> notas = Arrays.asList(8, 4, 9, 2, 10, 5, 7);
-        
+
         double promedio = notas.stream()
-                               .mapToInt(Integer::intValue) // Unboxing de Integer a int
-                               .average()
-                               .orElse(0.0);
+                .mapToInt(Integer::intValue) // Unboxing de Integer a int
+                .average()
+                .orElse(0.0);
 
         System.out.println("\nPromedio de notas: " + promedio);
 

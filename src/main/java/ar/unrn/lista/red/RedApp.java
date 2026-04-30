@@ -26,7 +26,7 @@ public class RedApp {
         System.out.println("\n3. Obteniendo una copia inmutable de los nodos:");
         List<String> copiaNodos = miRed.obtenerNodosInmutables();
         System.out.println("   - Contenido de la copia: " + copiaNodos);
-        
+
         try {
             // Intentar modificar la copia inmutable lanzará una excepción
             copiaNodos.add("Nodo D");
@@ -41,7 +41,7 @@ public class RedApp {
         String nodoRemovido = miRed.removerPrimerNodo();
         System.out.println("   - Nodo removido del principio: " + nodoRemovido);
         System.out.println("   - Cantidad de nodos restantes: " + miRed.obtenerCantidadDeNodos());
-        
+
         miRed.vaciarRed();
         System.out.println("   - Red después de vaciarla. ¿Está vacía? " + miRed.estaVacia());
     }

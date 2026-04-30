@@ -29,8 +29,8 @@ public final class Rectangulo implements FiguraGeometrica {
     @Override
     public Rectangulo trasladar(double dx, double dy) {
         return new Rectangulo(
-            verticeInferior.trasladar(dx, dy), 
-            verticeOpuesto.trasladar(dx, dy)
+                verticeInferior.trasladar(dx, dy),
+                verticeOpuesto.trasladar(dx, dy)
         );
     }
 
@@ -42,8 +42,8 @@ public final class Rectangulo implements FiguraGeometrica {
     @Override
     public Rectangulo rotar(Punto centro, double anguloRadianes) {
         return new Rectangulo(
-            verticeInferior.rotar(centro, anguloRadianes),
-            verticeOpuesto.rotar(centro, anguloRadianes)
+                verticeInferior.rotar(centro, anguloRadianes),
+                verticeOpuesto.rotar(centro, anguloRadianes)
         );
     }
 

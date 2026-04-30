@@ -1,6 +1,8 @@
 package ar.unrn.equals.problemas.rendimiento;
+
 import java.util.HashMap;
 import java.util.Map;
+
 public class ComparativaRendimientoHash {
     public static void main(String[] args) {
         System.out.println("--- Comparativa Rendimiento ---");

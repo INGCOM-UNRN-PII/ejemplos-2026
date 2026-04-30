@@ -20,15 +20,21 @@ public final class Empleado extends Persona {
 
     @Override
     public boolean equals(Object otro) {
-        if (this == otro) return true;
-        if (otro == null || getClass() != otro.getClass()) return false;
-        if (!super.equals(otro)) return false;
+        if (this == otro) {
+            return true;
+        }
+        if (otro == null || getClass() != otro.getClass()) {
+            return false;
+        }
+        if (!super.equals(otro)) {
+            return false;
+        }
         Empleado empleado = (Empleado) otro;
         return Objects.equals(legajo, empleado.legajo);
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(super.hashCode(), legajo);
     }
 

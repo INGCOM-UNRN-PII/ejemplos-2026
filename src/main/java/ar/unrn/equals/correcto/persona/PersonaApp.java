@@ -30,19 +30,19 @@ public class PersonaApp {
 
         System.out.println("\n--- 2. Pruebas de colecciones (hashCode) ---");
         Set<Persona> grupo = new HashSet<>();
-        
+
         System.out.println("Agregando p1 al HashSet...");
         grupo.add(p1);
-        
+
         System.out.println("¿El HashSet contiene a p1?: " + grupo.contains(p1));
-        
+
         // p2 es una instancia distinta en memoria, pero lógicamente igual a p1
         System.out.println("¿El HashSet contiene a p2? (Distinta instancia, mismos datos): " + grupo.contains(p2) + " (¡Correcto! Lo encuentra porque hashCode y equals están bien implementados)");
-        
+
         System.out.println("Agregando p2 al HashSet...");
         boolean agregado = grupo.add(p2);
         System.out.println("¿Se agregó p2? (HashSet no permite duplicados): " + agregado + " (No se agregó, reconoce que ya existe)");
-        
+
         System.out.println("Tamaño del HashSet: " + grupo.size() + " (Debería ser 1)");
     }
 }

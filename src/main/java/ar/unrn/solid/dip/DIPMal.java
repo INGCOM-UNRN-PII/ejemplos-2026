@@ -17,5 +17,7 @@ class InterruptorMal {
 }
 
 class VentiladorMal {
-    public void encender() { System.out.println("Ventilador encendido"); }
+    public void encender() {
+        System.out.println("Ventilador encendido");
+    }
 }

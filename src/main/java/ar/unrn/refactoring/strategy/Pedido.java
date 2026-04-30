@@ -1,7 +1,7 @@
 package ar.unrn.refactoring.strategy;
 
 public class Pedido {
-    public enum TipoEnvio { ESTANDAR, EXPRESS, INTERNACIONAL }
+    public enum TipoEnvio {ESTANDAR, EXPRESS, INTERNACIONAL}
 
     private TipoEnvio tipo;
     private double peso;
