@@ -77,6 +77,7 @@ class GeometriaTest {
 
         assertEquals(6.0, triangulo.calcularArea(), DELTA);
         assertEquals(12.0, triangulo.calcularPerimetro(), DELTA);
+    }
 
     @Test
     @DisplayName("Punto: Rotación")
