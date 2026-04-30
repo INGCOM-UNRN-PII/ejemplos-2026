@@ -3,20 +3,20 @@ package ar.unrn.genericos;
 import java.util.List;
 
 /**
- * Ejemplo de Recursive Type Bound.
- * Útil para asegurar que un tipo T sea comparable con objetos de su mismo tipo.
+ * Clase que proporciona una utilidad para encontrar el elemento máximo
+ * en una lista de objetos que implementan Comparable.
+ * Este es un ejemplo de Recursive Type Bound.
  */
 public class ComparadorMaximo {
 
     /**
      * Encuentra el máximo en una lista de elementos comparables.
-     * T debe extender de Comparable<? super T>.
-     *
-     * @param lista lista de elementos.
-     * @param <T>   el tipo de los elementos, que debe ser Comparable.
-     *
-     * @return el elemento máximo.
-     * @throws IllegalArgumentException si la lista está vacía.
+     * T debe extender de Comparable{@code <? super T>}.
+     * 
+     * @param <T>    el tipo de los elementos, que debe ser Comparable.
+     * @param lista la lista de elementos.
+     * @return el elemento máximo de la lista.
+     * @throws IllegalArgumentException si la lista es nula o está vacía.
      */
     public static <T extends Comparable<? super T>> T encontrarMaximo(List<T> lista) {
         if (lista == null || lista.isEmpty()) {

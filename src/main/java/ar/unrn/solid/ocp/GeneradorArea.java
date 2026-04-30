@@ -3,10 +3,17 @@ package ar.unrn.solid.ocp;
 import java.util.List;
 
 /**
- * OCP CUMPLIDO: Esta clase está cerrada a la modificación pero abierta a la extensión.
- * Si agregamos 'Triangulo', esta clase NO cambia.
+ * Clase responsable de calcular el área total de una colección de formas.
+ * Cumple con OCP al estar abierta a la extensión (nuevas formas) 
+ * pero cerrada a la modificación.
  */
 public class GeneradorArea {
+    /**
+     * Calcula la suma de las áreas de todas las formas en la lista.
+     * 
+     * @param formas la lista de objetos que implementan Forma.
+     * @return el área total acumulada.
+     */
     public double calcularAreaTotal(List<Forma> formas) {
         double total = 0;
         for (Forma forma : formas) {

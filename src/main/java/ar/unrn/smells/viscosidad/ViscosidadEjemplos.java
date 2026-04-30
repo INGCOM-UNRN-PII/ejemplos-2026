@@ -2,14 +2,20 @@ package ar.unrn.smells.viscosidad;
 
 /**
  * Ejemplo 1: Viscosidad de diseño.
- * Es tan difícil pasar un parámetro a través de 10 capas que el programador
- * usa un "atajo" (variable estática) para evitar el trabajo correcto.
+ * Fuente de datos compartida globalmente para evitar pasaje de parámetros.
  */
 class AtajoSucio {
+    /** Dato compartido globalmente. */
     public static String DATO_COMPARTIDO; // Usado para evitar pasar parámetros en un diseño rígido
 }
 
+/**
+ * Clase que representa una capa profunda del sistema.
+ */
 class Capa10 {
+    /**
+     * Procesa una tarea utilizando el atajo global.
+     */
     public void procesar() {
         System.out.println("Procesando con atajo: " + AtajoSucio.DATO_COMPARTIDO);
     }
@@ -17,9 +23,13 @@ class Capa10 {
 
 /**
  * Ejemplo 2: Viscosidad por falta de abstracción.
- * El diseño obliga a manejar detalles de bajo nivel en todas partes.
  */
 class LoggerViscoso {
+    /**
+     * Simula el log de un mensaje manejando detalles de bajo nivel.
+     * 
+     * @param msg el mensaje a registrar.
+     */
     public void log(String msg) {
         // En lugar de llamar a logger.info(), el diseño obliga a cada clase
         // a manejar la apertura, escritura y cierre de archivos.

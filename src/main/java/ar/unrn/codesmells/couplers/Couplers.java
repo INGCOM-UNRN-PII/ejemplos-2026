@@ -1,71 +1,66 @@
 package ar.unrn.codesmells.couplers;
 
 /**
- * Couplers: Feature Envy, Inappropriate Intimacy, Incomplete Library Class, Message Chains, Middle Man.
+ * Clase que agrupa ejemplos de Code Smells de tipo "Couplers".
  */
 public class Couplers {
 }
 
-// 1. Feature Envy (Un método se interesa más por otra clase que por la propia)
+/** Cliente del sistema. */
 class Cliente {
-    public String obtenerDireccionCompleta() {
-        return "Calle 123, Ciudad";
-    }
+    /** @return dirección formateada. */
+    public String obtenerDireccionCompleta() { return "Calle 123, Ciudad"; }
 }
 
+/** Clase con "Feature Envy" hacia Cliente. */
 class Impresora {
+    /** @param c el cliente a imprimir. */
     public void imprimirEtiqueta(Cliente c) {
-        // En lugar de que Cliente sepa imprimirse, Impresora extrae todo
         System.out.println("Destino: " + c.obtenerDireccionCompleta());
     }
 }
 
-// 2. Message Chains (a.getB().getC()...)
-class Motor {
-    String getSerie() {
-        return "SN123";
-    }
+/** Componente de un auto. */
+class Motor { 
+    /** @return número de serie. */
+    String getSerie() { return "SN123"; } 
 }
-
-class Auto {
-    Motor getMotor() {
-        return new Motor();
-    }
+/** Representa un automóvil. */
+class Auto { 
+    /** @return el motor del auto. */
+    Motor getMotor() { return new Motor(); } 
 }
-
+/** Clase que viola la Ley de Demeter (Message Chains). */
 class Persona {
-    Auto getAuto() {
-        return new Auto();
-    }
-
+    /** @return el auto de la persona. */
+    Auto getAuto() { return new Auto(); }
+    /** Muestra la serie del motor navegando por la cadena. */
     void mostrarSerie() {
-        // Cadena de mensajes: viola la Ley de Demeter
         System.out.println(this.getAuto().getMotor().getSerie());
     }
 }
 
-// 3. Middle Man (Una clase que solo delega)
-class Trabajador {
-    void trabajar() {
-    }
+/** Clase que solo delega (Middle Man). */
+class Trabajador { 
+    /** Realiza el trabajo. */
+    void trabajar() {} 
 }
-
+/** Intermediario sin valor agregado. */
 class Jefe {
-    Trabajador t = new Trabajador();
-
-    public void trabajar() {
-        t.trabajar();
-    } // Solo delega, no agrega valor
+    private Trabajador t = new Trabajador();
+    /** Delega el trabajo. */
+    public void trabajar() { t.trabajar(); }
 }
 
-// 4. Inappropriate Intimacy
+/** Clase con visibilidad excesiva (Inappropriate Intimacy). */
 class ClaseA {
+    /** Campo público que debería ser privado. */
     public int secretoInterno = 42;
 }
-
+/** Clase que accede a la intimidad de otra. */
 class ClaseB {
+    /** @param a instancia de ClaseA. */
     void chusmear(ClaseA a) {
-        // Acceso directo a campos que deberían ser privados
         int x = a.secretoInterno;
     }
 }

@@ -1,18 +1,33 @@
 package ar.unrn.refactoring.strategy;
 
+/**
+ * Representa un pedido que calcula su costo de envío.
+ * Ejemplo para refactorizar Type Code a Strategy.
+ */
 public class Pedido {
-    public enum TipoEnvio {ESTANDAR, EXPRESS, INTERNACIONAL}
+    /** Tipos de envío disponibles. */
+    public enum TipoEnvio { ESTANDAR, EXPRESS, INTERNACIONAL }
 
     private TipoEnvio tipo;
     private double peso;
 
+    /**
+     * Crea un nuevo pedido.
+     * 
+     * @param tipo el tipo de envío seleccionado.
+     * @param peso el peso del paquete en kilogramos.
+     */
     public Pedido(TipoEnvio tipo, double peso) {
         this.tipo = tipo;
         this.peso = peso;
     }
 
     /**
+     * Calcula el costo de envío basado en el tipo y peso.
      * MÉTODO A REFACTORIZAR: Lógica de negocio atada a un enum dentro de la clase.
+     * 
+     * @return el costo total del envío.
+     * @throws IllegalArgumentException si el tipo de envío es desconocido.
      */
     public double calcularCostoEnvio() {
         switch (tipo) {

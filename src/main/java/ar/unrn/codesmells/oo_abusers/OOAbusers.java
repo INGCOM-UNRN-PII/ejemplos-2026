@@ -1,52 +1,68 @@
 package ar.unrn.codesmells.oo_abusers;
 
 /**
- * OO Abusers: Switch Statements, Refused Bequest, Alternative Classes with Different Interfaces, Temporary Field.
+ * Clase que agrupa ejemplos de Code Smells de tipo "OO Abusers".
  */
 public class OOAbusers {
-
-    // 1. Switch Statements (complejos/repetidos)
+    
+    /**
+     * Calcula la comisión basada en el tipo de venta (Switch Statement).
+     * 
+     * @param tipo  categoría de la venta.
+     * @param venta importe de la venta.
+     * @return comisión calculada.
+     */
     public double calcularComision(String tipo, double venta) {
         switch (tipo) {
-            case "ORO":
-                return venta * 0.1;
-            case "PLATA":
-                return venta * 0.05;
-            default:
-                return 0;
+            case "ORO": return venta * 0.1;
+            case "PLATA": return venta * 0.05;
+            default: return 0;
         }
     }
 }
 
-// 2. Refused Bequest (La subclase no quiere lo que hereda)
+/**
+ * Superclase para pájaros.
+ */
 class Pajaro {
-    public void volar() {
-        System.out.println("Volando...");
-    }
+    /** Realiza la acción de volar. */
+    public void volar() { System.out.println("Volando..."); }
 }
 
+/**
+ * Subclase que hereda pero rechaza el comportamiento de la base (Refused Bequest).
+ */
 class Avestruz extends Pajaro {
+    /**
+     * Las avestruces no vuelan.
+     * @throws UnsupportedOperationException siempre.
+     */
     @Override
     public void volar() {
         throw new UnsupportedOperationException("Las avestruces no vuelan");
     }
 }
 
-// 3. Alternative Classes with Different Interfaces
+/** Clase alternativa para lectura de JSON. */
 class LectorJson {
-    public void leerArchivo(String p) {
-    }
+    /** @param p ruta del archivo. */
+    public void leerArchivo(String p) {}
 }
-
+/** Clase alternativa para parseo de XML con diferente interfaz. */
 class XmlParser {
-    public void parsearDocumento(String f) {
-    }
+    /** @param f archivo XML. */
+    public void parsearDocumento(String f) {}
 }
 
-// 4. Temporary Field (campos que solo se usan en un proceso específico)
+/** Ejemplo de "Temporary Field". */
 class ProcesadorCalculo {
     private double resultadoTemporal; // Solo tiene valor mientras corre calcular()
-
+    
+    /** 
+     * Realiza un cálculo y muestra el resultado.
+     * @param a primer valor.
+     * @param b segundo valor.
+     */
     public void calcular(double a, double b) {
         resultadoTemporal = a * b;
         System.out.println(resultadoTemporal);

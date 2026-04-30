@@ -1,41 +1,48 @@
 package ar.unrn.codesmells.dispensables;
 
 /**
- * Dispensables: Comments, Duplicate Code, Data Class, Dead Code, Lazy Class, Speculative Generality.
+ * Clase que agrupa ejemplos de Code Smells de tipo "Dispensables".
  */
 public class Dispensables {
 
-    // 1. Comments (explicando lo obvio)
+    /**
+     * Incrementa un valor entero.
+     * @param i el valor a incrementar.
+     */
     public void incrementar(int i) {
-        // Incrementa i en uno
+        // Incrementa i en uno (Comentario redundante)
         i = i + 1;
     }
 
-    // 2. Dead Code (método que nadie usa)
-    private void esteMetodoNoSeUsaNunca() {
-    }
+    /** Código muerto: método que nunca se invoca. */
+    private void esteMetodoNoSeUsaNunca() {}
 
-    // 3. Speculative Generality
+    /** Ejemplo de generalidad especulativa. */
     public interface ProcesableJustInCase {
+        /** Método creado "por si acaso". */
         void procesarEnElFuturoSiEsNecesario();
     }
 }
 
-// 4. Data Class
+/** Clase de datos sin comportamiento (Data Class). */
 class UsuarioDatos {
+    /** Nombre del usuario. */
     public String nombre;
+    /** Correo electrónico del usuario. */
     public String email;
 }
 
-// 5. Duplicate Code
+/** Servicio con código duplicado. */
 class ServicioA {
+    /** Realiza el procesamiento. */
     void procesar() {
         System.out.println("Validando...");
         System.out.println("Procesando...");
     }
 }
-
+/** Otro servicio con código duplicado. */
 class ServicioB {
+    /** Realiza el procesamiento con lógica duplicada. */
     void procesar() {
         System.out.println("Validando..."); // Duplicado
         System.out.println("Ejecutando...");

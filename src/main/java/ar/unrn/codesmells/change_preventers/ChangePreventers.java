@@ -1,61 +1,49 @@
 package ar.unrn.codesmells.change_preventers;
 
 /**
- * Change Preventers: Divergent Change, Shotgun Surgery, Parallel Inheritance Hierarchies.
+ * Clase que agrupa ejemplos de Code Smells de tipo "Change Preventers".
  */
 public class ChangePreventers {
 }
 
-// 1. Divergent Change (Una clase cambia por muchas razones diferentes)
+/**
+ * Clase con "Divergent Change". Cambia por motivos de stock, impuestos o exportación.
+ */
 class Producto {
-    // Cambia si cambia la lógica de stock
-    public void actualizarStock() {
-    }
-
-    // Cambia si cambia la lógica de impuestos
-    public void calcularIva() {
-    }
-
-    // Cambia si cambia el formato de exportación
-    public void exportarXml() {
-    }
+    /** Actualiza las existencias en inventario. */
+    public void actualizarStock() {}
+    /** Calcula el impuesto al valor agregado. */
+    public void calcularIva() {}
+    /** Genera una representación XML del producto. */
+    public void exportarXml() {}
 }
 
-// 2. Shotgun Surgery (Un cambio requiere tocar muchas clases)
-class Logger {
-    // Si cambio la firma de log(), debo tocar ClaseA, ClaseB, ClaseC...
-    public void log(String msg) {
-    }
+/** Clase involucrada en "Shotgun Surgery". */
+class Logger { 
+    /** @param msg mensaje a loggear. */
+    public void log(String msg) {} 
+}
+/** Dependiente de Logger. */
+class ClaseA { 
+    /** Llama al logger. */
+    void f() { new Logger().log("A"); } 
+}
+/** Dependiente de Logger. */
+class ClaseB { 
+    /** Llama al logger. */
+    void g() { new Logger().log("B"); } 
 }
 
-class ClaseA {
-    void f() {
-        new Logger().log("A");
-    }
-}
+/** Superclase para empleados en jerarquía paralela. */
+abstract class Empleado {}
+/** Programador. */
+class Programador extends Empleado {}
+/** Gerente. */
+class Gerente extends Empleado {}
 
-class ClaseB {
-    void g() {
-        new Logger().log("B");
-    }
-}
-
-// 3. Parallel Inheritance Hierarchies
-// Al crear una nueva subclase de Empleado, hay que crear una de Seguro
-abstract class Empleado {
-}
-
-class Programador extends Empleado {
-}
-
-class Gerente extends Empleado {
-}
-
-abstract class Seguro {
-}
-
-class SeguroProgramador extends Seguro {
-}
-
-class SeguroGerente extends Seguro {
-}
+/** Superclase para seguros en jerarquía paralela. */
+abstract class Seguro {}
+/** Seguro para programador. */
+class SeguroProgramador extends Seguro {}
+/** Seguro para gerente. */
+class SeguroGerente extends Seguro {}

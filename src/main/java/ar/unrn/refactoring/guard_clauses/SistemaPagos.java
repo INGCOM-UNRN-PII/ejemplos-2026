@@ -1,9 +1,20 @@
 package ar.unrn.refactoring.guard_clauses;
 
+/**
+ * Clase responsable de gestionar pagos y reembolsos.
+ */
 public class SistemaPagos {
+    /**
+     * Calcula el monto de reembolso aplicando condiciones.
+     * MÉTODO A REFACTORIZAR: Anidamiento excesivo (Arrow Code) reemplazable por Guard Clauses.
+     * 
+     * @param esElegible   si el cliente califica para el reembolso.
+     * @param estaVencido  si la fecha de solicitud ha expirado.
+     * @param monto        el monto original del pago.
+     * @return el monto de reembolso calculado.
+     */
     public double obtenerMontoReembolso(boolean esElegible, boolean estaVencido, double monto) {
         double resultado;
-        // MÉTODO A REFACTORIZAR: Anidamiento excesivo (Arrow Code)
         if (esElegible) {
             if (!estaVencido) {
                 resultado = monto * 0.9;
