@@ -2,6 +2,10 @@ package ar.unrn.equals.problemas.inconsistencia;
 
 import java.util.Objects;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete muestra como un objeto mutable deja de ser ubicable cuando el hash cambia despues de haber sido insertado en una coleccion.
+ */
 class PuntoMutable {
     private int x, y;
 

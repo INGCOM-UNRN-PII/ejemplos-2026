@@ -3,7 +3,8 @@ package ar.unrn.refactoring.extract_method;
 import java.util.List;
 
 /**
- * Clase que contiene un método monolítico para ser refactorizado mediante Extract Method.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde un metodo grande se divide en pasos con nombre para volver explicita la intencion del codigo.
  */
 public class FacturaRefactoring {
     private String cliente;
@@ -45,10 +46,8 @@ public class FacturaRefactoring {
     }
 
     /**
-     * Representa un ítem individual de la factura.
-     * 
-     * @param nombre nombre del ítem.
-     * @param precio precio unitario del ítem.
+     * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+     * El paquete concentra un ejercicio donde un metodo grande se divide en pasos con nombre para volver explicita la intencion del codigo.
      */
     public record Item(String nombre, double precio) {}
 }

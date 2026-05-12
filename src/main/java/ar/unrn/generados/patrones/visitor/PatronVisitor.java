@@ -17,12 +17,20 @@ import java.util.List;
  */
 
 // 1. Interfaz que deben implementar todos los elementos visitables.
+/**
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
+ */
 interface Elemento {
     void aceptar(Visitante v);
 }
 
 // 2. Interfaz que define las operaciones del visitante.
 // Notá que hay un método por cada tipo concreto de elemento.
+/**
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
+ */
 interface Visitante {
     void visitar(LibroVisitado l);
 
@@ -30,7 +38,8 @@ interface Visitante {
 }
 
 /**
- * Elemento Concreto: Un Libro.
+ * Representa un participante concreto del patron Visitor y muestra como se reparte la responsabilidad entre elementos y visitantes.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
  */
 class LibroVisitado implements Elemento {
     private String titulo;
@@ -58,7 +67,8 @@ class LibroVisitado implements Elemento {
 }
 
 /**
- * Elemento Concreto: Un producto Electrónico.
+ * Representa un participante concreto del patron Visitor y muestra como se reparte la responsabilidad entre elementos y visitantes.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
  */
 class Electronico implements Elemento {
     private String nombre;
@@ -80,7 +90,8 @@ class Electronico implements Elemento {
 }
 
 /**
- * Visitante Concreto: Un Calculador de Impuestos.
+ * Representa un participante concreto del patron Visitor y muestra como se reparte la responsabilidad entre elementos y visitantes.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
  */
 class CalculadorImpuestos implements Visitante {
     private double totalImpuestos = 0;
@@ -103,6 +114,10 @@ class CalculadorImpuestos implements Visitante {
     }
 }
 
+/**
+ * Ejecuta la demostracion del patron Visitor y muestra como agregar operaciones nuevas sin editar la estructura visitada.
+ * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
+ */
 public class PatronVisitor {
 
     public static void main(String[] args) {

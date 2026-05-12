@@ -3,8 +3,8 @@ package ar.unrn.refactoring.parameter_object;
 import java.time.LocalDate;
 
 /**
- * Aplicación que demuestra el olor de Long Parameter List y su refactorización 
- * a Parameter Object.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete concentra un ejercicio donde varios parametros relacionados se agrupan para expresar una sola idea de negocio.
  */
 public class BusquedaApp {
 

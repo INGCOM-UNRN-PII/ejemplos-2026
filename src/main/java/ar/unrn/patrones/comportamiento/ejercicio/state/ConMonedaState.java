@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.ejercicio.state;
 
+/**
+ * Encapsula las reglas aplicables despues de insertar dinero, incluyendo la validacion de compra o devolucion.
+ * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
+ */
 public class ConMonedaState implements EstadoMaquina {
     private MaquinaExpendedora maquina;
 

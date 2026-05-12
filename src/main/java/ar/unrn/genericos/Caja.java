@@ -1,10 +1,8 @@
 package ar.unrn.genericos;
 
 /**
- * Ejemplo básico de una clase genérica con un solo parámetro de tipo.
- * Representa un contenedor que puede guardar un objeto de cualquier tipo.
- * 
- * @param <T> el tipo de objeto que esta caja puede contener.
+ * Modela un contenedor generico minimo y hace tangible como un mismo tipo puede reutilizarse con contenidos distintos sin casting.
+ * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class Caja<T> {
     private T contenido;

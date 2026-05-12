@@ -1,7 +1,8 @@
 package ar.unrn.smells.acoplamiento;
 
 /**
- * Aplicación de demostración para el olor de diseño: Acoplamiento.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 public class AcoplamientoApp {
     /**

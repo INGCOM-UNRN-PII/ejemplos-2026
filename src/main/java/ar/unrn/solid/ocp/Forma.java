@@ -1,8 +1,8 @@
 package ar.unrn.solid.ocp;
 
 /**
- * Interfaz que define el contrato para cualquier figura geométrica.
- * Ejemplo de cumplimiento del Open/Closed Principle (OCP).
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete esta orientado a explicar el principio abierto/cerrado: agregar comportamiento no deberia exigir reescribir la logica existente.
  */
 public interface Forma {
     /**

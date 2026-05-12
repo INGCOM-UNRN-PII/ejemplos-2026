@@ -1,8 +1,8 @@
 package ar.unrn.smells.fragilidad;
 
 /**
- * Representa una configuración compartida de forma estática.
- * Fuente potencial de fragilidad.
+ * Representa una pieza del ejemplo donde un cambio lateral puede romper comportamiento que parecia no relacionado.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class ConfiguracionGlobal {
     /** Tiempo de espera predeterminado en milisegundos. */
@@ -10,7 +10,8 @@ class ConfiguracionGlobal {
 }
 
 /**
- * Módulo que modifica de forma imprevista el estado global.
+ * Representa una pieza del ejemplo donde un cambio lateral puede romper comportamiento que parecia no relacionado.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class ModuloA {
     /**
@@ -22,7 +23,8 @@ class ModuloA {
 }
 
 /**
- * Módulo que depende de la consistencia del estado global.
+ * Representa una pieza del ejemplo donde un cambio lateral puede romper comportamiento que parecia no relacionado.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class ModuloB {
     /**
@@ -38,7 +40,8 @@ class ModuloB {
 }
 
 /**
- * Ejemplo 2: Fragilidad por herencia profunda.
+ * Representa una pieza del ejemplo donde un cambio lateral puede romper comportamiento que parecia no relacionado.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class Base {
     /**
@@ -55,7 +58,8 @@ class Base {
 }
 
 /**
- * Subclase que depende del funcionamiento interno de la clase base.
+ * Representa una pieza del ejemplo donde un cambio lateral puede romper comportamiento que parecia no relacionado.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class Derivada extends Base {
     /**

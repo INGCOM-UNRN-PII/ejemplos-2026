@@ -1,5 +1,9 @@
 package ar.unrn.herencia.superconstructor;
 
+/**
+ * Representa la parte base del modelo heredado y concentra el estado que toda especializacion necesita recibir por constructor.
+ * El paquete explica el uso de super en constructores para inicializar primero el estado heredado antes de completar la subclase.
+ */
 public class Dispositivo {
     private final String marca;
 

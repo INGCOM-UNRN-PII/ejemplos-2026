@@ -17,7 +17,8 @@ interface Buscable {
 }
 
 /**
- * Clase Libro que implementa la interfaz Buscable.
+ * Representa un participante del ejemplo de interfaces y deja visible como el cliente colabora con contratos en lugar de clases concretas.
+ * El paquete muestra interfaces y sus implementaciones para hacer visible como un contrato comun desacopla al cliente de las clases concretas.
  */
 class LibroBuscable implements Buscable {
     private String titulo;
@@ -42,7 +43,8 @@ class LibroBuscable implements Buscable {
 }
 
 /**
- * Demostración de Polimorfismo mediante interfaces.
+ * Representa un participante del ejemplo de interfaces y deja visible como el cliente colabora con contratos en lugar de clases concretas.
+ * El paquete muestra interfaces y sus implementaciones para hacer visible como un contrato comun desacopla al cliente de las clases concretas.
  */
 public class EjemploInterfaces {
     public static void main(String[] args) {

@@ -1,11 +1,8 @@
 package ar.unrn.genericos;
 
 /**
- * Ejemplo de clase genérica con dos parámetros de tipo.
- * Útil para representar pares clave-valor inmutables.
- * 
- * @param <K> el tipo de la clave.
- * @param <V> el tipo del valor.
+ * Agrupa dos valores tipados y sirve para mostrar como los genericos mantienen juntas piezas relacionadas conservando seguridad de tipos.
+ * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class Par<K, V> {
     private final K clave;

@@ -1,8 +1,8 @@
 package ar.unrn.solid.isp;
 
 /**
- * Interfaz que define la capacidad de trabajar.
- * Ejemplo del Principio de Segregación de Interfaces (ISP).
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete usa estos tipos para mostrar que una interfaz debe exponer solo las operaciones que cada cliente realmente necesita.
  */
 public interface Trabajador {
     /**

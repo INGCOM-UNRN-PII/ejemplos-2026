@@ -1,8 +1,8 @@
 package ar.unrn.estaticos.contadorinstancias;
 
 /**
- * Clase de ejemplo para demostrar el uso de miembros estáticos (de clase)
- * en contraposición a los miembros de instancia (de objeto).
+ * Modela una pieza del ejemplo que comparte informacion de clase para mostrar cuando un dato deja de pertenecer a una sola instancia.
+ * El paquete usa miembros estaticos para mostrar como varias instancias pueden compartir informacion de clase y que costo conceptual tiene ese acoplamiento global.
  */
 public class ContadorInstancias {
 

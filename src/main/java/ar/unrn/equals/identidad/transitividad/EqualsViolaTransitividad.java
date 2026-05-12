@@ -1,5 +1,9 @@
 package ar.unrn.equals.identidad.transitividad;
 
+/**
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete demuestra que una definicion laxa de igualdad puede romper la transitividad y volver ambiguas las comparaciones encadenadas.
+ */
 public class EqualsViolaTransitividad {
     public static void main(String[] args) {
         System.out.println("--- Problema: Violación de Transitividad ---");

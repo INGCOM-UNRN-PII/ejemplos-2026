@@ -1,18 +1,25 @@
 package ar.unrn.codesmells.couplers;
 
 /**
- * Clase que agrupa ejemplos de Code Smells de tipo "Couplers".
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
  */
 public class Couplers {
 }
 
-/** Cliente del sistema. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Cliente {
     /** @return dirección formateada. */
     public String obtenerDireccionCompleta() { return "Calle 123, Ciudad"; }
 }
 
-/** Clase con "Feature Envy" hacia Cliente. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Impresora {
     /** @param c el cliente a imprimir. */
     public void imprimirEtiqueta(Cliente c) {
@@ -20,17 +27,26 @@ class Impresora {
     }
 }
 
-/** Componente de un auto. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Motor { 
     /** @return número de serie. */
     String getSerie() { return "SN123"; } 
 }
-/** Representa un automóvil. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Auto { 
     /** @return el motor del auto. */
     Motor getMotor() { return new Motor(); } 
 }
-/** Clase que viola la Ley de Demeter (Message Chains). */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Persona {
     /** @return el auto de la persona. */
     Auto getAuto() { return new Auto(); }
@@ -40,24 +56,36 @@ class Persona {
     }
 }
 
-/** Clase que solo delega (Middle Man). */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Trabajador { 
     /** Realiza el trabajo. */
     void trabajar() {} 
 }
-/** Intermediario sin valor agregado. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class Jefe {
     private Trabajador t = new Trabajador();
     /** Delega el trabajo. */
     public void trabajar() { t.trabajar(); }
 }
 
-/** Clase con visibilidad excesiva (Inappropriate Intimacy). */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class ClaseA {
     /** Campo público que debería ser privado. */
     public int secretoInterno = 42;
 }
-/** Clase que accede a la intimidad de otra. */
+/**
+ * Representa una pieza del ejemplo de acoplamiento y deja ver cuanta informacion ajena necesita conocer para cumplir su trabajo.
+ * El paquete concentra ejemplos de acoplamiento excesivo para hacer visible cuando una clase conoce demasiados detalles de las demas.
+ */
 class ClaseB {
     /** @param a instancia de ClaseA. */
     void chusmear(ClaseA a) {

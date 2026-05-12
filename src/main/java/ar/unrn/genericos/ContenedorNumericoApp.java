@@ -1,8 +1,8 @@
 package ar.unrn.genericos;
 
 /**
- * Aplicación de demostración para ContenedorNumerico.
- * Muestra el uso de tipos genéricos acotados (Upper Bounds).
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class ContenedorNumericoApp {
     

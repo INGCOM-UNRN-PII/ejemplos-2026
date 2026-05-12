@@ -1,8 +1,8 @@
 package ar.unrn.smells.rigidez;
 
 /**
- * Ejemplo 1: Lógica centralizada y rígida.
- * Agregar un nuevo tipo de reporte requiere modificar múltiples métodos en esta clase.
+ * Representa una pieza del ejemplo donde una modificacion puntual obliga a tocar varias clases relacionadas.
+ * El paquete muestra rigidez, donde una modificacion puntual obliga a tocar muchas clases relacionadas para mantener todo funcionando.
  */
 class GeneradorReporte {
     /**
@@ -32,7 +32,8 @@ class GeneradorReporte {
 }
 
 /**
- * Ejemplo 2: Dependencias en cadena (Rigidez ante el cambio de hardware).
+ * Representa una pieza del ejemplo donde una modificacion puntual obliga a tocar varias clases relacionadas.
+ * El paquete muestra rigidez, donde una modificacion puntual obliga a tocar muchas clases relacionadas para mantener todo funcionando.
  */
 class SistemaCaja {
     private ImpresoraFiscal impresora = new ImpresoraFiscal();
@@ -47,7 +48,8 @@ class SistemaCaja {
 }
 
 /**
- * Representa un modelo específico de impresora fiscal.
+ * Representa una pieza del ejemplo donde una modificacion puntual obliga a tocar varias clases relacionadas.
+ * El paquete muestra rigidez, donde una modificacion puntual obliga a tocar muchas clases relacionadas para mantener todo funcionando.
  */
 class ImpresoraFiscal {
     /**

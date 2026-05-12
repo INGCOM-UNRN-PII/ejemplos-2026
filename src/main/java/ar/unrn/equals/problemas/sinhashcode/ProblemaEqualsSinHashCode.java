@@ -3,6 +3,10 @@ package ar.unrn.equals.problemas.sinhashcode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete demuestra por que redefinir equals sin redefinir hashCode genera resultados inconsistentes en sets y mapas.
+ */
 public class ProblemaEqualsSinHashCode {
     @SuppressWarnings("EqualsHashCode")
     public static void main(String[] args) {

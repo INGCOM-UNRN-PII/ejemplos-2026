@@ -1,7 +1,8 @@
 package ar.unrn.solid.ocp;
 
 /**
- * Implementación de Forma para un Círculo.
+ * Representa una variante concreta del ejemplo y ayuda a ver si la extension del comportamiento exige o no tocar la logica existente.
+ * El paquete esta orientado a explicar el principio abierto/cerrado: agregar comportamiento no deberia exigir reescribir la logica existente.
  */
 public class Circulo implements Forma {
     private final double radio;

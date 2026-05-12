@@ -3,7 +3,8 @@ package ar.unrn.equals.contraejemplos;
 import java.util.Objects;
 
 /**
- * Contraejemplo 1: Sobrecargar equals en lugar de sobreescribirlo.
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete reúne contraejemplos clasicos del protocolo equals/hashCode para que el error se vea de forma concreta antes de discutir la solucion.
  */
 public class SobrecargaEquals {
     private String valor;

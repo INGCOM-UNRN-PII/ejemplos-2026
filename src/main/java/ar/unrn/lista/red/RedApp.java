@@ -3,8 +3,8 @@ package ar.unrn.dos.lista.red;
 import java.util.List;
 
 /**
- * Aplicación de consola para demostrar el uso de la clase Red y sus
- * operaciones con listas.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete modela una red simple enlazada entre objetos para practicar colaboracion sin centralizar toda la logica en una sola clase.
  */
 public class RedApp {
 

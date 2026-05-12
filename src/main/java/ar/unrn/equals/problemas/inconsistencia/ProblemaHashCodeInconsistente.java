@@ -5,7 +5,8 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
- * Ejemplo de objetos que desaparecen de un Set por mutabilidad en hashCode.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra como un objeto mutable deja de ser ubicable cuando el hash cambia despues de haber sido insertado en una coleccion.
  */
 public class ProblemaHashCodeInconsistente {
 

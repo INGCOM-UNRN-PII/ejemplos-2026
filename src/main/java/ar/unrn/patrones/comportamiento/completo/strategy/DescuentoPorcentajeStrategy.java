@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.completo.strategy;
 
+/**
+ * Implementa una politica basada en porcentaje y mantiene aislada la formula para que pueda reemplazarse sin tocar el cliente.
+ * El paquete usa Strategy para encapsular distintas politicas de descuento y permitir elegirlas sin reescribir el carrito.
+ */
 public class DescuentoPorcentajeStrategy implements DescuentoStrategy {
     private final double porcentaje;
 

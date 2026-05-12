@@ -16,6 +16,10 @@ class InterruptorMal {
     }
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete explica el principio de inversion de dependencias separando las politicas de alto nivel de los detalles concretos que realizan el trabajo.
+ */
 class VentiladorMal {
     public void encender() {
         System.out.println("Ventilador encendido");

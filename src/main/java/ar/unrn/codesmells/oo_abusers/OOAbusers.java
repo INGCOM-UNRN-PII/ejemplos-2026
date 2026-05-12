@@ -1,7 +1,8 @@
 package ar.unrn.codesmells.oo_abusers;
 
 /**
- * Clase que agrupa ejemplos de Code Smells de tipo "OO Abusers".
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
  */
 public class OOAbusers {
     
@@ -22,7 +23,8 @@ public class OOAbusers {
 }
 
 /**
- * Superclase para pájaros.
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
  */
 class Pajaro {
     /** Realiza la acción de volar. */
@@ -30,7 +32,8 @@ class Pajaro {
 }
 
 /**
- * Subclase que hereda pero rechaza el comportamiento de la base (Refused Bequest).
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
  */
 class Avestruz extends Pajaro {
     /**
@@ -43,18 +46,27 @@ class Avestruz extends Pajaro {
     }
 }
 
-/** Clase alternativa para lectura de JSON. */
+/**
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
+ */
 class LectorJson {
     /** @param p ruta del archivo. */
     public void leerArchivo(String p) {}
 }
-/** Clase alternativa para parseo de XML con diferente interfaz. */
+/**
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
+ */
 class XmlParser {
     /** @param f archivo XML. */
     public void parsearDocumento(String f) {}
 }
 
-/** Ejemplo de "Temporary Field". */
+/**
+ * Representa una pieza del ejemplo donde la orientacion a objetos se usa de forma poco expresiva y termina escondiendo el problema real.
+ * El paquete muestra abusos de orientacion a objetos donde la jerarquia o la abstraccion terminan escondiendo un diseño poco expresivo.
+ */
 class ProcesadorCalculo {
     private double resultadoTemporal; // Solo tiene valor mientras corre calcular()
     

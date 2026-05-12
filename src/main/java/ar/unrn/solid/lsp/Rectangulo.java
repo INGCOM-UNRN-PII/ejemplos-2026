@@ -1,7 +1,8 @@
 package ar.unrn.solid.lsp;
 
 /**
- * Implementación de FiguraLSP para un Rectángulo.
+ * Representa uno de los tipos concretos de la jerarquia y permite discutir si puede sustituir al tipo base sin romper expectativas.
+ * El paquete discute el principio de sustitucion de Liskov y muestra cuando una subclase deja de comportarse como su tipo base promete.
  */
 public class Rectangulo implements FiguraLSP {
     private final int ancho;

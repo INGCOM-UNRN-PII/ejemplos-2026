@@ -1,7 +1,8 @@
 package ar.unrn.generados.parciales;
 
 /**
- * Clase que contiene la lógica para la normalización resiliente de datos de telemetría.
+ * Representa una pieza del ejercicio de telemetria y concentra la logica necesaria para procesar o ejecutar el escenario de datos.
+ * El paquete concentra un ejercicio de telemetria donde interesa mostrar normalizacion de datos y manejo explicito de anomalias de entrada.
  */
 public class Telemetria {
 

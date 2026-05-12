@@ -1,8 +1,8 @@
 package ar.unrn.smells.acoplamiento;
 
 /**
- * Ejemplo 1: Acoplamiento fuerte por dependencia de clases concretas.
- * ProcesadorPedido está atado a EmailService y SqlDatabase.
+ * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class ProcesadorPedido {
     private EmailService emailService = new EmailService();
@@ -20,7 +20,8 @@ class ProcesadorPedido {
 }
 
 /**
- * Servicio simulado para envío de correos electrónicos.
+ * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class EmailService { 
     /**
@@ -32,7 +33,8 @@ class EmailService {
 }
 
 /**
- * Servicio simulado para persistencia en base de datos SQL.
+ * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class SqlDatabase { 
     /**
@@ -44,8 +46,8 @@ class SqlDatabase {
 }
 
 /**
- * Ejemplo 2: Intimidad inapropiada.
- * Representa un auto con campos públicos que exponen su estado interno.
+ * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class Auto {
     /** Temperatura del agua del motor. */
@@ -55,7 +57,8 @@ class Auto {
 }
 
 /**
- * Motor que manipula directamente el estado interno de la clase Auto.
+ * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
+ * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class Motor {
     /**

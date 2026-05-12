@@ -1,5 +1,9 @@
 package ar.unrn.equals.problemas.simetria;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete concentra un ejemplo minimo donde equals acepta comparar contra tipos ajenos y por eso rompe la simetria del contrato.
+ */
 class Usuario {
     private String login;
 

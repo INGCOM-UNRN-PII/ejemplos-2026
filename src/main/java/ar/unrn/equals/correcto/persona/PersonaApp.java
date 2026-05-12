@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Aplicación de consola para demostrar el uso correcto de equals() y hashCode()
- * utilizando la clase Persona.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete usa este tipo para mostrar una implementacion correcta de equals y hashCode, donde la identidad se apoya en atributos estables y en una comparacion coherente.
  */
 public class PersonaApp {
 

@@ -1,8 +1,8 @@
 package ar.unrn.patrones.estructurales.bridge;
 
 /**
- * La clase "Abstracción".
- * Mantiene una referencia al implementador (el "Bridge" o Puente).
+ * Representa la abstraccion del patron Bridge y concentra la idea de enviar una notificacion sin fijar todavia el canal concreto.
+ * El paquete usa Bridge para separar la abstraccion de notificacion del mecanismo concreto con el que el mensaje se entrega.
  */
 public abstract class Notification {
     protected MessageSender sender;

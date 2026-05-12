@@ -1,5 +1,9 @@
 package ar.unrn.equals.identidad.consistencia_equals;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete expone por que equals debe ser consistente entre invocaciones sucesivas mientras los objetos no cambian de estado relevante.
+ */
 public class PersonaMutable {
     private String nombre;
 

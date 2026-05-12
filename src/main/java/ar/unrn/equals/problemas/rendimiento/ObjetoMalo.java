@@ -1,5 +1,9 @@
 package ar.unrn.equals.problemas.rendimiento;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete compara objetos con estrategias de hash distintas para conectar la calidad del hash con el costo de busqueda.
+ */
 public class ObjetoMalo {
     private final int id;
 

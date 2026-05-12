@@ -1,5 +1,9 @@
 package ar.unrn.patrones.integracion.smarthome;
 
+/**
+ * Modela un observador concreto que traduce los eventos del hogar a notificaciones entendibles por un usuario final.
+ * El paquete integra varios patrones en un mismo escenario de hogar inteligente para mostrar colaboracion entre dispositivos, observadores, mediadores y decoradores.
+ */
 public class MobileApp implements HomeObserver {
     private String userName;
 

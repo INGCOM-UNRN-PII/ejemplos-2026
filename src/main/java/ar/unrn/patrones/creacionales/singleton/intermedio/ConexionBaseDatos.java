@@ -1,8 +1,8 @@
 package ar.unrn.patrones.creacionales.singleton.intermedio;
 
 /**
- * Ejemplo intermedio de Singleton utilizando Double-Checked Locking.
- * Es seguro para hilos y eficiente.
+ * Centraliza el acceso a una unica instancia compartida para que el resto del codigo no cree copias inconsistentes del mismo recurso.
+ * El paquete amplia Singleton con una implementacion mas realista que centraliza un recurso compartido por toda la aplicacion.
  */
 public class ConexionBaseDatos {
     private static volatile ConexionBaseDatos instancia;

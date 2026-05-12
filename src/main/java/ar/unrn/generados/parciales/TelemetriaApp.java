@@ -3,7 +3,8 @@ package ar.unrn.generados.parciales;
 import java.util.Arrays;
 
 /**
- * Aplicación principal para demostrar el funcionamiento de la clase Telemetria.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete concentra un ejercicio de telemetria donde interesa mostrar normalizacion de datos y manejo explicito de anomalias de entrada.
  */
 public class TelemetriaApp {
 

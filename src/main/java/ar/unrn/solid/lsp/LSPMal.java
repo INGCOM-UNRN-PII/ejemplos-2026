@@ -1,8 +1,8 @@
 package ar.unrn.solid.lsp;
 
 /**
- * VIOLACIÓN LSP: Un cuadrado NO es un rectángulo en términos de comportamiento
- * si permitimos cambiar ancho y alto de forma independiente.
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete discute el principio de sustitucion de Liskov y muestra cuando una subclase deja de comportarse como su tipo base promete.
  */
 class RectanguloMal {
     protected int ancho;
@@ -21,6 +21,10 @@ class RectanguloMal {
     }
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete discute el principio de sustitucion de Liskov y muestra cuando una subclase deja de comportarse como su tipo base promete.
+ */
 class CuadradoMal extends RectanguloMal {
     @Override
     public void establecerAncho(int ancho) {

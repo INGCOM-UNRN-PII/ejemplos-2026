@@ -1,10 +1,8 @@
 package ar.unrn.genericos;
 
 /**
- * Ejemplo de parámetros de tipo acotados (Bounded Type Parameters).
- * T solo puede ser de la clase Number o sus subclases.
- * 
- * @param <T> un tipo que extiende de Number.
+ * Modela una utilidad o contenedor generico pensado para reutilizar comportamiento conservando seguridad de tipos en compilacion.
+ * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class ContenedorNumerico<T extends Number> {
     private final T numero;

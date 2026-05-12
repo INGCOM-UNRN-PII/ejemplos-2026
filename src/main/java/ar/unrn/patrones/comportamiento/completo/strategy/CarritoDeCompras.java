@@ -3,6 +3,10 @@ package ar.unrn.patrones.comportamiento.completo.strategy;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Actua como contexto del patron Strategy y delega el calculo del descuento a la politica que reciba en cada escenario.
+ * El paquete usa Strategy para encapsular distintas politicas de descuento y permitir elegirlas sin reescribir el carrito.
+ */
 public class CarritoDeCompras {
     private List<Double> items;
     private DescuentoStrategy descuentoStrategy;

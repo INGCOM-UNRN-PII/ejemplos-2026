@@ -1,7 +1,8 @@
 package ar.unrn.refactoring.generalization;
 
 /**
- * Clase base para vehículos.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde varias clases parecidas piden extraer una generalizacion que capture lo comun.
  */
 abstract class Vehiculo {
     /** Marca del vehículo. */
@@ -9,7 +10,8 @@ abstract class Vehiculo {
 }
 
 /**
- * Subclase que representa un automóvil.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde varias clases parecidas piden extraer una generalizacion que capture lo comun.
  */
 class Auto extends Vehiculo {
     /**
@@ -22,7 +24,8 @@ class Auto extends Vehiculo {
 }
 
 /**
- * Subclase que representa una motocicleta.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde varias clases parecidas piden extraer una generalizacion que capture lo comun.
  */
 class Moto extends Vehiculo {
     /**

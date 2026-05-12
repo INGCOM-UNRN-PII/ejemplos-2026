@@ -1,8 +1,8 @@
 package ar.unrn.solid.isp;
 
 /**
- * VIOLACIÓN ISP: Una interfaz con demasiadas responsabilidades.
- * Un 'Robot' se ve obligado a implementar 'comer' y 'dormir'.
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete usa estos tipos para mostrar que una interfaz debe exponer solo las operaciones que cada cliente realmente necesita.
  */
 interface TrabajadorMal {
     void trabajar();
@@ -12,6 +12,10 @@ interface TrabajadorMal {
     void dormir();
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete usa estos tipos para mostrar que una interfaz debe exponer solo las operaciones que cada cliente realmente necesita.
+ */
 class HumanoMal implements TrabajadorMal {
     @Override
     public void trabajar() {
@@ -29,6 +33,10 @@ class HumanoMal implements TrabajadorMal {
     }
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete usa estos tipos para mostrar que una interfaz debe exponer solo las operaciones que cada cliente realmente necesita.
+ */
 class RobotMal implements TrabajadorMal {
     @Override
     public void trabajar() {

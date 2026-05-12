@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.ejercicio.state;
 
+/**
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
+ */
 public class MainState {
     public static void main(String[] args) {
         System.out.println("--- Máquina con 2 bebidas ---");

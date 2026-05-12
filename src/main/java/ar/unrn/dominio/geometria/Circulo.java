@@ -1,8 +1,8 @@
 package ar.unrn.dominio.geometria;
 
 /**
- * Círculo definido estrictamente por dos puntos.
- * El radio se deriva dinámicamente delegando en el comportamiento topológico del Punto.
+ * Modela una figura o valor geometrico concreto y encapsula la formula o transformacion que le corresponde.
+ * El paquete modela figuras geometricas simples para concentrar la discusion en calculos de area y responsabilidades de cada tipo.
  */
 public final class Circulo implements FiguraGeometrica {
     private final Punto centro;

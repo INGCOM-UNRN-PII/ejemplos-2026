@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.ejercicio.state;
 
+/**
+ * Representa el estado sin stock y concentra las respuestas que la maquina debe dar cuando ya no puede dispensar productos.
+ * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
+ */
 public class AgotadoState implements EstadoMaquina {
     private MaquinaExpendedora maquina;
 

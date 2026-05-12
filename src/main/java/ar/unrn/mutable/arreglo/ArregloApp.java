@@ -1,8 +1,8 @@
 package ar.unrn.dos.mutable.arreglo;
 
 /**
- * Aplicación de consola para demostrar el uso de la clase Arreglo
- * y los problemas de no realizar copias defensivas.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra mutabilidad sobre arreglos compartidos para que se vea como varias referencias observan el mismo estado subyacente.
  */
 public class ArregloApp {
 

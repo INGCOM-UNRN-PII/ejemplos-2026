@@ -1,8 +1,8 @@
 package ar.unrn.dominio.combate;
 
 /**
- * Representa un combatiente que posee un arma y puntos de salud.
- * El estado es totalmente privado y no se expone mediante getters.
+ * Modela un participante del combate y concentra una regla concreta de ataque, daño o equipamiento dentro del escenario.
+ * El paquete modela un combate sencillo para practicar colaboracion entre objetos sin exponer estado innecesario y dejando las reglas donde corresponden.
  */
 public class Combatiente {
     private final String nombre;

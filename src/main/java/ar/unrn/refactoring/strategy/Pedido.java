@@ -1,11 +1,14 @@
 package ar.unrn.refactoring.strategy;
 
 /**
- * Representa un pedido que calcula su costo de envío.
- * Ejemplo para refactorizar Type Code a Strategy.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde una variacion por tipo de envio se prepara para migrar a estrategias explicitas.
  */
 public class Pedido {
-    /** Tipos de envío disponibles. */
+    /**
+     * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+     * El paquete concentra un ejercicio donde una variacion por tipo de envio se prepara para migrar a estrategias explicitas.
+     */
     public enum TipoEnvio { ESTANDAR, EXPRESS, INTERNACIONAL }
 
     private TipoEnvio tipo;

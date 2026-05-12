@@ -11,8 +11,8 @@ import java.util.Enumeration;
 import java.util.List;
 
 /**
- * Esta clase se encarga de ejecutar todos los main en esta ubicación.
- * No es necesaria (o recomendada) su modificación.
+ * Recorre el classpath del proyecto para localizar y ejecutar los puntos de entrada de ejemplo sin pedir que cada paquete se ejecute manualmente.
+ * La clase sirve como infraestructura de apoyo para ejecutar o reunir los ejemplos del proyecto sin mezclar esa tarea con el contenido pedagogico de cada paquete.
  */
 
 @SuppressWarnings({"unchecked", "rawtypes"})
@@ -128,7 +128,8 @@ public class LoaderApp {
     }
 
     /**
-     * Esta excepción indica fallos internos del cargador de mains.
+     * Encapsula fallos internos del cargador y evita que los detalles tecnicos de reflexion y classpath se mezclen con los ejemplos ejecutados.
+     * La clase sirve como infraestructura de apoyo para ejecutar o reunir los ejemplos del proyecto sin mezclar esa tarea con el contenido pedagogico de cada paquete.
      */
     public static class InternalLoaderException extends RuntimeException {
         /**

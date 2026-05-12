@@ -1,8 +1,8 @@
 package ar.unrn.refactoring.move_method;
 
 /**
- * Representa una cuenta bancaria.
- * Ejemplo para demostrar Move Method ante el olor de "Feature Envy".
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde un metodo debe mudarse a la clase que realmente tiene la informacion para hacerlo bien.
  */
 public class Cuenta {
     private double saldo;
@@ -20,7 +20,8 @@ public class Cuenta {
 }
 
 /**
- * Representa el tipo de una cuenta bancaria (ej: Ahorro, Corriente).
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde un metodo debe mudarse a la clase que realmente tiene la informacion para hacerlo bien.
  */
 class TipoCuenta {
     /**

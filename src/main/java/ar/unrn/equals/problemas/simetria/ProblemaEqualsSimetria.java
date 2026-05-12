@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ejemplo de violación de Simetría.
- * Si A es igual a B, entonces B debe ser igual a A.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete concentra un ejemplo minimo donde equals acepta comparar contra tipos ajenos y por eso rompe la simetria del contrato.
  */
 public class ProblemaEqualsSimetria {
 

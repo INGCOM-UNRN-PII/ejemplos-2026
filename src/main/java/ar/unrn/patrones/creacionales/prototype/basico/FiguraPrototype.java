@@ -1,7 +1,8 @@
 package ar.unrn.patrones.creacionales.prototype.basico;
 
 /**
- * Interfaz Prototype para figuras.
+ * Representa el objeto que el ejemplo necesita clonar para reutilizar una configuracion ya preparada con el menor costo posible.
+ * El paquete introduce Prototype con un ejemplo minimo donde la clonacion reemplaza construcciones repetitivas.
  */
 public abstract class FiguraPrototype implements Cloneable {
     protected String color;
@@ -20,7 +21,10 @@ public abstract class FiguraPrototype implements Cloneable {
     public abstract void dibujar();
 }
 
-/** Clonación básica de un círculo. */
+/**
+ * Representa el objeto que el ejemplo necesita clonar para reutilizar una configuracion ya preparada con el menor costo posible.
+ * El paquete introduce Prototype con un ejemplo minimo donde la clonacion reemplaza construcciones repetitivas.
+ */
 class CirculoPrototype extends FiguraPrototype {
     private int radio;
     public CirculoPrototype(int radio) { this.radio = radio; }

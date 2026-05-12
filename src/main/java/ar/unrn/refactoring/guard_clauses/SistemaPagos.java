@@ -1,7 +1,8 @@
 package ar.unrn.refactoring.guard_clauses;
 
 /**
- * Clase responsable de gestionar pagos y reembolsos.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde las guard clauses reemplazan anidamientos para dejar visibles las precondiciones del flujo.
  */
 public class SistemaPagos {
     /**

@@ -1,5 +1,9 @@
 package ar.unrn.equals.identidad.transitividad;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete demuestra que una definicion laxa de igualdad puede romper la transitividad y volver ambiguas las comparaciones encadenadas.
+ */
 public class PuntoConTolerancia {
     private final int x, y;
 

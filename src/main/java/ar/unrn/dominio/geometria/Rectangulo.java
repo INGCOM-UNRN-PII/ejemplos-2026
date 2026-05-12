@@ -1,8 +1,8 @@
 package ar.unrn.dominio.geometria;
 
 /**
- * Rectángulo alineado a los ejes (AABB - Axis-Aligned Bounding Box).
- * Definido exclusivamente por los vértices de su diagonal principal.
+ * Modela una figura o valor geometrico concreto y encapsula la formula o transformacion que le corresponde.
+ * El paquete modela figuras geometricas simples para concentrar la discusion en calculos de area y responsabilidades de cada tipo.
  */
 public final class Rectangulo implements FiguraGeometrica {
     private final Punto verticeInferior;

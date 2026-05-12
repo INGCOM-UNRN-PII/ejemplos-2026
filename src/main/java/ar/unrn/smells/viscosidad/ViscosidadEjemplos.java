@@ -1,8 +1,8 @@
 package ar.unrn.smells.viscosidad;
 
 /**
- * Ejemplo 1: Viscosidad de diseño.
- * Fuente de datos compartida globalmente para evitar pasaje de parámetros.
+ * Representa una pieza del ejemplo donde el diseño incentiva atajos porque la solucion correcta parece mas costosa que la improvisada.
+ * El paquete muestra viscosidad, donde la solucion correcta parece mas costosa que el atajo y eso empuja a degradar el diseño.
  */
 class AtajoSucio {
     /** Dato compartido globalmente. */
@@ -10,7 +10,8 @@ class AtajoSucio {
 }
 
 /**
- * Clase que representa una capa profunda del sistema.
+ * Representa una pieza del ejemplo donde el diseño incentiva atajos porque la solucion correcta parece mas costosa que la improvisada.
+ * El paquete muestra viscosidad, donde la solucion correcta parece mas costosa que el atajo y eso empuja a degradar el diseño.
  */
 class Capa10 {
     /**
@@ -22,7 +23,8 @@ class Capa10 {
 }
 
 /**
- * Ejemplo 2: Viscosidad por falta de abstracción.
+ * Representa una pieza del ejemplo donde el diseño incentiva atajos porque la solucion correcta parece mas costosa que la improvisada.
+ * El paquete muestra viscosidad, donde la solucion correcta parece mas costosa que el atajo y eso empuja a degradar el diseño.
  */
 class LoggerViscoso {
     /**

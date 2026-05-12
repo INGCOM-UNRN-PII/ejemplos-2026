@@ -1,8 +1,8 @@
 package ar.unrn.basicos.contador;
 
 /**
- * Aplicación de consola para demostrar el uso de la clase Contador y el impacto
- * del encapsulamiento.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete introduce un objeto con estado minimo para mostrar como los mensajes de negocio alteran y consultan ese estado a lo largo del tiempo.
  */
 public class ContadorApp {
 

@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Ejemplo avanzado de Builder con API fluida para Peticiones HTTP.
+ * Representa el objeto complejo que el builder arma gradualmente y entrega al cliente una vez que la configuracion quedo consolidada.
+ * El paquete usa Builder para construir peticiones HTTP complejas paso a paso, distinguiendo obligatorios de opcionales.
  */
 public class PeticionHttp {
     private final String url;
@@ -19,7 +20,10 @@ public class PeticionHttp {
         this.cuerpo = builder.cuerpo;
     }
 
-    /** Builder fluido. */
+    /**
+     * Construye el objeto contenedor paso a paso y concentra las decisiones opcionales para que la instancia final nazca en un estado valido.
+     * El paquete usa Builder para construir peticiones HTTP complejas paso a paso, distinguiendo obligatorios de opcionales.
+     */
     public static class Builder {
         private String url;
         private String metodo = "GET";

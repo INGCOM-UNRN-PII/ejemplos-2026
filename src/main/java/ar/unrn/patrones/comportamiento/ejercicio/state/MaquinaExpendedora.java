@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.ejercicio.state;
 
+/**
+ * Funciona como contexto del patron State y delega en el objeto de estado actual las reglas que dependen del stock o de la moneda.
+ * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
+ */
 public class MaquinaExpendedora {
     private EstadoMaquina sinMonedaState;
     private EstadoMaquina conMonedaState;

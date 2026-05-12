@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Aplicación de demostración para el ejemplo de ComparadorMaximo.
- * Muestra cómo encontrar el máximo en listas de diferentes tipos.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class ComparadorMaximoApp {
     

@@ -1,5 +1,9 @@
 package ar.unrn.generados.objetos.internas;
 
+/**
+ * Actua como clase anfitriona para mostrar cuando conviene definir comportamiento estrechamente ligado a una instancia exterior.
+ * El paquete muestra distintas clases internas para explicar como cambia el acceso al contexto exterior segun la forma elegida.
+ */
 public class ClasesInternas {
     private String nombreExterno = "Clase Externa";
 

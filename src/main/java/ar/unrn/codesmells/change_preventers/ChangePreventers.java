@@ -1,13 +1,15 @@
 package ar.unrn.codesmells.change_preventers;
 
 /**
- * Clase que agrupa ejemplos de Code Smells de tipo "Change Preventers".
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
  */
 public class ChangePreventers {
 }
 
 /**
- * Clase con "Divergent Change". Cambia por motivos de stock, impuestos o exportación.
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
  */
 class Producto {
     /** Actualiza las existencias en inventario. */
@@ -18,32 +20,59 @@ class Producto {
     public void exportarXml() {}
 }
 
-/** Clase involucrada en "Shotgun Surgery". */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class Logger { 
     /** @param msg mensaje a loggear. */
     public void log(String msg) {} 
 }
-/** Dependiente de Logger. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class ClaseA { 
     /** Llama al logger. */
     void f() { new Logger().log("A"); } 
 }
-/** Dependiente de Logger. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class ClaseB { 
     /** Llama al logger. */
     void g() { new Logger().log("B"); } 
 }
 
-/** Superclase para empleados en jerarquía paralela. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 abstract class Empleado {}
-/** Programador. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class Programador extends Empleado {}
-/** Gerente. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class Gerente extends Empleado {}
 
-/** Superclase para seguros en jerarquía paralela. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 abstract class Seguro {}
-/** Seguro para programador. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class SeguroProgramador extends Seguro {}
-/** Seguro para gerente. */
+/**
+ * Representa una pieza del ejemplo donde el diseño propaga el impacto de cada modificacion a demasiados puntos del sistema.
+ * El paquete reúne ejemplos de change preventers, donde la estructura del codigo vuelve costoso modificar una parte sin arrastrar muchas otras.
+ */
 class SeguroGerente extends Seguro {}

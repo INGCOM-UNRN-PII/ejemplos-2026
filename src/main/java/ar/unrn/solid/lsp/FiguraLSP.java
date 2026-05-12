@@ -1,8 +1,8 @@
 package ar.unrn.solid.lsp;
 
 /**
- * Interfaz que define una figura que puede proporcionar su área.
- * Utilizada para demostrar el Principio de Sustitución de Liskov (LSP).
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete discute el principio de sustitucion de Liskov y muestra cuando una subclase deja de comportarse como su tipo base promete.
  */
 public interface FiguraLSP {
     /**

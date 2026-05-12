@@ -1,7 +1,8 @@
 package ar.unrn.patrones.estructurales.bridge;
 
 /**
- * Abstracción refinada: Notificación urgente.
+ * Especializa la abstraccion para mensajes urgentes y demuestra que el nivel de urgencia puede variar sin tocar el canal de entrega.
+ * El paquete usa Bridge para separar la abstraccion de notificacion del mecanismo concreto con el que el mensaje se entrega.
  */
 public class UrgentNotification extends Notification {
 

@@ -1,8 +1,8 @@
 package ar.unrn.solid.ocp;
 
 /**
- * VIOLACIÓN OCP: Si queremos agregar una nueva forma (Triángulo),
- * debemos modificar esta clase agregando otro 'if' o 'switch'.
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete esta orientado a explicar el principio abierto/cerrado: agregar comportamiento no deberia exigir reescribir la logica existente.
  */
 class GeneradorAreaMal {
     public double calcular(Object forma) {
@@ -17,10 +17,18 @@ class GeneradorAreaMal {
     }
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete esta orientado a explicar el principio abierto/cerrado: agregar comportamiento no deberia exigir reescribir la logica existente.
+ */
 class RectanguloMal {
     public double ancho, alto;
 }
 
+/**
+ * Representa una variante deliberadamente defectuosa que sirve para exponer el problema de diseno que el paquete esta discutiendo.
+ * El paquete esta orientado a explicar el principio abierto/cerrado: agregar comportamiento no deberia exigir reescribir la logica existente.
+ */
 class CirculoMal {
     public double radio;
 }

@@ -13,7 +13,8 @@ import java.util.Objects;
 public class EqualsViolaNullComparison {
 
     /**
-     * Clase que NO verifica null y lanza NullPointerException
+     * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+     * El paquete compara distintas implementaciones de equals frente a null para hacer visible que el contrato debe manejar ese caso de forma segura y predecible.
      */
     static class PersonaSinCheckNull {
         private final String nombre;
@@ -42,7 +43,8 @@ public class EqualsViolaNullComparison {
     }
 
     /**
-     * Clase con lógica errónea que retorna true para null
+     * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+     * El paquete compara distintas implementaciones de equals frente a null para hacer visible que el contrato debe manejar ese caso de forma segura y predecible.
      */
     static class PersonaConLogicaErronea {
         private final String nombre;
@@ -74,7 +76,8 @@ public class EqualsViolaNullComparison {
     }
 
     /**
-     * Clase con verificación explícita CORRECTA de null
+     * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+     * El paquete compara distintas implementaciones de equals frente a null para hacer visible que el contrato debe manejar ese caso de forma segura y predecible.
      */
     static class PersonaCorrecta {
         private final String nombre;

@@ -1,5 +1,9 @@
 package ar.unrn.patrones.estructurales.bridge;
 
+/**
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete usa Bridge para separar la abstraccion de notificacion del mecanismo concreto con el que el mensaje se entrega.
+ */
 public class MainBridge {
     public static void main(String[] args) {
         // Creamos las implementaciones (los medios de envío)

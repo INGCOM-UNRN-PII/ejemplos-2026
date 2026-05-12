@@ -1,25 +1,33 @@
 package ar.unrn.patrones.creacionales.factory_method.basico;
 
 /**
- * Interfaz para productos de tipo Figura.
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
  */
 interface Figura {
     /** Dibuja la figura. */
     void dibujar();
 }
 
-/** Producto concreto Círculo. */
+/**
+ * Representa uno de los productos del ejemplo y deja que el metodo fabrica decida cuando y con que variante crearlo.
+ * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
+ */
 class Circulo implements Figura {
     @Override public void dibujar() { System.out.println("Dibujando Círculo"); }
 }
 
-/** Producto concreto Cuadrado. */
+/**
+ * Representa uno de los productos del ejemplo y deja que el metodo fabrica decida cuando y con que variante crearlo.
+ * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
+ */
 class Cuadrado implements Figura {
     @Override public void dibujar() { System.out.println("Dibujando Cuadrado"); }
 }
 
 /**
- * Creador básico (Factory Method).
+ * Centraliza la creacion de objetos relacionados para que el cliente trabaje contra contratos estables y no contra constructores concretos.
+ * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
  */
 public abstract class FabricaFiguras {
     /**

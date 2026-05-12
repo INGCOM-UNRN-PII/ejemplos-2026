@@ -1,8 +1,8 @@
 package ar.unrn.dominio.combate;
 
 /**
- * Representa un arma con daño y cantidad limitada de usos.
- * Sigue el principio de encapsulamiento estricto: sin accesores (getters/setters).
+ * Modela un participante del combate y concentra una regla concreta de ataque, daño o equipamiento dentro del escenario.
+ * El paquete modela un combate sencillo para practicar colaboracion entre objetos sin exponer estado innecesario y dejando las reglas donde corresponden.
  */
 public class Arma {
     private final int danioBase;

@@ -1,5 +1,9 @@
 package ar.unrn.equals.identidad.mutabilidad;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete usa estos tipos para mostrar como la mutabilidad puede romper la identidad logica despues de insertar objetos en una coleccion.
+ */
 public class PersonaInmutable {
     private final String nombre;
 

@@ -1,7 +1,8 @@
 package ar.unrn.smells.viscosidad;
 
 /**
- * Aplicación de demostración para el olor de diseño: Viscosidad.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra viscosidad, donde la solucion correcta parece mas costosa que el atajo y eso empuja a degradar el diseño.
  */
 public class ViscosidadApp {
     /**

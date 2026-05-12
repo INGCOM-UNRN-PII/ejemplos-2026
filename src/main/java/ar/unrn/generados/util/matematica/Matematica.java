@@ -1,7 +1,8 @@
 package ar.unrn.generados.util.matematica;
 
 /**
- * Clase utilitaria para demostración de testing.
+ * Agrupa operaciones matematicas sencillas para que otras clases reutilicen calculos sin duplicar formulas.
+ * El paquete extrae operaciones matematicas simples a una utilidad reusable para que el ejemplo muestre encapsulamiento de funciones comunes.
  */
 public class Matematica {
 

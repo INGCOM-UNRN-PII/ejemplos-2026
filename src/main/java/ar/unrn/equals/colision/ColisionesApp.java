@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * Este ejemplo ejecuta un escenario orientado a observar colisiones de hash y sus efectos sobre el comportamiento de las colecciones.
+ */
 public class ColisionesApp {
     private static final int NUM_OBJETOS_A_GENERAR = 500_000;
 

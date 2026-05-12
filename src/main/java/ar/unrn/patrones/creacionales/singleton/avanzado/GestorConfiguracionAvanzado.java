@@ -20,7 +20,8 @@ public class GestorConfiguracionAvanzado {
     }
 
     /**
-     * Clase interna estática que contiene la instancia.
+     * Encapsula la instancia unica del singleton y aprovecha la carga diferida de clases para crearla solo cuando realmente se necesita.
+     * El paquete muestra una variante robusta de Singleton que retrasa la creacion de la instancia y evita sincronizacion explicita.
      */
     private static class Holder {
         private static final GestorConfiguracionAvanzado INSTANCIA = new GestorConfiguracionAvanzado();

@@ -1,5 +1,9 @@
 package ar.unrn.patrones.comportamiento.ejercicio.state;
 
+/**
+ * Encapsula lo que la maquina puede hacer mientras todavia no recibio dinero y evita que esas reglas queden dispersas en ifs.
+ * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
+ */
 public class SinMonedaState implements EstadoMaquina {
     private MaquinaExpendedora maquina;
 

@@ -3,6 +3,10 @@ package ar.unrn.equals.correcto.persona;
 
 import java.util.Objects;
 
+/**
+ * Modela el valor u objeto concreto sobre el que se pone a prueba una regla del contrato equals/hashCode dentro del paquete.
+ * El paquete usa este tipo para mostrar una implementacion correcta de equals y hashCode, donde la identidad se apoya en atributos estables y en una comparacion coherente.
+ */
 public final class Empleado extends Persona {
     private final String legajo;
 

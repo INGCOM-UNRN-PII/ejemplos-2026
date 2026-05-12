@@ -1,7 +1,8 @@
 package ar.unrn.smells.fragilidad;
 
 /**
- * Aplicación de demostración para el olor de diseño: Fragilidad.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 public class FragilidadApp {
     /**

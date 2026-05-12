@@ -3,7 +3,8 @@ package ar.unrn.codesmells.bloaters;
 import java.util.List;
 
 /**
- * Clase que agrupa ejemplos de Code Smells de tipo "Bloaters".
+ * Representa una pieza del ejemplo que crecio mas de lo debido y ayuda a detectar por que el exceso de tamano vuelve pesado cualquier cambio.
+ * El paquete reúne ejemplos de bloaters para mostrar como clases, metodos o listas de datos demasiado grandes vuelven torpe cualquier cambio.
  */
 public class BloatersExamples {
 
@@ -42,7 +43,8 @@ public class BloatersExamples {
 }
 
 /**
- * Ejemplo de "Large Class". Clase con demasiadas responsabilidades y campos.
+ * Representa una pieza del ejemplo que crecio mas de lo debido y ayuda a detectar por que el exceso de tamano vuelve pesado cualquier cambio.
+ * El paquete reúne ejemplos de bloaters para mostrar como clases, metodos o listas de datos demasiado grandes vuelven torpe cualquier cambio.
  */
 class GestorTodoEnUno {
     private List<String> usuarios;

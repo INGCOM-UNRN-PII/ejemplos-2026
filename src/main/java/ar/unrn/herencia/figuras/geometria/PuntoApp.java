@@ -3,8 +3,8 @@ package ar.unrn.herencia.figuras.geometria;
 import ar.unrn.equals.correcto.persona.Empleado;
 
 /**
- * Aplicación de consola para demostrar el uso de la clase Punto, el
- * concepto de Encapsulamiento y el comportamiento de los objetos.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete usa una jerarquia geometrica minima para discutir que se hereda, que se agrega y cuando conviene especializar comportamiento.
  */
 public class PuntoApp {
 

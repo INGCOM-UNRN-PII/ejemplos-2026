@@ -1,8 +1,8 @@
 package ar.unrn.smells.inseparabilidad;
 
 /**
- * Ejemplo 1: Lógica de negocio atada a la interfaz de usuario.
- * No se puede reusar el cálculo de IVA sin la ventana.
+ * Representa una pieza del ejemplo donde varias responsabilidades viajan juntas y por eso cuesta reutilizarlas por separado.
+ * El paquete muestra inseparabilidad, donde varias decisiones viajan juntas y por eso cuesta reutilizar o probar solo una parte.
  */
 class VentanaFactura {
     /**
@@ -17,7 +17,8 @@ class VentanaFactura {
 }
 
 /**
- * Ejemplo 2: Lógica de negocio mezclada con persistencia física específica.
+ * Representa una pieza del ejemplo donde varias responsabilidades viajan juntas y por eso cuesta reutilizarlas por separado.
+ * El paquete muestra inseparabilidad, donde varias decisiones viajan juntas y por eso cuesta reutilizar o probar solo una parte.
  */
 class ValidadorUsuario {
     /**

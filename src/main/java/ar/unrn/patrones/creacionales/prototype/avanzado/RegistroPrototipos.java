@@ -3,7 +3,10 @@ package ar.unrn.patrones.creacionales.prototype.avanzado;
 import java.util.HashMap;
 import java.util.Map;
 
-/** Interfaz común. */
+/**
+ * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
+ * El paquete usa Prototype para registrar y clonar objetos a partir de prototipos ya configurados.
+ */
 interface ComponenteUi extends Cloneable {
     /** @return clon */
     ComponenteUi clone();
@@ -12,7 +15,8 @@ interface ComponenteUi extends Cloneable {
 }
 
 /**
- * Registro de prototipos avanzado.
+ * Representa el objeto que el ejemplo necesita clonar para reutilizar una configuracion ya preparada con el menor costo posible.
+ * El paquete usa Prototype para registrar y clonar objetos a partir de prototipos ya configurados.
  */
 public class RegistroPrototipos {
     private Map<String, ComponenteUi> prototipos = new HashMap<>();
@@ -29,7 +33,10 @@ public class RegistroPrototipos {
     }
 }
 
-/** Ejemplo concreto. */
+/**
+ * Representa el objeto que el ejemplo necesita clonar para reutilizar una configuracion ya preparada con el menor costo posible.
+ * El paquete usa Prototype para registrar y clonar objetos a partir de prototipos ya configurados.
+ */
 class BotonPersonalizado implements ComponenteUi {
     private String texto;
     public BotonPersonalizado(String t) { this.texto = t; }

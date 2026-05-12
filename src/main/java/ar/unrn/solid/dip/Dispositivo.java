@@ -1,8 +1,8 @@
 package ar.unrn.solid.dip;
 
 /**
- * Interfaz que define las operaciones básicas de un dispositivo electrónico.
- * Ejemplo del Principio de Inversión de Dependencias (DIP).
+ * Representa la parte base del modelo heredado y concentra el estado que toda especializacion necesita recibir por constructor.
+ * El paquete explica el principio de inversion de dependencias separando las politicas de alto nivel de los detalles concretos que realizan el trabajo.
  */
 public interface Dispositivo {
     /**

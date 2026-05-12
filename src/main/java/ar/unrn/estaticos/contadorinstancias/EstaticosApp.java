@@ -1,8 +1,8 @@
 package ar.unrn.estaticos.contadorinstancias;
 
 /**
- * Aplicación de consola para demostrar el uso de miembros estáticos
- * (de clase) versus miembros de instancia (de objeto).
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete usa miembros estaticos para mostrar como varias instancias pueden compartir informacion de clase y que costo conceptual tiene ese acoplamiento global.
  */
 public class EstaticosApp {
 

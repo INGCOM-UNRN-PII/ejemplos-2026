@@ -1,8 +1,8 @@
 package ar.unrn.refactoring.magic_number;
 
 /**
- * Clase que realiza cálculos físicos.
- * Ejemplo para refactorizar Magic Numbers a constantes simbólicas.
+ * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
+ * El paquete concentra un ejercicio donde los numeros magicos se reemplazan por nombres que explican la formula y el dominio.
  */
 public class CalculadoraFisica {
     /**

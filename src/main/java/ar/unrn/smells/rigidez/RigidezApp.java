@@ -1,7 +1,8 @@
 package ar.unrn.smells.rigidez;
 
 /**
- * Aplicación de demostración para el olor de diseño: Rigidez.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra rigidez, donde una modificacion puntual obliga a tocar muchas clases relacionadas para mantener todo funcionando.
  */
 public class RigidezApp {
     /**

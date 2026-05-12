@@ -1,7 +1,8 @@
 package ar.unrn.patrones.creacionales.builder.basico;
 
 /**
- * Producto Pizza.
+ * Representa el objeto complejo que el builder arma gradualmente y entrega al cliente una vez que la configuracion quedo consolidada.
+ * El paquete introduce Builder con un ejemplo minimo para separar configuracion incremental de construccion final del objeto.
  */
 class Pizza {
     private String masa = "";
@@ -16,7 +17,8 @@ class Pizza {
 }
 
 /**
- * Builder para Pizza.
+ * Representa el objeto complejo que el builder arma gradualmente y entrega al cliente una vez que la configuracion quedo consolidada.
+ * El paquete introduce Builder con un ejemplo minimo para separar configuracion incremental de construccion final del objeto.
  */
 public abstract class PizzaBuilder {
     protected Pizza pizza;

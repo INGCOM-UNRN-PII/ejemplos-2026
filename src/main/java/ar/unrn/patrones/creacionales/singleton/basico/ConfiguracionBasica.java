@@ -1,8 +1,8 @@
 package ar.unrn.patrones.creacionales.singleton.basico;
 
 /**
- * Ejemplo básico de Singleton con inicialización perezosa (Lazy Initialization).
- * No es seguro para hilos (thread-safe).
+ * Centraliza el acceso a una unica instancia compartida para que el resto del codigo no cree copias inconsistentes del mismo recurso.
+ * El paquete introduce Singleton con una version sencilla pensada para explicar la idea de una unica instancia compartida.
  */
 public class ConfiguracionBasica {
     private static ConfiguracionBasica instancia;

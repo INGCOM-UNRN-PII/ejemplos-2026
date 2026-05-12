@@ -1,7 +1,8 @@
 package ar.unrn.patrones.creacionales.builder.intermedio;
 
 /**
- * Ejemplo de Builder interno para un Perfil de Usuario con muchos campos opcionales.
+ * Representa el objeto complejo que el builder arma gradualmente y entrega al cliente una vez que la configuracion quedo consolidada.
+ * El paquete usa Builder para ensamblar perfiles con muchos datos opcionales sin multiplicar constructores.
  */
 public class PerfilUsuario {
     private final String nombre;    // Requerido
@@ -18,7 +19,10 @@ public class PerfilUsuario {
         this.direccion = builder.direccion;
     }
 
-    /** Clase constructora interna. */
+    /**
+     * Construye el objeto contenedor paso a paso y concentra las decisiones opcionales para que la instancia final nazca en un estado valido.
+     * El paquete usa Builder para ensamblar perfiles con muchos datos opcionales sin multiplicar constructores.
+     */
     public static class Builder {
         private final String nombre;
         private final String apellido;

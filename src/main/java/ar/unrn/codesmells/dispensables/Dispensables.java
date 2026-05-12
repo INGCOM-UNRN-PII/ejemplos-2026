@@ -1,7 +1,8 @@
 package ar.unrn.codesmells.dispensables;
 
 /**
- * Clase que agrupa ejemplos de Code Smells de tipo "Dispensables".
+ * Representa una pieza del ejemplo de elementos dispensables y ayuda a distinguir lo esencial del ruido accidental.
+ * El paquete reúne ejemplos de elementos dispensables, es decir, codigo que sobra, distrae o es mas facil de entender si se elimina o simplifica.
  */
 public class Dispensables {
 
@@ -17,14 +18,20 @@ public class Dispensables {
     /** Código muerto: método que nunca se invoca. */
     private void esteMetodoNoSeUsaNunca() {}
 
-    /** Ejemplo de generalidad especulativa. */
+    /**
+     * Representa una pieza del ejemplo de elementos dispensables y ayuda a distinguir lo esencial del ruido accidental.
+     * El paquete reúne ejemplos de elementos dispensables, es decir, codigo que sobra, distrae o es mas facil de entender si se elimina o simplifica.
+     */
     public interface ProcesableJustInCase {
         /** Método creado "por si acaso". */
         void procesarEnElFuturoSiEsNecesario();
     }
 }
 
-/** Clase de datos sin comportamiento (Data Class). */
+/**
+ * Representa una pieza del ejemplo de elementos dispensables y ayuda a distinguir lo esencial del ruido accidental.
+ * El paquete reúne ejemplos de elementos dispensables, es decir, codigo que sobra, distrae o es mas facil de entender si se elimina o simplifica.
+ */
 class UsuarioDatos {
     /** Nombre del usuario. */
     public String nombre;
@@ -32,7 +39,10 @@ class UsuarioDatos {
     public String email;
 }
 
-/** Servicio con código duplicado. */
+/**
+ * Representa una pieza del ejemplo de elementos dispensables y ayuda a distinguir lo esencial del ruido accidental.
+ * El paquete reúne ejemplos de elementos dispensables, es decir, codigo que sobra, distrae o es mas facil de entender si se elimina o simplifica.
+ */
 class ServicioA {
     /** Realiza el procesamiento. */
     void procesar() {
@@ -40,7 +50,10 @@ class ServicioA {
         System.out.println("Procesando...");
     }
 }
-/** Otro servicio con código duplicado. */
+/**
+ * Representa una pieza del ejemplo de elementos dispensables y ayuda a distinguir lo esencial del ruido accidental.
+ * El paquete reúne ejemplos de elementos dispensables, es decir, codigo que sobra, distrae o es mas facil de entender si se elimina o simplifica.
+ */
 class ServicioB {
     /** Realiza el procesamiento con lógica duplicada. */
     void procesar() {

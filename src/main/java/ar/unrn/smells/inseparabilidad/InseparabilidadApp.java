@@ -1,7 +1,8 @@
 package ar.unrn.smells.inseparabilidad;
 
 /**
- * Aplicación de demostración para el olor de diseño: Inseparabilidad.
+ * Orquesta la ejecucion del ejemplo y expone por consola el comportamiento que el paquete quiere discutir.
+ * El paquete muestra inseparabilidad, donde varias decisiones viajan juntas y por eso cuesta reutilizar o probar solo una parte.
  */
 public class InseparabilidadApp {
     /**

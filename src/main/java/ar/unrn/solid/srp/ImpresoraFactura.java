@@ -1,7 +1,8 @@
 package ar.unrn.solid.srp;
 
 /**
- * Clase responsable exclusivamente de la salida visual (impresión) de una factura.
+ * Representa una responsabilidad puntual del flujo de factura para que cada motivo de cambio quede aislado en su propia clase.
+ * El paquete separa responsabilidades para que cada tipo cambie por un solo motivo y el ejemplo haga visible donde se concentra cada decision.
  */
 public class ImpresoraFactura {
     /**
