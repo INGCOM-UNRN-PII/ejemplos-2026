@@ -36,7 +36,12 @@ src/main/java/ar/unrn/
 │   └── superkeyword/           # Extensión de lógica con super.metodo()
 ├── inmutable/mensaje/          # Objetos inmutables
 ├── lista/red/                  # Estructura de datos personalizada
-└── mutable/arreglo/            # Mutabilidad en arreglos
+├── mutable/arreglo/            # Mutabilidad en arreglos
+└── patrones/
+    ├── comportamiento/         # Strategy, Observer, State y Chain of Responsibility
+    ├── creacionales/           # Builder, Factory Method, Prototype y más
+    ├── estructurales/          # Bridge y Flyweight
+    └── integracion/smarthome/  # Composición de múltiples patrones
 ```
 
 ## Índice de Ejemplos y Temas
@@ -57,7 +62,14 @@ src/main/java/ar/unrn/
 - **Rendimiento**: [`ComparativaRendimientoHash`](src/main/java/ar/unrn/equals/problemas/rendimiento/ComparativaRendimientoHash.java) ($O(1)$ vs $O(N)$).
 
 ### 4. Patrones y Servicios
-- **Patrones**: [`Observer`](src/main/java/ar/unrn/generados/patrones/observer/), [`Singleton`](src/main/java/ar/unrn/generados/patrones/singleton/), [`Visitor`](src/main/java/ar/unrn/generados/patrones/visitor/).
+- **Patrones generados**: [`Observer`](src/main/java/ar/unrn/generados/patrones/observer/), [`Singleton`](src/main/java/ar/unrn/generados/patrones/singleton/), [`Visitor`](src/main/java/ar/unrn/generados/patrones/visitor/).
+- **Patrones de comportamiento**:
+  - **Básico**: [`Strategy`](src/main/java/ar/unrn/patrones/comportamiento/basico/strategy/) para intercambiar operaciones simples en una calculadora.
+  - **Intermedio**: [`Observer`](src/main/java/ar/unrn/patrones/comportamiento/intermedio/observer/) para publicar noticias a suscriptores dinámicos.
+  - **Avanzado**: [`Chain of Responsibility`](src/main/java/ar/unrn/patrones/comportamiento/avanzado/chain_of_responsibility/) para escalar solicitudes de soporte.
+  - **Ejercicio guiado**: [`State`](src/main/java/ar/unrn/patrones/comportamiento/ejercicio/state/) con una máquina expendedora.
+- **Patrones estructurales**: [`Bridge`](src/main/java/ar/unrn/patrones/estructurales/bridge/), [`Flyweight`](src/main/java/ar/unrn/patrones/estructurales/flyweight/).
+- **Integración de patrones**: [`Smart Home`](src/main/java/ar/unrn/patrones/integracion/smarthome/).
 - **Servicios**: [`ManejoFechas`](src/main/java/ar/unrn/generados/servicios/manejofechas/), [`ManejoArchivos`](src/main/java/ar/unrn/generados/servicios/manejoarchivos/).
 
 ---

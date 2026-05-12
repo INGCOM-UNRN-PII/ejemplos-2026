@@ -20,6 +20,6 @@ public class SmartThermostat extends SmartDevice {
 
     @Override
     public void accept(DeviceVisitor visitor) {
-        // TODO: Implementar double dispatch
+        visitor.visit(this);
     }
 }

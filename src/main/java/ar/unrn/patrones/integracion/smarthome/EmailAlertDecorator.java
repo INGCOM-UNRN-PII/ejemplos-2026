@@ -8,5 +8,10 @@ public class EmailAlertDecorator extends AlertDecorator {
     public EmailAlertDecorator(HomeAlert wrappedAlert) {
         super(wrappedAlert);
     }
-    // TODO: Implementar el envío de email
+
+    @Override
+    public void send(String message) {
+        super.send(message);
+        System.out.println("📧 Enviando email con alerta: " + message);
+    }
 }

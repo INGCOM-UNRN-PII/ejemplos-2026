@@ -42,6 +42,9 @@ public class PerfilUsuario {
          * @param edad opcional @return this
          */
         public Builder conEdad(int edad) {
+            if (edad < 0) {
+                throw new IllegalArgumentException("La edad no puede ser negativa");
+            }
             this.edad = edad;
             return this;
         }
