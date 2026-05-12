@@ -7,7 +7,7 @@ package ar.unrn.solid.lsp;
 public interface FiguraLSP {
     /**
      * Obtiene el área de la figura.
-     * 
+     *
      * @return el área calculada.
      */
     int obtenerArea();

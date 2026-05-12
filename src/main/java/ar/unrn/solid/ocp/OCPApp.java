@@ -9,18 +9,18 @@ import java.util.Arrays;
 public class OCPApp {
     /**
      * Punto de entrada de la aplicación.
-     * 
+     *
      * @param args argumentos de la línea de comandos (no se utilizan).
      */
     public static void main(String[] args) {
         System.out.println("--- OCP: Open/Closed Principle ---");
         GeneradorArea generador = new GeneradorArea();
-        
+
         double total = generador.calcularAreaTotal(Arrays.asList(
-            new Rectangulo(10, 5),
-            new Circulo(3)
+                new Rectangulo(10, 5),
+                new Circulo(3)
         ));
-        
+
         System.out.println("Área total: " + total);
     }
 }

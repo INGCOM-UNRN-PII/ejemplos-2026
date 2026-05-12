@@ -7,8 +7,9 @@ package ar.unrn.solid.srp;
 public class CalculadoraImpuestos {
     /**
      * Calcula los impuestos (21% IVA) para la factura dada.
-     * 
+     *
      * @param factura la factura sobre la cual calcular impuestos.
+     *
      * @return el monto de impuestos calculado.
      */
     public double calcular(Factura factura) {

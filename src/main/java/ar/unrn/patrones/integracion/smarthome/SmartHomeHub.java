@@ -1,7 +1,6 @@
 package ar.unrn.patrones.integracion.smarthome;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**

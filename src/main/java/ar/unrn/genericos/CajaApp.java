@@ -5,15 +5,15 @@ package ar.unrn.genericos;
  * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class CajaApp {
-    
+
     /**
      * Punto de entrada de la aplicación.
-     * 
+     *
      * @param args argumentos de la línea de comandos (no se utilizan).
      */
     public static void main(String[] args) {
         System.out.println("--- Ejemplo Caja Genérica ---");
-        
+
         Caja<String> cajaDeTexto = new Caja<>();
         cajaDeTexto.poner("Mensaje en la caja");
         System.out.println("Contenido: " + cajaDeTexto.obtener());

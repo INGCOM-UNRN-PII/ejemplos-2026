@@ -11,7 +11,7 @@ public class UtilidadesListas {
     /**
      * Método genérico que imprime los elementos de cualquier lista.
      * Utiliza un Unbounded Wildcard (?).
-     * 
+     *
      * @param lista la lista de elementos a imprimir.
      */
     public static void imprimirLista(List<?> lista) {
@@ -23,10 +23,11 @@ public class UtilidadesListas {
 
     /**
      * Calcula la suma de los elementos de una lista de números.
-     * Utiliza un Upper Bounded Wildcard ({@code ? extends Number}) para aceptar 
+     * Utiliza un Upper Bounded Wildcard ({@code ? extends Number}) para aceptar
      * List de Integer, Double, etc.
-     * 
+     *
      * @param lista la lista de números a sumar.
+     *
      * @return la suma de todos los elementos como un valor double.
      */
     public static double sumar(List<? extends Number> lista) {
@@ -39,9 +40,9 @@ public class UtilidadesListas {
 
     /**
      * Agrega una secuencia de números enteros (1 a 5) a una lista.
-     * Utiliza un Lower Bounded Wildcard ({@code ? super Integer}) para aceptar 
+     * Utiliza un Lower Bounded Wildcard ({@code ? super Integer}) para aceptar
      * listas de Integer o sus superclases (Number, Object).
-     * 
+     *
      * @param lista la lista donde se agregarán los números.
      */
     public static void agregarNumeros(List<? super Integer> lista) {

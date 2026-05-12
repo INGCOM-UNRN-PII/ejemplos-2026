@@ -5,7 +5,9 @@ package ar.unrn.refactoring.generalization;
  * El paquete concentra un ejercicio donde varias clases parecidas piden extraer una generalizacion que capture lo comun.
  */
 abstract class Vehiculo {
-    /** Marca del vehículo. */
+    /**
+     * Marca del vehículo.
+     */
     protected String marca;
 }
 

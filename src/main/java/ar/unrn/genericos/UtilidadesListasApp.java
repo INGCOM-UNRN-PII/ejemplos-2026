@@ -9,15 +9,15 @@ import java.util.List;
  * El paquete practica genericos con contenedores y utilidades pequeñas para mostrar reutilizacion de algoritmos sin casting manual.
  */
 public class UtilidadesListasApp {
-    
+
     /**
      * Punto de entrada de la aplicación.
-     * 
+     *
      * @param args argumentos de la línea de comandos (no se utilizan).
      */
     public static void main(String[] args) {
         System.out.println("--- Ejemplo Utilidades de Listas (Wildcards) ---");
-        
+
         List<Integer> enteros = Arrays.asList(10, 20, 30);
         System.out.print("Lista de enteros: ");
         UtilidadesListas.imprimirLista(enteros);

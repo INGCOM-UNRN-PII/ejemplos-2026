@@ -9,7 +9,7 @@ public class Circulo implements Forma {
 
     /**
      * Crea un nuevo círculo con el radio especificado.
-     * 
+     *
      * @param radio el radio del círculo.
      */
     public Circulo(double radio) {
@@ -18,7 +18,7 @@ public class Circulo implements Forma {
 
     /**
      * Calcula el área del círculo utilizando PI * radio^2.
-     * 
+     *
      * @return el área del círculo.
      */
     @Override

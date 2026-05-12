@@ -17,7 +17,7 @@ public class ConexionBaseDatos {
 
     /**
      * Obtiene la instancia única de forma segura para hilos.
-     * 
+     *
      * @return la instancia única.
      */
     public static ConexionBaseDatos obtenerInstancia() {

@@ -7,7 +7,7 @@ package ar.unrn.solid.srp;
 public class RepositorioFactura {
     /**
      * Simula el guardado de una factura en una base de datos.
-     * 
+     *
      * @param factura la factura a persistir.
      */
     public void guardar(Factura factura) {

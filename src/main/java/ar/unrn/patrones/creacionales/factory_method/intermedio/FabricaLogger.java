@@ -7,6 +7,7 @@ package ar.unrn.patrones.creacionales.factory_method.intermedio;
 interface Logger {
     /**
      * Registra un mensaje.
+     *
      * @param mensaje el texto a registrar.
      */
     void registrar(String mensaje);
@@ -17,7 +18,10 @@ interface Logger {
  * El paquete aplica Factory Method a la creacion de loggers para variar el destino del registro sin cambiar el cliente.
  */
 class ConsoleLogger implements Logger {
-    @Override public void registrar(String mensaje) { System.out.println("[CONSOLE] " + mensaje); }
+    @Override
+    public void registrar(String mensaje) {
+        System.out.println("[CONSOLE] " + mensaje);
+    }
 }
 
 /**
@@ -25,7 +29,10 @@ class ConsoleLogger implements Logger {
  * El paquete aplica Factory Method a la creacion de loggers para variar el destino del registro sin cambiar el cliente.
  */
 class FileLogger implements Logger {
-    @Override public void registrar(String mensaje) { System.out.println("[FILE] Escribiendo en log.txt: " + mensaje); }
+    @Override
+    public void registrar(String mensaje) {
+        System.out.println("[FILE] Escribiendo en log.txt: " + mensaje);
+    }
 }
 
 /**
@@ -35,12 +42,14 @@ class FileLogger implements Logger {
 public abstract class FabricaLogger {
     /**
      * Método fábrica.
+     *
      * @return una instancia de Logger.
      */
     protected abstract Logger crearLogger();
 
     /**
      * Registra un evento de información.
+     *
      * @param msg mensaje de información.
      */
     public void info(String msg) {

@@ -7,7 +7,7 @@ package ar.unrn.solid.ocp;
 public interface Forma {
     /**
      * Calcula el área de la forma.
-     * 
+     *
      * @return el área calculada.
      */
     double calcularArea();

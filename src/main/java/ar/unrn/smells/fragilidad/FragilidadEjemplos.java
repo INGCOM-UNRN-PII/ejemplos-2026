@@ -5,7 +5,9 @@ package ar.unrn.smells.fragilidad;
  * El paquete muestra fragilidad, es decir, cambios laterales que rompen partes aparentemente independientes del sistema.
  */
 class ConfiguracionGlobal {
-    /** Tiempo de espera predeterminado en milisegundos. */
+    /**
+     * Tiempo de espera predeterminado en milisegundos.
+     */
     public static int TIMEOUT = 5000;
 }
 
@@ -29,7 +31,7 @@ class ModuloA {
 class ModuloB {
     /**
      * Procesa una tarea validando que el TIMEOUT sea suficiente.
-     * 
+     *
      * @throws RuntimeException si el tiempo configurado es insuficiente.
      */
     public void procesar() {
@@ -51,10 +53,20 @@ class Base {
         paso1();
         paso2();
     }
-    /** Realiza el primer paso. */
-    protected void paso1() { System.out.println("Base Paso 1"); }
-    /** Realiza el segundo paso. */
-    protected void paso2() { System.out.println("Base Paso 2"); }
+
+    /**
+     * Realiza el primer paso.
+     */
+    protected void paso1() {
+        System.out.println("Base Paso 1");
+    }
+
+    /**
+     * Realiza el segundo paso.
+     */
+    protected void paso2() {
+        System.out.println("Base Paso 2");
+    }
 }
 
 /**

@@ -17,7 +17,7 @@ public class ConfiguracionBasica {
 
     /**
      * Obtiene la instancia única de la clase.
-     * 
+     *
      * @return la instancia única.
      */
     public static ConfiguracionBasica obtenerInstancia() {
@@ -29,7 +29,7 @@ public class ConfiguracionBasica {
 
     /**
      * Obtiene el valor de configuración.
-     * 
+     *
      * @return el valor actual.
      */
     public String obtenerValor() {
@@ -38,7 +38,7 @@ public class ConfiguracionBasica {
 
     /**
      * Establece un nuevo valor de configuración.
-     * 
+     *
      * @param valor el nuevo valor.
      */
     public void establecerValor(String valor) {

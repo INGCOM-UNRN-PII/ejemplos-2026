@@ -1,7 +1,6 @@
 package ar.unrn.equals.problemas.inconsistencia;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /**

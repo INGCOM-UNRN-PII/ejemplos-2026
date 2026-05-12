@@ -9,7 +9,7 @@ public class ContenedorNumerico<T extends Number> {
 
     /**
      * Crea un nuevo ContenedorNumerico con el número especificado.
-     * 
+     *
      * @param numero el valor numérico a contener.
      */
     public ContenedorNumerico(T numero) {
@@ -18,7 +18,7 @@ public class ContenedorNumerico<T extends Number> {
 
     /**
      * Obtiene el valor contenido convertido a double.
-     * 
+     *
      * @return el valor del número como un double.
      */
     public double obtenerValorDoble() {
@@ -27,8 +27,9 @@ public class ContenedorNumerico<T extends Number> {
 
     /**
      * Compara el valor de este contenedor con otro contenedor numérico.
-     * 
+     *
      * @param otro el otro contenedor con el que comparar.
+     *
      * @return verdadero si este número es mayor que el otro, falso en caso contrario.
      */
     public boolean esMayorQue(ContenedorNumerico<? extends Number> otro) {

@@ -9,6 +9,7 @@ public interface Dispositivo {
      * Activa el dispositivo.
      */
     void encender();
+
     /**
      * Desactiva el dispositivo.
      */

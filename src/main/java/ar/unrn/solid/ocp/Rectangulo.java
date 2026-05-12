@@ -10,9 +10,9 @@ public class Rectangulo implements Forma {
 
     /**
      * Crea un nuevo rectángulo con las dimensiones especificadas.
-     * 
+     *
      * @param ancho el ancho del rectángulo.
-     * @param alto el alto del rectángulo.
+     * @param alto  el alto del rectángulo.
      */
     public Rectangulo(double ancho, double alto) {
         this.ancho = ancho;
@@ -21,7 +21,7 @@ public class Rectangulo implements Forma {
 
     /**
      * Calcula el área del rectángulo multiplicando ancho por alto.
-     * 
+     *
      * @return el área del rectángulo.
      */
     @Override

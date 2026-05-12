@@ -1,11 +1,11 @@
 package ar.unrn.generados.servicios.manejoarchivos;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.charset.StandardCharsets;
-import java.io.IOException;
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Ejemplo de manejo de archivos usando la API moderna NIO.2.

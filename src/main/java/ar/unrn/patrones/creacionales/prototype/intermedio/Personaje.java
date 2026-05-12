@@ -6,7 +6,10 @@ package ar.unrn.patrones.creacionales.prototype.intermedio;
  */
 class Habilidad {
     public String nombre;
-    public Habilidad(String n) { this.nombre = n; }
+
+    public Habilidad(String n) {
+        this.nombre = n;
+    }
 }
 
 /**
@@ -22,7 +25,9 @@ public class Personaje implements Cloneable {
         this.habilidadPrincipal = h;
     }
 
-    /** Clonación que debe considerar si es superficial o profunda. */
+    /**
+     * Clonación que debe considerar si es superficial o profunda.
+     */
     @Override
     public Personaje clone() {
         try {

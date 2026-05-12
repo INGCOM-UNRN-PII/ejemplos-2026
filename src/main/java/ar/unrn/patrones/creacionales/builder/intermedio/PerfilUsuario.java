@@ -30,22 +30,48 @@ public class PerfilUsuario {
         private String telefono = "";
         private String direccion = "";
 
-        /** @param nombre requerido @param apellido requerido */
+        /**
+         * @param nombre requerido @param apellido requerido
+         */
         public Builder(String nombre, String apellido) {
             this.nombre = nombre;
             this.apellido = apellido;
         }
 
-        /** @param edad opcional @return this */
-        public Builder conEdad(int edad) { this.edad = edad; return this; }
-        /** @param tel opcional @return this */
-        public Builder conTelefono(String tel) { this.telefono = tel; return this; }
-        /** @param dir opcional @return this */
-        public Builder conDireccion(String dir) { this.direccion = dir; return this; }
+        /**
+         * @param edad opcional @return this
+         */
+        public Builder conEdad(int edad) {
+            this.edad = edad;
+            return this;
+        }
 
-        /** @return instancia de PerfilUsuario */
-        public PerfilUsuario construir() { return new PerfilUsuario(this); }
+        /**
+         * @param tel opcional @return this
+         */
+        public Builder conTelefono(String tel) {
+            this.telefono = tel;
+            return this;
+        }
+
+        /**
+         * @param dir opcional @return this
+         */
+        public Builder conDireccion(String dir) {
+            this.direccion = dir;
+            return this;
+        }
+
+        /**
+         * @return instancia de PerfilUsuario
+         */
+        public PerfilUsuario construir() {
+            return new PerfilUsuario(this);
+        }
     }
 
-    @Override public String toString() { return "Usuario: " + nombre + " " + apellido + " (Edad: " + edad + ")"; }
+    @Override
+    public String toString() {
+        return "Usuario: " + nombre + " " + apellido + " (Edad: " + edad + ")";
+    }
 }

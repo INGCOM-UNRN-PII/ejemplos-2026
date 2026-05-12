@@ -10,7 +10,7 @@ public class BloatersExamples {
 
     /**
      * Registra un evento con una lista excesiva de parámetros (Data Clump).
-     * 
+     *
      * @param nombre     nombre del evento.
      * @param diaInicio  día de inicio.
      * @param mesInicio  mes de inicio.
@@ -22,15 +22,15 @@ public class BloatersExamples {
      * @param ciudad     ciudad de ubicación.
      * @param pais       país de ubicación.
      */
-    public void registrarEvento(String nombre, int diaInicio, int mesInicio, int anioInicio, 
-                                int diaFin, int mesFin, int anioFin, 
+    public void registrarEvento(String nombre, int diaInicio, int mesInicio, int anioInicio,
+                                int diaFin, int mesFin, int anioFin,
                                 String calle, String ciudad, String pais) {
         // ...
     }
 
     /**
      * Procesa datos de un usuario utilizando tipos primitivos (Primitive Obsession).
-     * 
+     *
      * @param email    correo electrónico.
      * @param telefono número de teléfono.
      * @param cuit     identificación fiscal.
@@ -53,14 +53,33 @@ class GestorTodoEnUno {
     private String configuracionDb;
     private String logPath;
 
-    /** Agrega un nuevo usuario al sistema. */
-    public void agregarUsuario() {}
-    /** Realiza el procesamiento de una factura. */
-    public void procesarFactura() {}
-    /** Establece la conexión con la base de datos. */
-    public void conectarDb() {}
-    /** Genera y envía un reporte por consola. */
-    public void imprimirReporte() {}
-    /** Envía una notificación por correo electrónico. */
-    public void enviarEmail() {}
+    /**
+     * Agrega un nuevo usuario al sistema.
+     */
+    public void agregarUsuario() {
+    }
+
+    /**
+     * Realiza el procesamiento de una factura.
+     */
+    public void procesarFactura() {
+    }
+
+    /**
+     * Establece la conexión con la base de datos.
+     */
+    public void conectarDb() {
+    }
+
+    /**
+     * Genera y envía un reporte por consola.
+     */
+    public void imprimirReporte() {
+    }
+
+    /**
+     * Envía una notificación por correo electrónico.
+     */
+    public void enviarEmail() {
+    }
 }

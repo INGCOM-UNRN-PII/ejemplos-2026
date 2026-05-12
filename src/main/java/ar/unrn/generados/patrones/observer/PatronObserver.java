@@ -15,6 +15,7 @@ import java.util.List;
  */
 
 // 1. Interfaz que deben implementar todos los observadores.
+
 /**
  * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
  * El paquete implementa Observer con fines didacticos para hacer visible como un sujeto desacoplado distribuye cambios a varios observadores.
@@ -24,6 +25,7 @@ interface Observador {
 }
 
 // 2. Interfaz para el sujeto observable (Sujeto).
+
 /**
  * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
  * El paquete implementa Observer con fines didacticos para hacer visible como un sujeto desacoplado distribuye cambios a varios observadores.

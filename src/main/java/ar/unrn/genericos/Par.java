@@ -10,7 +10,7 @@ public class Par<K, V> {
 
     /**
      * Crea un nuevo Par con la clave y el valor especificados.
-     * 
+     *
      * @param clave la clave del par.
      * @param valor el valor asociado a la clave.
      */
@@ -21,7 +21,7 @@ public class Par<K, V> {
 
     /**
      * Obtiene la clave del par.
-     * 
+     *
      * @return la clave almacenada.
      */
     public K obtenerClave() {
@@ -30,7 +30,7 @@ public class Par<K, V> {
 
     /**
      * Obtiene el valor del par.
-     * 
+     *
      * @return el valor almacenado.
      */
     public V obtenerValor() {
@@ -39,7 +39,7 @@ public class Par<K, V> {
 
     /**
      * Devuelve una representación en cadena del par.
-     * 
+     *
      * @return una cadena con el formato (clave, valor).
      */
     @Override

@@ -23,8 +23,9 @@ class VentanaFactura {
 class ValidadorUsuario {
     /**
      * Valida si un nombre de usuario es correcto consultando archivos del sistema.
-     * 
+     *
      * @param nombre el nombre del usuario a validar.
+     *
      * @return verdadero si el nombre no es nulo ni vacío.
      */
     public boolean esValido(String nombre) {

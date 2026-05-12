@@ -5,9 +5,14 @@ package ar.unrn.patrones.creacionales.factory_method.avanzado;
  * El paquete usa Factory Method para delegar la creacion de documentos especializados segun el formato requerido.
  */
 interface Documento {
-    /** @return el tipo de documento. */
+    /**
+     * @return el tipo de documento.
+     */
     String obtenerTipo();
-    /** Realiza el guardado. */
+
+    /**
+     * Realiza el guardado.
+     */
     void guardar();
 }
 
@@ -16,8 +21,15 @@ interface Documento {
  * El paquete usa Factory Method para delegar la creacion de documentos especializados segun el formato requerido.
  */
 class DocumentoPdf implements Documento {
-    @Override public String obtenerTipo() { return "PDF"; }
-    @Override public void guardar() { System.out.println("Generando estructura binaria PDF..."); }
+    @Override
+    public String obtenerTipo() {
+        return "PDF";
+    }
+
+    @Override
+    public void guardar() {
+        System.out.println("Generando estructura binaria PDF...");
+    }
 }
 
 /**
@@ -25,8 +37,15 @@ class DocumentoPdf implements Documento {
  * El paquete usa Factory Method para delegar la creacion de documentos especializados segun el formato requerido.
  */
 class DocumentoHtml implements Documento {
-    @Override public String obtenerTipo() { return "HTML"; }
-    @Override public void guardar() { System.out.println("Generando etiquetas <html>..."); }
+    @Override
+    public String obtenerTipo() {
+        return "HTML";
+    }
+
+    @Override
+    public void guardar() {
+        System.out.println("Generando etiquetas <html>...");
+    }
 }
 
 /**
@@ -36,6 +55,7 @@ class DocumentoHtml implements Documento {
 public abstract class GestorDocumentos {
     /**
      * Método fábrica abstracto.
+     *
      * @return un nuevo Documento.
      */
     public abstract Documento crearDocumento();

@@ -9,5 +9,7 @@ public class Robot implements Trabajador {
      * El robot realiza su trabajo incansablemente.
      */
     @Override
-    public void trabajar() { System.out.println("Robot trabajando incansablemente"); }
+    public void trabajar() {
+        System.out.println("Robot trabajando incansablemente");
+    }
 }

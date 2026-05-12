@@ -29,7 +29,7 @@ public class GestorConfiguracionAvanzado {
 
     /**
      * Obtiene la instancia única.
-     * 
+     *
      * @return la instancia única.
      */
     public static GestorConfiguracionAvanzado obtenerInstancia() {
@@ -38,8 +38,9 @@ public class GestorConfiguracionAvanzado {
 
     /**
      * Obtiene un valor de configuración por su clave.
-     * 
+     *
      * @param clave la clave de la configuración.
+     *
      * @return el valor asociado o null si no existe.
      */
     public String obtenerConfiguracion(String clave) {

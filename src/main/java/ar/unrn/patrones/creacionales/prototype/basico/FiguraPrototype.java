@@ -7,7 +7,9 @@ package ar.unrn.patrones.creacionales.prototype.basico;
 public abstract class FiguraPrototype implements Cloneable {
     protected String color;
 
-    /** @return clon del objeto */
+    /**
+     * @return clon del objeto
+     */
     @Override
     public FiguraPrototype clone() {
         try {
@@ -17,7 +19,10 @@ public abstract class FiguraPrototype implements Cloneable {
         }
     }
 
-    public void establecerColor(String color) { this.color = color; }
+    public void establecerColor(String color) {
+        this.color = color;
+    }
+
     public abstract void dibujar();
 }
 
@@ -27,6 +32,13 @@ public abstract class FiguraPrototype implements Cloneable {
  */
 class CirculoPrototype extends FiguraPrototype {
     private int radio;
-    public CirculoPrototype(int radio) { this.radio = radio; }
-    @Override public void dibujar() { System.out.println("Círculo [radio=" + radio + ", color=" + color + "]"); }
+
+    public CirculoPrototype(int radio) {
+        this.radio = radio;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Círculo [radio=" + radio + ", color=" + color + "]");
+    }
 }

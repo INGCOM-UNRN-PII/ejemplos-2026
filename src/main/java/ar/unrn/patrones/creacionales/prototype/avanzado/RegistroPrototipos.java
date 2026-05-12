@@ -8,9 +8,14 @@ import java.util.Map;
  * El paquete usa Prototype para registrar y clonar objetos a partir de prototipos ya configurados.
  */
 interface ComponenteUi extends Cloneable {
-    /** @return clon */
+    /**
+     * @return clon
+     */
     ComponenteUi clone();
-    /** Visualiza. */
+
+    /**
+     * Visualiza.
+     */
     void mostrar();
 }
 
@@ -21,12 +26,16 @@ interface ComponenteUi extends Cloneable {
 public class RegistroPrototipos {
     private Map<String, ComponenteUi> prototipos = new HashMap<>();
 
-    /** @param clave id @param p prototipo */
+    /**
+     * @param clave id @param p prototipo
+     */
     public void registrar(String clave, ComponenteUi p) {
         prototipos.put(clave, p);
     }
 
-    /** @param clave id @return nuevo clon del prototipo registrado */
+    /**
+     * @param clave id @return nuevo clon del prototipo registrado
+     */
     public ComponenteUi obtener(String clave) {
         ComponenteUi p = prototipos.get(clave);
         return (p != null) ? p.clone() : null;
@@ -39,7 +48,18 @@ public class RegistroPrototipos {
  */
 class BotonPersonalizado implements ComponenteUi {
     private String texto;
-    public BotonPersonalizado(String t) { this.texto = t; }
-    @Override public ComponenteUi clone() { return new BotonPersonalizado(this.texto); }
-    @Override public void mostrar() { System.out.println("Botón: " + texto); }
+
+    public BotonPersonalizado(String t) {
+        this.texto = t;
+    }
+
+    @Override
+    public ComponenteUi clone() {
+        return new BotonPersonalizado(this.texto);
+    }
+
+    @Override
+    public void mostrar() {
+        System.out.println("Botón: " + texto);
+    }
 }

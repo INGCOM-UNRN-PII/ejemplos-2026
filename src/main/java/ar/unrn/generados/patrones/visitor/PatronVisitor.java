@@ -17,6 +17,7 @@ import java.util.List;
  */
 
 // 1. Interfaz que deben implementar todos los elementos visitables.
+
 /**
  * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
  * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.
@@ -27,6 +28,7 @@ interface Elemento {
 
 // 2. Interfaz que define las operaciones del visitante.
 // Notá que hay un método por cada tipo concreto de elemento.
+
 /**
  * Define el contrato minimo que las implementaciones del paquete deben cumplir para colaborar sin depender de detalles concretos.
  * El paquete implementa Visitor con fines didacticos para separar operaciones nuevas de una estructura de objetos estable.

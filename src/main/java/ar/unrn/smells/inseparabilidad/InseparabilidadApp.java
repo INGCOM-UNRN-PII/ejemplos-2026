@@ -7,7 +7,7 @@ package ar.unrn.smells.inseparabilidad;
 public class InseparabilidadApp {
     /**
      * Punto de entrada de la aplicación.
-     * 
+     *
      * @param args argumentos de la línea de comandos (no se utilizan).
      */
     public static void main(String[] args) {

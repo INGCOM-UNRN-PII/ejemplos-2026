@@ -1,7 +1,7 @@
 package ar.unrn.generados.servicios.entradasalida;
 
-import java.util.Scanner;
 import java.util.Locale;
+import java.util.Scanner;
 
 /**
  * Demostración de Entrada y Salida de datos en consola.

@@ -9,7 +9,7 @@ public class Caja<T> {
 
     /**
      * Coloca un objeto dentro de la caja.
-     * 
+     *
      * @param contenido el objeto a guardar en la caja.
      */
     public void poner(T contenido) {
@@ -18,7 +18,7 @@ public class Caja<T> {
 
     /**
      * Recupera el objeto almacenado en la caja.
-     * 
+     *
      * @return el objeto contenido en la caja, o null si está vacía.
      */
     public T obtener() {
@@ -27,7 +27,7 @@ public class Caja<T> {
 
     /**
      * Verifica si la caja está vacía.
-     * 
+     *
      * @return verdadero si el contenido es nulo, falso en caso contrario.
      */
     public boolean estaVacia() {

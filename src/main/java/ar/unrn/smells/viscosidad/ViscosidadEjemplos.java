@@ -5,7 +5,9 @@ package ar.unrn.smells.viscosidad;
  * El paquete muestra viscosidad, donde la solucion correcta parece mas costosa que el atajo y eso empuja a degradar el diseño.
  */
 class AtajoSucio {
-    /** Dato compartido globalmente. */
+    /**
+     * Dato compartido globalmente.
+     */
     public static String DATO_COMPARTIDO; // Usado para evitar pasar parámetros en un diseño rígido
 }
 
@@ -29,7 +31,7 @@ class Capa10 {
 class LoggerViscoso {
     /**
      * Simula el log de un mensaje manejando detalles de bajo nivel.
-     * 
+     *
      * @param msg el mensaje a registrar.
      */
     public void log(String msg) {

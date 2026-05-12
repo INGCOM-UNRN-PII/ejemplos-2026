@@ -12,7 +12,7 @@ public class FacturaRefactoring {
 
     /**
      * Crea una nueva instancia de FacturaRefactoring.
-     * 
+     *
      * @param cliente el nombre del cliente.
      * @param items   la lista de ítems de la factura.
      */
@@ -49,5 +49,6 @@ public class FacturaRefactoring {
      * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.
      * El paquete concentra un ejercicio donde un metodo grande se divide en pasos con nombre para volver explicita la intencion del codigo.
      */
-    public record Item(String nombre, double precio) {}
+    public record Item(String nombre, double precio) {
+    }
 }

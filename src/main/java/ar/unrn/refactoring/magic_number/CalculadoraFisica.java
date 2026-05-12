@@ -7,9 +7,10 @@ package ar.unrn.refactoring.magic_number;
 public class CalculadoraFisica {
     /**
      * Calcula la energía potencial gravitatoria.
-     * 
+     *
      * @param masa   la masa del objeto en kg.
      * @param altura la altura en metros.
+     *
      * @return la energía potencial en Joules.
      */
     public double calcularEnergiaPotencial(double masa, double altura) {

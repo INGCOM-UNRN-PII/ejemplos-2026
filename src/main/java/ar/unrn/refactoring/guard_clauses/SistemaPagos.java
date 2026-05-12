@@ -8,10 +8,11 @@ public class SistemaPagos {
     /**
      * Calcula el monto de reembolso aplicando condiciones.
      * MÉTODO A REFACTORIZAR: Anidamiento excesivo (Arrow Code) reemplazable por Guard Clauses.
-     * 
-     * @param esElegible   si el cliente califica para el reembolso.
-     * @param estaVencido  si la fecha de solicitud ha expirado.
-     * @param monto        el monto original del pago.
+     *
+     * @param esElegible  si el cliente califica para el reembolso.
+     * @param estaVencido si la fecha de solicitud ha expirado.
+     * @param monto       el monto original del pago.
+     *
      * @return el monto de reembolso calculado.
      */
     public double obtenerMontoReembolso(boolean esElegible, boolean estaVencido, double monto) {

@@ -7,7 +7,7 @@ package ar.unrn.solid.srp;
 public class ImpresoraFactura {
     /**
      * Envía la información de la factura a la consola.
-     * 
+     *
      * @param factura la factura a imprimir.
      */
     public void imprimir(Factura factura) {

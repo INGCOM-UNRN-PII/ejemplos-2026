@@ -30,7 +30,7 @@ public class CarritoDeCompras {
         for (double precio : items) {
             total += precio;
         }
-        
+
         // El carrito delega el cálculo del descuento a la estrategia configurada
         return descuentoStrategy.aplicarDescuento(total);
     }

@@ -5,7 +5,9 @@ package ar.unrn.patrones.creacionales.factory_method.basico;
  * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
  */
 interface Figura {
-    /** Dibuja la figura. */
+    /**
+     * Dibuja la figura.
+     */
     void dibujar();
 }
 
@@ -14,7 +16,10 @@ interface Figura {
  * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
  */
 class Circulo implements Figura {
-    @Override public void dibujar() { System.out.println("Dibujando Círculo"); }
+    @Override
+    public void dibujar() {
+        System.out.println("Dibujando Círculo");
+    }
 }
 
 /**
@@ -22,7 +27,10 @@ class Circulo implements Figura {
  * El paquete explica Factory Method delegando en subclases la decision sobre que producto concreto crear.
  */
 class Cuadrado implements Figura {
-    @Override public void dibujar() { System.out.println("Dibujando Cuadrado"); }
+    @Override
+    public void dibujar() {
+        System.out.println("Dibujando Cuadrado");
+    }
 }
 
 /**
@@ -32,7 +40,7 @@ class Cuadrado implements Figura {
 public abstract class FabricaFiguras {
     /**
      * Método fábrica que debe ser implementado por subclases.
-     * 
+     *
      * @return una nueva instancia de Figura.
      */
     public abstract Figura crearFigura();

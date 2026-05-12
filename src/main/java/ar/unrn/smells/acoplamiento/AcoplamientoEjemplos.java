@@ -10,7 +10,7 @@ class ProcesadorPedido {
 
     /**
      * Procesa un pedido guardándolo en la base de datos y enviando un email.
-     * 
+     *
      * @param pedido descripción del pedido a procesar.
      */
     public void procesar(String pedido) {
@@ -23,26 +23,30 @@ class ProcesadorPedido {
  * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
  * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
-class EmailService { 
+class EmailService {
     /**
      * Simula el envío de un mensaje.
-     * 
+     *
      * @param msg el contenido del mensaje.
      */
-    void enviar(String msg) { System.out.println("Enviando email: " + msg); } 
+    void enviar(String msg) {
+        System.out.println("Enviando email: " + msg);
+    }
 }
 
 /**
  * Representa una pieza del ejemplo de acoplamiento y deja visible por que una clase depende de demasiados detalles de otras.
  * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
-class SqlDatabase { 
+class SqlDatabase {
     /**
      * Simula el guardado de datos.
-     * 
+     *
      * @param data los datos a persistir.
      */
-    void guardar(String data) { System.out.println("Guardando en SQL: " + data); } 
+    void guardar(String data) {
+        System.out.println("Guardando en SQL: " + data);
+    }
 }
 
 /**
@@ -50,9 +54,13 @@ class SqlDatabase {
  * El paquete muestra acoplamiento excesivo y permite ver cuando una clase queda trabada a demasiados detalles de sus colaboradoras.
  */
 class Auto {
-    /** Temperatura del agua del motor. */
+    /**
+     * Temperatura del agua del motor.
+     */
     public int temperaturaAgua = 20;
-    /** Estado del ventilador de refrigeración. */
+    /**
+     * Estado del ventilador de refrigeración.
+     */
     public boolean ventiladorEncendido = false;
 }
 
@@ -63,7 +71,7 @@ class Auto {
 class Motor {
     /**
      * Chequea la temperatura del auto y activa el ventilador si es necesario.
-     * 
+     *
      * @param auto el auto a chequear.
      */
     public void chequear(Auto auto) {

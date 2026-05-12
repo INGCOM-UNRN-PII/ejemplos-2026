@@ -9,7 +9,7 @@ public class Factura {
 
     /**
      * Crea una nueva factura con el monto especificado.
-     * 
+     *
      * @param monto el importe total de la factura.
      */
     public Factura(double monto) {
@@ -18,7 +18,7 @@ public class Factura {
 
     /**
      * Obtiene el monto de la factura.
-     * 
+     *
      * @return el importe total.
      */
     public double obtenerMonto() {

@@ -9,7 +9,7 @@ public class Cuadrado implements FiguraLSP {
 
     /**
      * Crea un nuevo cuadrado con el lado especificado.
-     * 
+     *
      * @param lado el tamaño del lado del cuadrado.
      */
     public Cuadrado(int lado) {
@@ -18,7 +18,7 @@ public class Cuadrado implements FiguraLSP {
 
     /**
      * Calcula el área del cuadrado (lado * lado).
-     * 
+     *
      * @return el área del cuadrado.
      */
     @Override
