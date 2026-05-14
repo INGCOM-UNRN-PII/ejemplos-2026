@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.strategy;
+package ar.unrn.refactoring.patrones_diseno.intermedio.strategy;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

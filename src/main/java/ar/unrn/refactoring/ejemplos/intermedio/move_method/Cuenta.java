@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.move_method;
+package ar.unrn.refactoring.ejemplos.intermedio.move_method;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

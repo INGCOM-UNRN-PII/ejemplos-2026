@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.guard_clauses;
+package ar.unrn.refactoring.ejemplos.basico.guard_clauses;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

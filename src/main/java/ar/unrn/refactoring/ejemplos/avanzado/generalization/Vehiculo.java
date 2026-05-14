@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.generalization;
+package ar.unrn.refactoring.ejemplos.avanzado.generalization;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

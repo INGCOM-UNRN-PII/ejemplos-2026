@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.polimorfismo;
+package ar.unrn.refactoring.ejemplos.intermedio.polimorfismo;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

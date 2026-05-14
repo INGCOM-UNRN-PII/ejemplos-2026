@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.extract_method;
+package ar.unrn.refactoring.ejemplos.basico.extract_method;
 
 import java.util.List;
 

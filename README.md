@@ -37,6 +37,10 @@ src/main/java/ar/unrn/
 ├── inmutable/mensaje/          # Objetos inmutables
 ├── lista/red/                  # Estructura de datos personalizada
 ├── mutable/arreglo/            # Mutabilidad en arreglos
+├── refactoring/
+│   ├── enunciados/             # Ejercicios por dificultad, grupo y refactorización
+│   ├── ejemplos/               # Refactorizaciones resueltas, ordenadas por dificultad
+│   └── patrones_diseno/        # Refactorizaciones orientadas a patrones de diseño
 └── patrones/
     ├── comportamiento/         # Strategy, Observer, State y Chain of Responsibility
     ├── creacionales/           # Builder, Factory Method, Prototype y más
@@ -71,6 +75,12 @@ src/main/java/ar/unrn/
 - **Patrones estructurales**: [`Bridge`](src/main/java/ar/unrn/patrones/estructurales/bridge/), [`Flyweight`](src/main/java/ar/unrn/patrones/estructurales/flyweight/).
 - **Integración de patrones**: [`Smart Home`](src/main/java/ar/unrn/patrones/integracion/smarthome/).
 - **Servicios**: [`ManejoFechas`](src/main/java/ar/unrn/generados/servicios/manejofechas/), [`ManejoArchivos`](src/main/java/ar/unrn/generados/servicios/manejoarchivos/).
+
+### 5. Refactorización
+- **Índice general**: [`ar/unrn/refactoring`](src/main/java/ar/unrn/refactoring/README.md).
+- **Ejemplos resueltos por dificultad**: [`ejemplos/`](src/main/java/ar/unrn/refactoring/ejemplos/README.md).
+- **Enunciados por dificultad, grupo y refactorización**: [`enunciados/`](src/main/java/ar/unrn/refactoring/enunciados/README.md).
+- **Refactorizaciones orientadas a patrones de diseño**: [`patrones_diseno/`](src/main/java/ar/unrn/refactoring/patrones_diseno/README.md).
 
 ---
 

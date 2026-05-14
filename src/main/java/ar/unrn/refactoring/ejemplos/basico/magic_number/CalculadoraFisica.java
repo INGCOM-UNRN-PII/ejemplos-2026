@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.magic_number;
+package ar.unrn.refactoring.ejemplos.basico.magic_number;
 
 /**
  * Representa el codigo base del ejercicio y sirve como material sobre el que se razona el refactoring propuesto por el paquete.

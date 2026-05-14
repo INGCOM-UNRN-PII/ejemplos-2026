@@ -1,4 +1,4 @@
-package ar.unrn.refactoring.parameter_object;
+package ar.unrn.refactoring.ejemplos.basico.parameter_object;
 
 import java.time.LocalDate;
 
