@@ -12,6 +12,7 @@ El proyecto sigue una estructura de **un paquete por ejemplo**, facilitando el a
 ```text
 src/main/java/ar/unrn/
 ├── basicos/contador/           # Contador elemental
+├── demeter/                    # Ley de Demeter y message chains
 ├── dominio/combate/            # Encapsulamiento estricto (Arma, Combatiente)
 ├── equals/
 │   ├── correcto/persona/       # Implementación robusta (Persona)
@@ -35,6 +36,7 @@ src/main/java/ar/unrn/
 │   ├── superconstructor/       # Llamada a super() en constructores
 │   └── superkeyword/           # Extensión de lógica con super.metodo()
 ├── inmutable/mensaje/          # Objetos inmutables
+├── inter/                      # Escala de interdependencia entre modulos
 ├── lista/red/                  # Estructura de datos personalizada
 ├── mutable/arreglo/            # Mutabilidad en arreglos
 ├── refactoring/
@@ -57,6 +59,8 @@ src/main/java/ar/unrn/
 
 ### 2. Orientación a Objetos Avanzada
 - **Encapsulamiento**: [`Combate`](src/main/java/ar/unrn/dominio/combate/) (Tell, Don't Ask).
+- **Ley de Demeter**: [`demeter/`](src/main/java/ar/unrn/demeter/) para contrastar cadenas de mensajes contra delegacion directa.
+- **Interdependencia**: [`inter/`](src/main/java/ar/unrn/inter/) para comparar contenido, global, control, datos y mensajes.
 - **Sobreescritura**: [`SobreescrituraSuper`](src/main/java/ar/unrn/herencia/superkeyword/SobreescrituraSuper.java), [`ProblemaSinOverride`](src/main/java/ar/unrn/herencia/sinoverride/ProblemaSinOverride.java).
 - **Polimorfismo**: [`EjemploInterfaces`](src/main/java/ar/unrn/generados/objetos/interfaces/EjemploInterfaces.java).
 
