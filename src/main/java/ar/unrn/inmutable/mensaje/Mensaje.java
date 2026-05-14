@@ -1,4 +1,4 @@
-package ar.unrn.dos.inmutable.mensaje;
+package ar.unrn.inmutable.mensaje;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package ar.unrn.dos.inmutable.mensaje;
+package ar.unrn.inmutable.mensaje;
 
 /**
  * Aplicación de consola para demostrar que el uso de clases inmutables
