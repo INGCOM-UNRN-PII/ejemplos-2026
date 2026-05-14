@@ -7,11 +7,11 @@ dependiendo del estado en el que se encuentre.
 ## Contexto inicial
 
 La clase `MaquinaExpendedora` (nuestro Contexto) vende una bebida que cuesta **$10**.
-Actualmente tenemos la estructura básica: la interfaz `EstadoMaquina` y las clases que representan los estados (
-`SinMonedaState`, `ConMonedaState` y `AgotadoState`), pero sus métodos están vacíos (con `TODOs`).
+El paquete ya incluye la implementación completa de la interfaz `EstadoMaquina` y de los estados
+`SinMonedaState`, `ConMonedaState` y `AgotadoState`.
 
-El objetivo es codificarlos paso a paso junto con los alumnos para entender cómo se delega la lógica y se realizan las
-transiciones.
+El objetivo es revisarlos o reconstruirlos paso a paso junto con los alumnos para entender cómo se delega la lógica y se
+realizan las transiciones.
 
 ---
 

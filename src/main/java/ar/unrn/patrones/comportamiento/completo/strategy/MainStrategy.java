@@ -12,7 +12,7 @@ public class MainStrategy {
 
         System.out.println("Total sin descuento (default): " + carrito.calcularTotal());
 
-        carrito.setDescuentoStrategy(new DescuentoFijoStrategy(20.0));
+        carrito.setDescuentoStrategy(new DescuentoCuponStrategy(20.0));
         System.out.println("Total con descuento fijo de 20: " + carrito.calcularTotal());
 
         carrito.setDescuentoStrategy(new DescuentoPorcentajeStrategy(10.0));

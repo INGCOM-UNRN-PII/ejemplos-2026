@@ -5,5 +5,20 @@ package ar.unrn.patrones.estructurales.flyweight;
  * El paquete modela Flyweight para compartir estado intrinseco y evitar repetir datos pesados en cada objeto del bosque.
  */
 public class Arbol {
-    // TODO: Implementar el Contexto (estado extrínseco)
+    private final int x;
+    private final int y;
+    private final TipoArbol tipo;
+
+    public Arbol(int x, int y, TipoArbol tipo) {
+        if (tipo == null) {
+            throw new IllegalArgumentException("El tipo de arbol no puede ser nulo");
+        }
+        this.x = x;
+        this.y = y;
+        this.tipo = tipo;
+    }
+
+    public void dibujar() {
+        tipo.dibujar(x, y);
+    }
 }

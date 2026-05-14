@@ -6,6 +6,14 @@ package ar.unrn.patrones.estructurales.flyweight;
  */
 public class MainFlyweight {
     public static void main(String[] args) {
-        // TODO: Probar la creación del bosque
+        Bosque bosque = new Bosque();
+
+        bosque.plantarArbol(10, 20, "Roble", "Verde Oscuro", "TexturaRobleHD");
+        bosque.plantarArbol(15, 25, "Roble", "Verde Oscuro", "TexturaRobleHD");
+        bosque.plantarArbol(30, 40, "Pino", "Verde Claro", "TexturaPinoHD");
+        bosque.plantarArbol(35, 45, "Roble", "Verde Oscuro", "TexturaRobleHD");
+
+        System.out.println("\nDibujando el bosque:");
+        bosque.dibujar();
     }
 }

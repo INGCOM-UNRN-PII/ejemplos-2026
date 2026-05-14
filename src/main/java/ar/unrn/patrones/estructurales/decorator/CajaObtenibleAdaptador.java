@@ -1,6 +1,8 @@
 package ar.unrn.patrones.estructurales.decorator;
 
-public class CajaObtenibleAdaptador implements Obtenible{
+import java.math.BigInteger;
+
+public class CajaObtenibleAdaptador implements Obtenible {
     private final Encajable caja;
 
     public CajaObtenibleAdaptador(Encajable caja) {
@@ -8,9 +10,9 @@ public class CajaObtenibleAdaptador implements Obtenible{
     }
 
     @Override
-    public int recuperar() {
+    public BigInteger recuperar() {
         System.out.println("Adaptando!!!!!");
-        return caja.obtener();
+        return new BigInteger(String.valueOf(caja.obtener()));
     }
 
 }

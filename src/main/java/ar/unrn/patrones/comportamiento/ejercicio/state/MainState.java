@@ -13,7 +13,9 @@ public class MainState {
         maquina.solicitarBebida();
 
         // Flujo 2: Pagar de menos
-        maquina.insertarMoneda(5);
+        maquina.insertarMoneda(3);
+        maquina.insertarMoneda(3);
+        maquina.insertarMoneda(3);
 
         // Flujo 3: Comprar exitosamente (Stock pasa de 2 a 1)
         maquina.insertarMoneda(10);

@@ -1,6 +1,6 @@
 package ar.unrn.patrones.estructurales.decorator;
 
-public class BitacoraCaja implements Encajable{
+public class BitacoraCaja implements Encajable {
     private Encajable caja;
 
     public BitacoraCaja(Encajable caja) {

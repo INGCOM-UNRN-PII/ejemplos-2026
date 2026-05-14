@@ -5,7 +5,7 @@ package ar.unrn.patrones.comportamiento.ejercicio.state;
  * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
  */
 public class AgotadoState implements EstadoMaquina {
-    private MaquinaExpendedora maquina;
+    private final MaquinaExpendedora maquina;
 
     public AgotadoState(MaquinaExpendedora maquina) {
         this.maquina = maquina;
@@ -13,16 +13,16 @@ public class AgotadoState implements EstadoMaquina {
 
     @Override
     public void insertarMoneda(int cantidad) {
-        // TODO: Mostrar mensaje indicando que no hay stock y devolver la moneda.
+        System.out.println("Máquina sin stock. Devolviendo moneda de $" + cantidad);
     }
 
     @Override
     public void expulsarMoneda() {
-        // TODO: Mostrar mensaje de que no se puede expulsar nada.
+        System.out.println("No has insertado moneda para expulsar.");
     }
 
     @Override
     public void solicitarBebida() {
-        // TODO: Mostrar mensaje de que no hay stock.
+        System.out.println("Lo sentimos, no hay stock.");
     }
 }

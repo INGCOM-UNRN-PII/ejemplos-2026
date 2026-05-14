@@ -5,7 +5,7 @@ package ar.unrn.patrones.comportamiento.ejercicio.state;
  * El paquete implementa una maquina expendedora con State para mover las reglas de cada situacion a objetos de estado independientes.
  */
 public class SinMonedaState implements EstadoMaquina {
-    private MaquinaExpendedora maquina;
+    private final MaquinaExpendedora maquina;
 
     public SinMonedaState(MaquinaExpendedora maquina) {
         this.maquina = maquina;
@@ -13,18 +13,21 @@ public class SinMonedaState implements EstadoMaquina {
 
     @Override
     public void insertarMoneda(int cantidad) {
-        // TODO: Si la cantidad es igual o mayor al precio de la bebida, 
-        // aceptar la moneda y cambiar al estado ConMonedaState.
-        // Si no, rechazarla (mensaje por consola).
+        if (cantidad >= maquina.getPrecioBebida()) {
+            System.out.println("Moneda de $" + cantidad + " aceptada.");
+            maquina.setEstado(maquina.getConMonedaState());
+            return;
+        }
+        System.out.println("Moneda rechazada. El precio es $" + maquina.getPrecioBebida());
     }
 
     @Override
     public void expulsarMoneda() {
-        // TODO: Mostrar mensaje de que no hay moneda insertada.
+        System.out.println("No has insertado ninguna moneda.");
     }
 
     @Override
     public void solicitarBebida() {
-        // TODO: Mostrar mensaje pidiendo que se inserte moneda primero.
+        System.out.println("Primero debes insertar una moneda.");
     }
 }
