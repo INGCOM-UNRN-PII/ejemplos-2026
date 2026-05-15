@@ -50,41 +50,58 @@ src/main/java/ar/unrn/
     └── integracion/smarthome/  # Composición de múltiples patrones
 ```
 
-## Índice de Ejemplos y Temas
+## Índice general de todos los ejemplos contenidos
 
-### 1. Fundamentos y Sintaxis
-- **Fundamentos**: [`OrigenesJava`](src/main/java/ar/unrn/generados/fundamentos/origenesjava/OrigenesJava.java), [`CaracteristicasLenguaje`](src/main/java/ar/unrn/generados/fundamentos/caracteristicaslenguaje/CaracteristicasLenguaje.java), [`TiposDeDatos`](src/main/java/ar/unrn/generados/fundamentos/tiposdedatos/TiposDeDatos.java).
-- **Sintaxis**: [`ControlFlujo`](src/main/java/ar/unrn/generados/sintaxis/controlflujo/ControlFlujo.java), [`Metodos`](src/main/java/ar/unrn/generados/sintaxis/metodos/Metodos.java), [`EjemploRecursion`](src/main/java/ar/unrn/generados/sintaxis/ejemplorecursion/EjemploRecursion.java).
-- **Herencia Básica**: [`EjemploSuper`](src/main/java/ar/unrn/herencia/superconstructor/EjemploSuper.java) (Llamada a constructor padre).
+### 1. Fundamentos, sintaxis y utilitarios
+- **Básicos**: [`basicos/contador/`](src/main/java/ar/unrn/basicos/contador/).
+- **Fundamentos generados**: [`origenesjava/`](src/main/java/ar/unrn/generados/fundamentos/origenesjava/), [`caracteristicaslenguaje/`](src/main/java/ar/unrn/generados/fundamentos/caracteristicaslenguaje/), [`tiposdedatos/`](src/main/java/ar/unrn/generados/fundamentos/tiposdedatos/).
+- **Sintaxis generada**: [`argumentosvariables/`](src/main/java/ar/unrn/generados/sintaxis/argumentosvariables/), [`controlflujo/`](src/main/java/ar/unrn/generados/sintaxis/controlflujo/), [`ejemplorecursion/`](src/main/java/ar/unrn/generados/sintaxis/ejemplorecursion/), [`metodos/`](src/main/java/ar/unrn/generados/sintaxis/metodos/).
+- **Colecciones generadas**: [`arreglos/`](src/main/java/ar/unrn/generados/colecciones/arreglos/), [`dinamicas/`](src/main/java/ar/unrn/generados/colecciones/dinamicas/), [`genericos/`](src/main/java/ar/unrn/generados/colecciones/genericos/).
+- **Objetos generados**: [`interfaces/`](src/main/java/ar/unrn/generados/objetos/interfaces/), [`internas/`](src/main/java/ar/unrn/generados/objetos/internas/), [`memoria/`](src/main/java/ar/unrn/generados/objetos/memoria/).
+- **Servicios generados**: [`entradasalida/`](src/main/java/ar/unrn/generados/servicios/entradasalida/), [`manejoarchivos/`](src/main/java/ar/unrn/generados/servicios/manejoarchivos/), [`manejofechas/`](src/main/java/ar/unrn/generados/servicios/manejofechas/).
+- **Utilitarios**: [`generados/util/matematica/`](src/main/java/ar/unrn/generados/util/matematica/), [`genericos/`](src/main/java/ar/unrn/genericos/), [`docs/`](src/main/java/ar/unrn/docs/), [`generados/parciales/`](src/main/java/ar/unrn/generados/parciales/).
 
-### 2. Orientación a Objetos Avanzada
-- **Encapsulamiento**: [`Combate`](src/main/java/ar/unrn/dominio/combate/) (Tell, Don't Ask).
-- **Ley de Demeter**: [`demeter/`](src/main/java/ar/unrn/demeter/) para contrastar cadenas de mensajes contra delegacion directa.
-- **Interdependencia**: [`inter/`](src/main/java/ar/unrn/inter/) para comparar contenido, global, control, datos y mensajes.
-- **Sobreescritura**: [`SobreescrituraSuper`](src/main/java/ar/unrn/herencia/superkeyword/SobreescrituraSuper.java), [`ProblemaSinOverride`](src/main/java/ar/unrn/herencia/sinoverride/ProblemaSinOverride.java).
-- **Polimorfismo**: [`EjemploInterfaces`](src/main/java/ar/unrn/generados/objetos/interfaces/EjemploInterfaces.java).
+### 2. Objetos, encapsulamiento y colaboración
+- **Dominio y encapsulamiento**: [`dominio/combate/`](src/main/java/ar/unrn/dominio/combate/), [`dominio/geometria/`](src/main/java/ar/unrn/dominio/geometria/).
+- **Herencia**: [`herencia/figuras/geometria/`](src/main/java/ar/unrn/herencia/figuras/geometria/), [`herencia/sinoverride/`](src/main/java/ar/unrn/herencia/sinoverride/), [`herencia/superconstructor/`](src/main/java/ar/unrn/herencia/superconstructor/), [`herencia/superkeyword/`](src/main/java/ar/unrn/herencia/superkeyword/).
+- **Mutabilidad e inmutabilidad**: [`inmutable/mensaje/`](src/main/java/ar/unrn/inmutable/mensaje/), [`mutable/arreglo/`](src/main/java/ar/unrn/mutable/arreglo/), [`lista/red/`](src/main/java/ar/unrn/lista/red/).
+- **Ley de Demeter**: [`demeter/`](src/main/java/ar/unrn/demeter/).
+- **Interdependencia**: [`inter/contenido/`](src/main/java/ar/unrn/inter/contenido/), [`inter/global/`](src/main/java/ar/unrn/inter/global/), [`inter/control/`](src/main/java/ar/unrn/inter/control/), [`inter/datos/`](src/main/java/ar/unrn/inter/datos/), [`inter/mensajes/`](src/main/java/ar/unrn/inter/mensajes/).
+- **Acoplamiento global con estáticos**: [`estaticos/contadorinstancias/`](src/main/java/ar/unrn/estaticos/contadorinstancias/).
 
-### 3. El Contrato de Objetos (equals y hashCode)
-- **Implementación**: [`Persona`](src/main/java/ar/unrn/equals/correcto/persona/Persona.java).
-- **Fallas de Identidad**: [`Reflexividad`](src/main/java/ar/unrn/equals/identidad/reflexividad/), [`Simetria`](src/main/java/ar/unrn/equals/identidad/simetria/), [`Transitividad`](src/main/java/ar/unrn/equals/identidad/transitividad/).
-- **Rendimiento**: [`ComparativaRendimientoHash`](src/main/java/ar/unrn/equals/problemas/rendimiento/ComparativaRendimientoHash.java) ($O(1)$ vs $O(N)$).
+### 3. Contrato de objetos: equals y hashCode
+- **Implementación correcta**: [`equals/correcto/persona/`](src/main/java/ar/unrn/equals/correcto/persona/).
+- **Identidad y contrato**: [`equals/identidad/`](src/main/java/ar/unrn/equals/identidad/), [`consistencia_equals/`](src/main/java/ar/unrn/equals/identidad/consistencia_equals/), [`consistencia_hash/`](src/main/java/ar/unrn/equals/identidad/consistencia_hash/), [`mutabilidad/`](src/main/java/ar/unrn/equals/identidad/mutabilidad/), [`nullcomparison/`](src/main/java/ar/unrn/equals/identidad/nullcomparison/), [`reflexividad/`](src/main/java/ar/unrn/equals/identidad/reflexividad/), [`simetria/`](src/main/java/ar/unrn/equals/identidad/simetria/), [`transitividad/`](src/main/java/ar/unrn/equals/identidad/transitividad/).
+- **Colisiones, contraejemplos y problemas**: [`equals/colision/`](src/main/java/ar/unrn/equals/colision/), [`equals/contraejemplos/`](src/main/java/ar/unrn/equals/contraejemplos/), [`problemas/colisiones/`](src/main/java/ar/unrn/equals/problemas/colisiones/), [`problemas/inconsistencia/`](src/main/java/ar/unrn/equals/problemas/inconsistencia/), [`problemas/rendimiento/`](src/main/java/ar/unrn/equals/problemas/rendimiento/), [`problemas/simetria/`](src/main/java/ar/unrn/equals/problemas/simetria/), [`problemas/sinhashcode/`](src/main/java/ar/unrn/equals/problemas/sinhashcode/).
 
-### 4. Patrones y Servicios
-- **Patrones generados**: [`Observer`](src/main/java/ar/unrn/generados/patrones/observer/), [`Singleton`](src/main/java/ar/unrn/generados/patrones/singleton/), [`Visitor`](src/main/java/ar/unrn/generados/patrones/visitor/).
-- **Patrones de comportamiento**:
-  - **Básico**: [`Strategy`](src/main/java/ar/unrn/patrones/comportamiento/basico/strategy/) para intercambiar operaciones simples en una calculadora.
-  - **Intermedio**: [`Observer`](src/main/java/ar/unrn/patrones/comportamiento/intermedio/observer/) para publicar noticias a suscriptores dinámicos.
-  - **Avanzado**: [`Chain of Responsibility`](src/main/java/ar/unrn/patrones/comportamiento/avanzado/chain_of_responsibility/) para escalar solicitudes de soporte.
-  - **Ejercicio guiado**: [`State`](src/main/java/ar/unrn/patrones/comportamiento/ejercicio/state/) con una máquina expendedora.
-- **Patrones estructurales**: [`Bridge`](src/main/java/ar/unrn/patrones/estructurales/bridge/), [`Flyweight`](src/main/java/ar/unrn/patrones/estructurales/flyweight/).
-- **Integración de patrones**: [`Smart Home`](src/main/java/ar/unrn/patrones/integracion/smarthome/).
-- **Servicios**: [`ManejoFechas`](src/main/java/ar/unrn/generados/servicios/manejofechas/), [`ManejoArchivos`](src/main/java/ar/unrn/generados/servicios/manejoarchivos/).
+### 4. Excepciones
+- **Jerarquía de excepciones**: [`excepciones/banco/`](src/main/java/ar/unrn/excepciones/banco/).
+- **Gestión base y recursos**: [`excepciones/base/gestion/`](src/main/java/ar/unrn/excepciones/base/gestion/).
+- **Flujo excepcional**: [`excepciones/flujo/`](src/main/java/ar/unrn/excepciones/flujo/).
 
-### 5. Refactorización
-- **Índice general**: [`ar/unrn/refactoring`](src/main/java/ar/unrn/refactoring/README.md).
-- **Ejemplos resueltos por dificultad**: [`ejemplos/`](src/main/java/ar/unrn/refactoring/ejemplos/README.md).
-- **Enunciados por dificultad, grupo y refactorización**: [`enunciados/`](src/main/java/ar/unrn/refactoring/enunciados/README.md).
-- **Refactorizaciones orientadas a patrones de diseño**: [`patrones_diseno/`](src/main/java/ar/unrn/refactoring/patrones_diseno/README.md).
+### 5. Smells, acoplamiento y diseño defectuoso
+- **Code smells clásicos**: [`codesmells/bloaters/`](src/main/java/ar/unrn/codesmells/bloaters/), [`codesmells/change_preventers/`](src/main/java/ar/unrn/codesmells/change_preventers/), [`codesmells/couplers/`](src/main/java/ar/unrn/codesmells/couplers/), [`codesmells/dispensables/`](src/main/java/ar/unrn/codesmells/dispensables/), [`codesmells/oo_abusers/`](src/main/java/ar/unrn/codesmells/oo_abusers/).
+- **Smells en español**: [`smells/acoplamiento/`](src/main/java/ar/unrn/smells/acoplamiento/), [`smells/fragilidad/`](src/main/java/ar/unrn/smells/fragilidad/), [`smells/inseparabilidad/`](src/main/java/ar/unrn/smells/inseparabilidad/), [`smells/rigidez/`](src/main/java/ar/unrn/smells/rigidez/), [`smells/viscosidad/`](src/main/java/ar/unrn/smells/viscosidad/).
+
+### 6. Principios SOLID
+- [`solid/srp/`](src/main/java/ar/unrn/solid/srp/)
+- [`solid/ocp/`](src/main/java/ar/unrn/solid/ocp/)
+- [`solid/lsp/`](src/main/java/ar/unrn/solid/lsp/)
+- [`solid/isp/`](src/main/java/ar/unrn/solid/isp/)
+- [`solid/dip/`](src/main/java/ar/unrn/solid/dip/)
+
+### 7. Patrones de diseño y variantes
+- **Patrones generados**: [`observer/`](src/main/java/ar/unrn/generados/patrones/observer/), [`singleton/`](src/main/java/ar/unrn/generados/patrones/singleton/), [`visitor/`](src/main/java/ar/unrn/generados/patrones/visitor/).
+- **Comportamiento**: [`strategy básico/`](src/main/java/ar/unrn/patrones/comportamiento/basico/strategy/), [`observer intermedio/`](src/main/java/ar/unrn/patrones/comportamiento/intermedio/observer/), [`chain_of_responsibility avanzado/`](src/main/java/ar/unrn/patrones/comportamiento/avanzado/chain_of_responsibility/), [`state ejercicio/`](src/main/java/ar/unrn/patrones/comportamiento/ejercicio/state/), [`strategy completo/`](src/main/java/ar/unrn/patrones/comportamiento/completo/strategy/).
+- **Creacionales**: [`abstract_factory/basico/`](src/main/java/ar/unrn/patrones/creacionales/abstract_factory/basico/), [`abstract_factory/intermedio/`](src/main/java/ar/unrn/patrones/creacionales/abstract_factory/intermedio/), [`abstract_factory/avanzado/`](src/main/java/ar/unrn/patrones/creacionales/abstract_factory/avanzado/), [`builder/basico/`](src/main/java/ar/unrn/patrones/creacionales/builder/basico/), [`builder/intermedio/`](src/main/java/ar/unrn/patrones/creacionales/builder/intermedio/), [`builder/avanzado/`](src/main/java/ar/unrn/patrones/creacionales/builder/avanzado/), [`factory_method/basico/`](src/main/java/ar/unrn/patrones/creacionales/factory_method/basico/), [`factory_method/intermedio/`](src/main/java/ar/unrn/patrones/creacionales/factory_method/intermedio/), [`factory_method/avanzado/`](src/main/java/ar/unrn/patrones/creacionales/factory_method/avanzado/), [`prototype/basico/`](src/main/java/ar/unrn/patrones/creacionales/prototype/basico/), [`prototype/intermedio/`](src/main/java/ar/unrn/patrones/creacionales/prototype/intermedio/), [`prototype/avanzado/`](src/main/java/ar/unrn/patrones/creacionales/prototype/avanzado/), [`singleton/basico/`](src/main/java/ar/unrn/patrones/creacionales/singleton/basico/), [`singleton/intermedio/`](src/main/java/ar/unrn/patrones/creacionales/singleton/intermedio/), [`singleton/avanzado/`](src/main/java/ar/unrn/patrones/creacionales/singleton/avanzado/).
+- **Estructurales**: [`bridge/`](src/main/java/ar/unrn/patrones/estructurales/bridge/), [`decorator/`](src/main/java/ar/unrn/patrones/estructurales/decorator/), [`flyweight/`](src/main/java/ar/unrn/patrones/estructurales/flyweight/).
+- **Integración de patrones**: [`integracion/smarthome/`](src/main/java/ar/unrn/patrones/integracion/smarthome/).
+
+### 8. Refactorización
+- **Índice principal**: [`refactoring/README.md`](src/main/java/ar/unrn/refactoring/README.md).
+- **Ejemplos resueltos**: [`refactoring/ejemplos/`](src/main/java/ar/unrn/refactoring/ejemplos/README.md).
+- **Enunciados de práctica**: [`refactoring/enunciados/`](src/main/java/ar/unrn/refactoring/enunciados/README.md).
+- **Refactorizaciones hacia patrones**: [`refactoring/patrones_diseno/`](src/main/java/ar/unrn/refactoring/patrones_diseno/README.md).
 
 ---
 
